@@ -1,9 +1,0 @@
-version: "Swift version 4.0-dev (LLVM b90f33daf1, Clang e352443ae3, Swift 7ade7c9336)"
-options: "3ffbf17b0c7347a7564ba45dc07dcc19"
-build_time: [1521248112, 66498000]
-inputs:
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/Statics.swift": [1521247938, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/SwiftMathBinding.swift": [1521244345, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/SwiftMathBinding_Listener.swift": [1521248091, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/SwiftMathBinding_Responder.swift": [1521244345, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/main.swift": [1521247938, 0]

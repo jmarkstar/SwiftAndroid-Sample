@@ -7,82 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_101 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Statics.swift */; };
-		OBJ_102 /* SwiftMathBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SwiftMathBinding.swift */; };
-		OBJ_103 /* SwiftMathBinding_Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SwiftMathBinding_Listener.swift */; };
-		OBJ_104 /* SwiftMathBinding_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SwiftMathBinding_Responder.swift */; };
-		OBJ_105 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
-		OBJ_107 /* Fortify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fortify::Fortify::Product" /* Fortify.framework */; };
-		OBJ_108 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_109 /* AndroidInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AndroidInjection::AndroidInjection::Product" /* AndroidInjection.framework */; };
-		OBJ_110 /* java_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "java_swift::java_swift::Product" /* java_swift.framework */; };
-		OBJ_123 /* Fortify.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Fortify.swift */; };
-		OBJ_129 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AFError.swift */; };
-		OBJ_130 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Alamofire.swift */; };
-		OBJ_131 /* CFString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CFString+String.swift */; };
-		OBJ_132 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_133 /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MimeTypes.swift */; };
-		OBJ_134 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MultipartFormData.swift */; };
-		OBJ_135 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Notifications.swift */; };
-		OBJ_136 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ParameterEncoding.swift */; };
-		OBJ_137 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Request.swift */; };
-		OBJ_138 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Response.swift */; };
-		OBJ_139 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ResponseSerialization.swift */; };
-		OBJ_140 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Result.swift */; };
-		OBJ_141 /* ServerTrustPolicyPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ServerTrustPolicyPlaceholder.swift */; };
-		OBJ_142 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SessionDelegate.swift */; };
-		OBJ_143 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* SessionManager.swift */; };
-		OBJ_144 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* TaskDelegate.swift */; };
-		OBJ_145 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Timeline.swift */; };
-		OBJ_146 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Validation.swift */; };
-		OBJ_152 /* AndroidInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AndroidInjection.swift */; };
-		OBJ_153 /* AndroidInjectionHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AndroidInjectionHost.swift */; };
-		OBJ_154 /* SwiftInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* SwiftInternals.swift */; };
-		OBJ_160 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Exception.swift */; };
-		OBJ_161 /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* HashMap.swift */; };
-		OBJ_162 /* JNICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* JNICore.swift */; };
-		OBJ_163 /* JNIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* JNIField.swift */; };
-		OBJ_164 /* JNIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* JNIMethod.swift */; };
-		OBJ_165 /* JNIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* JNIObject.swift */; };
-		OBJ_166 /* JNIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* JNIProxy.swift */; };
-		OBJ_167 /* JNIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* JNIType.swift */; };
-		OBJ_168 /* JavaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* JavaClass.swift */; };
-		OBJ_169 /* JavaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* JavaEnum.swift */; };
-		OBJ_170 /* JavaMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* JavaMap.swift */; };
-		OBJ_171 /* JavaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* JavaObject.swift */; };
-		OBJ_172 /* JavaSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* JavaSet.swift */; };
-		OBJ_173 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Runnable.swift */; };
-		OBJ_174 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Throwable.swift */; };
-		OBJ_71 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_77 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Package.swift */; };
-		OBJ_83 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
-		OBJ_89 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Package.swift */; };
-		OBJ_95 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
+		OBJ_106 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_112 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Package.swift */; };
+		OBJ_118 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Package.swift */; };
+		OBJ_124 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Package.swift */; };
+		OBJ_130 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Package.swift */; };
+		OBJ_136 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* Package.swift */; };
+		OBJ_142 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Statics.swift */; };
+		OBJ_143 /* SwiftMathBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SwiftMathBinding.swift */; };
+		OBJ_144 /* SwiftMathBinding_Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SwiftMathBinding_Listener.swift */; };
+		OBJ_145 /* SwiftMathBinding_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SwiftMathBinding_Responder.swift */; };
+		OBJ_146 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
+		OBJ_148 /* Bluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Bluetooth::Bluetooth::Product" /* Bluetooth.framework */; };
+		OBJ_149 /* Fortify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fortify::Fortify::Product" /* Fortify.framework */; };
+		OBJ_150 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_151 /* AndroidInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AndroidInjection::AndroidInjection::Product" /* AndroidInjection.framework */; };
+		OBJ_152 /* java_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "java_swift::java_swift::Product" /* java_swift.framework */; };
+		OBJ_167 /* ATT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ATT.swift */; };
+		OBJ_168 /* ATTProtocolDataUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ATTProtocolDataUnit.swift */; };
+		OBJ_169 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Address.swift */; };
+		OBJ_170 /* AdvertisingChannelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AdvertisingChannelHeader.swift */; };
+		OBJ_171 /* BitMaskOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* BitMaskOption.swift */; };
+		OBJ_172 /* BluetoothUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* BluetoothUUID.swift */; };
+		OBJ_173 /* ByteValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* ByteValue.swift */; };
+		OBJ_174 /* CompanyIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* CompanyIdentifier.swift */; };
+		OBJ_175 /* DefinedUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DefinedUUID.swift */; };
+		OBJ_176 /* GATT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* GATT.swift */; };
+		OBJ_177 /* GATTAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GATTAttributes.swift */; };
+		OBJ_178 /* HCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* HCI.swift */; };
+		OBJ_179 /* HCICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* HCICommand.swift */; };
+		OBJ_180 /* HCIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* HCIError.swift */; };
+		OBJ_181 /* HCIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HCIEvent.swift */; };
+		OBJ_182 /* HCIGeneralEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* HCIGeneralEvent.swift */; };
+		OBJ_183 /* HCIGeneralEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* HCIGeneralEventParameter.swift */; };
+		OBJ_184 /* HCIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* HCIVersion.swift */; };
+		OBJ_185 /* Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Hexadecimal.swift */; };
+		OBJ_186 /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Integer.swift */; };
+		OBJ_187 /* LinkControlCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* LinkControlCommand.swift */; };
+		OBJ_188 /* LinkControlCommandParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* LinkControlCommandParameter.swift */; };
+		OBJ_189 /* LowEnergyAddressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* LowEnergyAddressType.swift */; };
+		OBJ_190 /* LowEnergyCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* LowEnergyCommand.swift */; };
+		OBJ_191 /* LowEnergyCommandParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* LowEnergyCommandParameter.swift */; };
+		OBJ_192 /* LowEnergyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* LowEnergyEvent.swift */; };
+		OBJ_193 /* LowEnergyEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* LowEnergyEventParameter.swift */; };
+		OBJ_194 /* PSM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* PSM.swift */; };
+		OBJ_195 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Range.swift */; };
+		OBJ_196 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* String.swift */; };
+		OBJ_197 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* UInt128.swift */; };
+		OBJ_198 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* UUID.swift */; };
+		OBJ_204 /* Fortify.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Fortify.swift */; };
+		OBJ_210 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* AFError.swift */; };
+		OBJ_211 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Alamofire.swift */; };
+		OBJ_212 /* CFString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* CFString+String.swift */; };
+		OBJ_213 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_214 /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* MimeTypes.swift */; };
+		OBJ_215 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* MultipartFormData.swift */; };
+		OBJ_216 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Notifications.swift */; };
+		OBJ_217 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* ParameterEncoding.swift */; };
+		OBJ_218 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Request.swift */; };
+		OBJ_219 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Response.swift */; };
+		OBJ_220 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* ResponseSerialization.swift */; };
+		OBJ_221 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Result.swift */; };
+		OBJ_222 /* ServerTrustPolicyPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* ServerTrustPolicyPlaceholder.swift */; };
+		OBJ_223 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* SessionDelegate.swift */; };
+		OBJ_224 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* SessionManager.swift */; };
+		OBJ_225 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* TaskDelegate.swift */; };
+		OBJ_226 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Timeline.swift */; };
+		OBJ_227 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Validation.swift */; };
+		OBJ_233 /* AndroidInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* AndroidInjection.swift */; };
+		OBJ_234 /* AndroidInjectionHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* AndroidInjectionHost.swift */; };
+		OBJ_235 /* SwiftInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* SwiftInternals.swift */; };
+		OBJ_241 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Exception.swift */; };
+		OBJ_242 /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* HashMap.swift */; };
+		OBJ_243 /* JNICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* JNICore.swift */; };
+		OBJ_244 /* JNIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* JNIField.swift */; };
+		OBJ_245 /* JNIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* JNIMethod.swift */; };
+		OBJ_246 /* JNIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* JNIObject.swift */; };
+		OBJ_247 /* JNIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* JNIProxy.swift */; };
+		OBJ_248 /* JNIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* JNIType.swift */; };
+		OBJ_249 /* JavaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* JavaClass.swift */; };
+		OBJ_250 /* JavaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* JavaEnum.swift */; };
+		OBJ_251 /* JavaMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* JavaMap.swift */; };
+		OBJ_252 /* JavaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* JavaObject.swift */; };
+		OBJ_253 /* JavaSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* JavaSet.swift */; };
+		OBJ_254 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Runnable.swift */; };
+		OBJ_255 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* Throwable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		51E50D31205C9FA400101BC9 /* PBXContainerItemProxy */ = {
+		6E45C7AD205D542200C76374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Bluetooth::Bluetooth";
+			remoteInfo = Bluetooth;
+		};
+		6E45C7AE205D542200C76374 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Fortify::Fortify";
 			remoteInfo = Fortify;
 		};
-		51E50D32205C9FA400101BC9 /* PBXContainerItemProxy */ = {
+		6E45C7AF205D542200C76374 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		51E50D33205C9FA400101BC9 /* PBXContainerItemProxy */ = {
+		6E45C7B0205D542200C76374 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "AndroidInjection::AndroidInjection";
 			remoteInfo = AndroidInjection;
 		};
-		51E50D34205C9FA400101BC9 /* PBXContainerItemProxy */ = {
+		6E45C7B1205D542200C76374 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -94,92 +135,134 @@
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"AndroidInjection::AndroidInjection::Product" /* AndroidInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AndroidInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Bluetooth::Bluetooth::Product" /* Bluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Fortify::Fortify::Product" /* Fortify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fortify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SwiftMathBinding_Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMathBinding_Listener.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SwiftMathBinding_Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMathBinding_Responder.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_16 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Fortify.git-1536294584922693076/Package.swift"; sourceTree = "<group>"; };
-		OBJ_17 /* Fortify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fortify.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Package.swift"; sourceTree = "<group>"; };
-		OBJ_20 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_22 /* CFString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFString+String.swift"; sourceTree = "<group>"; };
-		OBJ_23 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* MimeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
-		OBJ_25 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_27 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_30 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		OBJ_32 /* ServerTrustPolicyPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicyPlaceholder.swift; sourceTree = "<group>"; };
-		OBJ_33 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_34 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		OBJ_35 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Package.swift"; sourceTree = "<group>"; };
-		OBJ_40 /* AndroidInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidInjection.swift; sourceTree = "<group>"; };
-		OBJ_41 /* AndroidInjectionHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidInjectionHost.swift; sourceTree = "<group>"; };
-		OBJ_42 /* SwiftInternals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInternals.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Package.swift"; sourceTree = "<group>"; };
-		OBJ_45 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
-		OBJ_46 /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
-		OBJ_47 /* JNICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNICore.swift; sourceTree = "<group>"; };
-		OBJ_48 /* JNIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIField.swift; sourceTree = "<group>"; };
-		OBJ_49 /* JNIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIMethod.swift; sourceTree = "<group>"; };
-		OBJ_50 /* JNIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIObject.swift; sourceTree = "<group>"; };
-		OBJ_51 /* JNIProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIProxy.swift; sourceTree = "<group>"; };
-		OBJ_52 /* JNIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIType.swift; sourceTree = "<group>"; };
-		OBJ_53 /* JavaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaClass.swift; sourceTree = "<group>"; };
-		OBJ_54 /* JavaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaEnum.swift; sourceTree = "<group>"; };
-		OBJ_55 /* JavaMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaMap.swift; sourceTree = "<group>"; };
-		OBJ_56 /* JavaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaObject.swift; sourceTree = "<group>"; };
-		OBJ_57 /* JavaSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaSet.swift; sourceTree = "<group>"; };
-		OBJ_58 /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
-		OBJ_59 /* Throwable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/coleman/Developer/SwiftAndroid-Sample/src/main/swift/.build/checkouts/Bluetooth.git--1679829496101537995/Package.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* ATT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATT.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ATTProtocolDataUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATTProtocolDataUnit.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		OBJ_20 /* AdvertisingChannelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingChannelHeader.swift; sourceTree = "<group>"; };
+		OBJ_21 /* BitMaskOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskOption.swift; sourceTree = "<group>"; };
+		OBJ_22 /* BluetoothUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothUUID.swift; sourceTree = "<group>"; };
+		OBJ_23 /* ByteValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteValue.swift; sourceTree = "<group>"; };
+		OBJ_24 /* CompanyIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyIdentifier.swift; sourceTree = "<group>"; };
+		OBJ_25 /* DefinedUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedUUID.swift; sourceTree = "<group>"; };
+		OBJ_26 /* GATT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATT.swift; sourceTree = "<group>"; };
+		OBJ_27 /* GATTAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATTAttributes.swift; sourceTree = "<group>"; };
+		OBJ_28 /* HCI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCI.swift; sourceTree = "<group>"; };
+		OBJ_29 /* HCICommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCICommand.swift; sourceTree = "<group>"; };
+		OBJ_30 /* HCIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIError.swift; sourceTree = "<group>"; };
+		OBJ_31 /* HCIEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIEvent.swift; sourceTree = "<group>"; };
+		OBJ_32 /* HCIGeneralEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIGeneralEvent.swift; sourceTree = "<group>"; };
+		OBJ_33 /* HCIGeneralEventParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIGeneralEventParameter.swift; sourceTree = "<group>"; };
+		OBJ_34 /* HCIVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIVersion.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Hexadecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexadecimal.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		OBJ_37 /* LinkControlCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkControlCommand.swift; sourceTree = "<group>"; };
+		OBJ_38 /* LinkControlCommandParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkControlCommandParameter.swift; sourceTree = "<group>"; };
+		OBJ_39 /* LowEnergyAddressType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEnergyAddressType.swift; sourceTree = "<group>"; };
+		OBJ_40 /* LowEnergyCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEnergyCommand.swift; sourceTree = "<group>"; };
+		OBJ_41 /* LowEnergyCommandParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEnergyCommandParameter.swift; sourceTree = "<group>"; };
+		OBJ_42 /* LowEnergyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEnergyEvent.swift; sourceTree = "<group>"; };
+		OBJ_43 /* LowEnergyEventParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEnergyEventParameter.swift; sourceTree = "<group>"; };
+		OBJ_44 /* PSM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSM.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		OBJ_46 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		OBJ_47 /* UInt128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
+		OBJ_48 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/coleman/Developer/SwiftAndroid-Sample/src/main/swift/.build/checkouts/Fortify.git-1536294584922693076/Package.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* Fortify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fortify.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/coleman/Developer/SwiftAndroid-Sample/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Package.swift"; sourceTree = "<group>"; };
+		OBJ_54 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_56 /* CFString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFString+String.swift"; sourceTree = "<group>"; };
+		OBJ_57 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_58 /* MimeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
+		OBJ_59 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_61 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_63 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_64 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_66 /* ServerTrustPolicyPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicyPlaceholder.swift; sourceTree = "<group>"; };
+		OBJ_67 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_68 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_69 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_70 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_71 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/coleman/Developer/SwiftAndroid-Sample/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Package.swift"; sourceTree = "<group>"; };
+		OBJ_74 /* AndroidInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidInjection.swift; sourceTree = "<group>"; };
+		OBJ_75 /* AndroidInjectionHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidInjectionHost.swift; sourceTree = "<group>"; };
+		OBJ_76 /* SwiftInternals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInternals.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/coleman/Developer/SwiftAndroid-Sample/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Package.swift"; sourceTree = "<group>"; };
+		OBJ_79 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		OBJ_8 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
+		OBJ_80 /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
+		OBJ_81 /* JNICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNICore.swift; sourceTree = "<group>"; };
+		OBJ_82 /* JNIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIField.swift; sourceTree = "<group>"; };
+		OBJ_83 /* JNIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIMethod.swift; sourceTree = "<group>"; };
+		OBJ_84 /* JNIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIObject.swift; sourceTree = "<group>"; };
+		OBJ_85 /* JNIProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIProxy.swift; sourceTree = "<group>"; };
+		OBJ_86 /* JNIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNIType.swift; sourceTree = "<group>"; };
+		OBJ_87 /* JavaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaClass.swift; sourceTree = "<group>"; };
+		OBJ_88 /* JavaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaEnum.swift; sourceTree = "<group>"; };
+		OBJ_89 /* JavaMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaMap.swift; sourceTree = "<group>"; };
 		OBJ_9 /* SwiftMathBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMathBinding.swift; sourceTree = "<group>"; };
+		OBJ_90 /* JavaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaObject.swift; sourceTree = "<group>"; };
+		OBJ_91 /* JavaSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaSet.swift; sourceTree = "<group>"; };
+		OBJ_92 /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
+		OBJ_93 /* Throwable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
 		"java_swift::java_swift::Product" /* java_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = java_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"libswiftandroid.so::libswiftandroid.so::Product" /* libswiftandroid.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libswiftandroid.so; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_106 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_107 /* Fortify.framework in Frameworks */,
-				OBJ_108 /* Alamofire.framework in Frameworks */,
-				OBJ_109 /* AndroidInjection.framework in Frameworks */,
-				OBJ_110 /* java_swift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_124 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_147 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				OBJ_148 /* Bluetooth.framework in Frameworks */,
+				OBJ_149 /* Fortify.framework in Frameworks */,
+				OBJ_150 /* Alamofire.framework in Frameworks */,
+				OBJ_151 /* AndroidInjection.framework in Frameworks */,
+				OBJ_152 /* java_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_155 /* Frameworks */ = {
+		OBJ_199 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_175 /* Frameworks */ = {
+		OBJ_205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -199,85 +282,64 @@
 		OBJ_14 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* Fortify 1.0.2 */,
-				OBJ_18 /* Alamofire 4.5.1 */,
-				OBJ_38 /* AndroidInjection 1.0.4 */,
-				OBJ_43 /* java_swift 2.2.1 */,
+				OBJ_15 /* Bluetooth 1.5.7 */,
+				OBJ_49 /* Fortify 1.0.2 */,
+				OBJ_52 /* Alamofire 4.5.1 */,
+				OBJ_72 /* AndroidInjection 1.0.4 */,
+				OBJ_77 /* java_swift 2.2.1 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_15 /* Fortify 1.0.2 */ = {
+		OBJ_15 /* Bluetooth 1.5.7 */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_16 /* Package.swift */,
-				OBJ_17 /* Fortify.swift */,
+				OBJ_17 /* ATT.swift */,
+				OBJ_18 /* ATTProtocolDataUnit.swift */,
+				OBJ_19 /* Address.swift */,
+				OBJ_20 /* AdvertisingChannelHeader.swift */,
+				OBJ_21 /* BitMaskOption.swift */,
+				OBJ_22 /* BluetoothUUID.swift */,
+				OBJ_23 /* ByteValue.swift */,
+				OBJ_24 /* CompanyIdentifier.swift */,
+				OBJ_25 /* DefinedUUID.swift */,
+				OBJ_26 /* GATT.swift */,
+				OBJ_27 /* GATTAttributes.swift */,
+				OBJ_28 /* HCI.swift */,
+				OBJ_29 /* HCICommand.swift */,
+				OBJ_30 /* HCIError.swift */,
+				OBJ_31 /* HCIEvent.swift */,
+				OBJ_32 /* HCIGeneralEvent.swift */,
+				OBJ_33 /* HCIGeneralEventParameter.swift */,
+				OBJ_34 /* HCIVersion.swift */,
+				OBJ_35 /* Hexadecimal.swift */,
+				OBJ_36 /* Integer.swift */,
+				OBJ_37 /* LinkControlCommand.swift */,
+				OBJ_38 /* LinkControlCommandParameter.swift */,
+				OBJ_39 /* LowEnergyAddressType.swift */,
+				OBJ_40 /* LowEnergyCommand.swift */,
+				OBJ_41 /* LowEnergyCommandParameter.swift */,
+				OBJ_42 /* LowEnergyEvent.swift */,
+				OBJ_43 /* LowEnergyEventParameter.swift */,
+				OBJ_44 /* PSM.swift */,
+				OBJ_45 /* Range.swift */,
+				OBJ_46 /* String.swift */,
+				OBJ_47 /* UInt128.swift */,
+				OBJ_48 /* UUID.swift */,
+			);
+			name = "Bluetooth 1.5.7";
+			path = ".build/checkouts/Bluetooth.git--1679829496101537995/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_49 /* Fortify 1.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* Package.swift */,
+				OBJ_51 /* Fortify.swift */,
 			);
 			name = "Fortify 1.0.2";
 			path = ".build/checkouts/Fortify.git-1536294584922693076/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_18 /* Alamofire 4.5.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_19 /* Package.swift */,
-				OBJ_20 /* AFError.swift */,
-				OBJ_21 /* Alamofire.swift */,
-				OBJ_22 /* CFString+String.swift */,
-				OBJ_23 /* DispatchQueue+Alamofire.swift */,
-				OBJ_24 /* MimeTypes.swift */,
-				OBJ_25 /* MultipartFormData.swift */,
-				OBJ_26 /* Notifications.swift */,
-				OBJ_27 /* ParameterEncoding.swift */,
-				OBJ_28 /* Request.swift */,
-				OBJ_29 /* Response.swift */,
-				OBJ_30 /* ResponseSerialization.swift */,
-				OBJ_31 /* Result.swift */,
-				OBJ_32 /* ServerTrustPolicyPlaceholder.swift */,
-				OBJ_33 /* SessionDelegate.swift */,
-				OBJ_34 /* SessionManager.swift */,
-				OBJ_35 /* TaskDelegate.swift */,
-				OBJ_36 /* Timeline.swift */,
-				OBJ_37 /* Validation.swift */,
-			);
-			name = "Alamofire 4.5.1";
-			path = ".build/checkouts/Alamofire.git-8369878224867254261/Source";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_38 /* AndroidInjection 1.0.4 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_39 /* Package.swift */,
-				OBJ_40 /* AndroidInjection.swift */,
-				OBJ_41 /* AndroidInjectionHost.swift */,
-				OBJ_42 /* SwiftInternals.swift */,
-			);
-			name = "AndroidInjection 1.0.4";
-			path = ".build/checkouts/swift-android-injection.git--6051692336269504420/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_43 /* java_swift 2.2.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_44 /* Package.swift */,
-				OBJ_45 /* Exception.swift */,
-				OBJ_46 /* HashMap.swift */,
-				OBJ_47 /* JNICore.swift */,
-				OBJ_48 /* JNIField.swift */,
-				OBJ_49 /* JNIMethod.swift */,
-				OBJ_50 /* JNIObject.swift */,
-				OBJ_51 /* JNIProxy.swift */,
-				OBJ_52 /* JNIType.swift */,
-				OBJ_53 /* JavaClass.swift */,
-				OBJ_54 /* JavaEnum.swift */,
-				OBJ_55 /* JavaMap.swift */,
-				OBJ_56 /* JavaObject.swift */,
-				OBJ_57 /* JavaSet.swift */,
-				OBJ_58 /* Runnable.swift */,
-				OBJ_59 /* Throwable.swift */,
-			);
-			name = "java_swift 2.2.1";
-			path = ".build/checkouts/java_swift.git-9082904271628832338/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_5 /*  */ = {
@@ -287,22 +349,37 @@
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
 				OBJ_14 /* Dependencies */,
-				OBJ_60 /* Products */,
+				OBJ_94 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_60 /* Products */ = {
+		OBJ_52 /* Alamofire 4.5.1 */ = {
 			isa = PBXGroup;
 			children = (
-				"libswiftandroid.so::libswiftandroid.so::Product" /* libswiftandroid.so */,
-				"Fortify::Fortify::Product" /* Fortify.framework */,
-				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
-				"AndroidInjection::AndroidInjection::Product" /* AndroidInjection.framework */,
-				"java_swift::java_swift::Product" /* java_swift.framework */,
+				OBJ_53 /* Package.swift */,
+				OBJ_54 /* AFError.swift */,
+				OBJ_55 /* Alamofire.swift */,
+				OBJ_56 /* CFString+String.swift */,
+				OBJ_57 /* DispatchQueue+Alamofire.swift */,
+				OBJ_58 /* MimeTypes.swift */,
+				OBJ_59 /* MultipartFormData.swift */,
+				OBJ_60 /* Notifications.swift */,
+				OBJ_61 /* ParameterEncoding.swift */,
+				OBJ_62 /* Request.swift */,
+				OBJ_63 /* Response.swift */,
+				OBJ_64 /* ResponseSerialization.swift */,
+				OBJ_65 /* Result.swift */,
+				OBJ_66 /* ServerTrustPolicyPlaceholder.swift */,
+				OBJ_67 /* SessionDelegate.swift */,
+				OBJ_68 /* SessionManager.swift */,
+				OBJ_69 /* TaskDelegate.swift */,
+				OBJ_70 /* Timeline.swift */,
+				OBJ_71 /* Validation.swift */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			name = "Alamofire 4.5.1";
+			path = ".build/checkouts/Alamofire.git-8369878224867254261/Source";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -316,15 +393,64 @@
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_72 /* AndroidInjection 1.0.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_73 /* Package.swift */,
+				OBJ_74 /* AndroidInjection.swift */,
+				OBJ_75 /* AndroidInjectionHost.swift */,
+				OBJ_76 /* SwiftInternals.swift */,
+			);
+			name = "AndroidInjection 1.0.4";
+			path = ".build/checkouts/swift-android-injection.git--6051692336269504420/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_77 /* java_swift 2.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_78 /* Package.swift */,
+				OBJ_79 /* Exception.swift */,
+				OBJ_80 /* HashMap.swift */,
+				OBJ_81 /* JNICore.swift */,
+				OBJ_82 /* JNIField.swift */,
+				OBJ_83 /* JNIMethod.swift */,
+				OBJ_84 /* JNIObject.swift */,
+				OBJ_85 /* JNIProxy.swift */,
+				OBJ_86 /* JNIType.swift */,
+				OBJ_87 /* JavaClass.swift */,
+				OBJ_88 /* JavaEnum.swift */,
+				OBJ_89 /* JavaMap.swift */,
+				OBJ_90 /* JavaObject.swift */,
+				OBJ_91 /* JavaSet.swift */,
+				OBJ_92 /* Runnable.swift */,
+				OBJ_93 /* Throwable.swift */,
+			);
+			name = "java_swift 2.2.1";
+			path = ".build/checkouts/java_swift.git-9082904271628832338/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"libswiftandroid.so::libswiftandroid.so::Product" /* libswiftandroid.so */,
+				"Bluetooth::Bluetooth::Product" /* Bluetooth.framework */,
+				"Fortify::Fortify::Product" /* Fortify.framework */,
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"AndroidInjection::AndroidInjection::Product" /* AndroidInjection.framework */,
+				"java_swift::java_swift::Product" /* java_swift.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		"Alamofire::Alamofire" /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_125 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = OBJ_206 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				OBJ_128 /* Sources */,
-				OBJ_147 /* Frameworks */,
+				OBJ_209 /* Sources */,
+				OBJ_228 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,9 +463,9 @@
 		};
 		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildConfigurationList = OBJ_120 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
 			buildPhases = (
-				OBJ_82 /* Sources */,
+				OBJ_123 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -351,10 +477,10 @@
 		};
 		"AndroidInjection::AndroidInjection" /* AndroidInjection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_148 /* Build configuration list for PBXNativeTarget "AndroidInjection" */;
+			buildConfigurationList = OBJ_229 /* Build configuration list for PBXNativeTarget "AndroidInjection" */;
 			buildPhases = (
-				OBJ_151 /* Sources */,
-				OBJ_155 /* Frameworks */,
+				OBJ_232 /* Sources */,
+				OBJ_236 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,9 +493,9 @@
 		};
 		"AndroidInjection::SwiftPMPackageDescription" /* AndroidInjectionPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "AndroidInjectionPackageDescription" */;
+			buildConfigurationList = OBJ_126 /* Build configuration list for PBXNativeTarget "AndroidInjectionPackageDescription" */;
 			buildPhases = (
-				OBJ_88 /* Sources */,
+				OBJ_129 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -379,12 +505,42 @@
 			productName = AndroidInjectionPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
+		"Bluetooth::Bluetooth" /* Bluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_163 /* Build configuration list for PBXNativeTarget "Bluetooth" */;
+			buildPhases = (
+				OBJ_166 /* Sources */,
+				OBJ_199 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bluetooth;
+			productName = Bluetooth;
+			productReference = "Bluetooth::Bluetooth::Product" /* Bluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Bluetooth::SwiftPMPackageDescription" /* BluetoothPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_108 /* Build configuration list for PBXNativeTarget "BluetoothPackageDescription" */;
+			buildPhases = (
+				OBJ_111 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothPackageDescription;
+			productName = BluetoothPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
 		"Fortify::Fortify" /* Fortify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_119 /* Build configuration list for PBXNativeTarget "Fortify" */;
+			buildConfigurationList = OBJ_200 /* Build configuration list for PBXNativeTarget "Fortify" */;
 			buildPhases = (
-				OBJ_122 /* Sources */,
-				OBJ_124 /* Frameworks */,
+				OBJ_203 /* Sources */,
+				OBJ_205 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,9 +553,9 @@
 		};
 		"Fortify::SwiftPMPackageDescription" /* FortifyPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "FortifyPackageDescription" */;
+			buildConfigurationList = OBJ_114 /* Build configuration list for PBXNativeTarget "FortifyPackageDescription" */;
 			buildPhases = (
-				OBJ_76 /* Sources */,
+				OBJ_117 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -411,9 +567,9 @@
 		};
 		"java_swift::SwiftPMPackageDescription" /* java_swiftPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "java_swiftPackageDescription" */;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "java_swiftPackageDescription" */;
 			buildPhases = (
-				OBJ_94 /* Sources */,
+				OBJ_135 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -425,10 +581,10 @@
 		};
 		"java_swift::java_swift" /* java_swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_156 /* Build configuration list for PBXNativeTarget "java_swift" */;
+			buildConfigurationList = OBJ_237 /* Build configuration list for PBXNativeTarget "java_swift" */;
 			buildPhases = (
-				OBJ_159 /* Sources */,
-				OBJ_175 /* Frameworks */,
+				OBJ_240 /* Sources */,
+				OBJ_256 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,9 +597,9 @@
 		};
 		"libswiftandroid.so::SwiftPMPackageDescription" /* libswiftandroid.soPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "libswiftandroid.soPackageDescription" */;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "libswiftandroid.soPackageDescription" */;
 			buildPhases = (
-				OBJ_70 /* Sources */,
+				OBJ_105 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -455,18 +611,19 @@
 		};
 		"libswiftandroid.so::libswiftandroid.so" /* libswiftandroid.so */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_97 /* Build configuration list for PBXNativeTarget "libswiftandroid.so" */;
+			buildConfigurationList = OBJ_138 /* Build configuration list for PBXNativeTarget "libswiftandroid.so" */;
 			buildPhases = (
-				OBJ_100 /* Sources */,
-				OBJ_106 /* Frameworks */,
+				OBJ_141 /* Sources */,
+				OBJ_147 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_111 /* PBXTargetDependency */,
-				OBJ_113 /* PBXTargetDependency */,
-				OBJ_115 /* PBXTargetDependency */,
-				OBJ_117 /* PBXTargetDependency */,
+				OBJ_153 /* PBXTargetDependency */,
+				OBJ_155 /* PBXTargetDependency */,
+				OBJ_157 /* PBXTargetDependency */,
+				OBJ_159 /* PBXTargetDependency */,
+				OBJ_161 /* PBXTargetDependency */,
 			);
 			name = libswiftandroid.so;
 			productName = libswiftandroid_so;
@@ -489,16 +646,18 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_60 /* Products */;
+			productRefGroup = OBJ_94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"libswiftandroid.so::SwiftPMPackageDescription" /* libswiftandroid.soPackageDescription */,
+				"Bluetooth::SwiftPMPackageDescription" /* BluetoothPackageDescription */,
 				"Fortify::SwiftPMPackageDescription" /* FortifyPackageDescription */,
 				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
 				"AndroidInjection::SwiftPMPackageDescription" /* AndroidInjectionPackageDescription */,
 				"java_swift::SwiftPMPackageDescription" /* java_swiftPackageDescription */,
 				"libswiftandroid.so::libswiftandroid.so" /* libswiftandroid.so */,
+				"Bluetooth::Bluetooth" /* Bluetooth */,
 				"Fortify::Fortify" /* Fortify */,
 				"Alamofire::Alamofire" /* Alamofire */,
 				"AndroidInjection::AndroidInjection" /* AndroidInjection */,
@@ -508,150 +667,402 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_100 /* Sources */ = {
+		OBJ_105 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_101 /* Statics.swift in Sources */,
-				OBJ_102 /* SwiftMathBinding.swift in Sources */,
-				OBJ_103 /* SwiftMathBinding_Listener.swift in Sources */,
-				OBJ_104 /* SwiftMathBinding_Responder.swift in Sources */,
-				OBJ_105 /* main.swift in Sources */,
+				OBJ_106 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_122 /* Sources */ = {
+		OBJ_111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_123 /* Fortify.swift in Sources */,
+				OBJ_112 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_128 /* Sources */ = {
+		OBJ_117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_129 /* AFError.swift in Sources */,
-				OBJ_130 /* Alamofire.swift in Sources */,
-				OBJ_131 /* CFString+String.swift in Sources */,
-				OBJ_132 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_133 /* MimeTypes.swift in Sources */,
-				OBJ_134 /* MultipartFormData.swift in Sources */,
-				OBJ_135 /* Notifications.swift in Sources */,
-				OBJ_136 /* ParameterEncoding.swift in Sources */,
-				OBJ_137 /* Request.swift in Sources */,
-				OBJ_138 /* Response.swift in Sources */,
-				OBJ_139 /* ResponseSerialization.swift in Sources */,
-				OBJ_140 /* Result.swift in Sources */,
-				OBJ_141 /* ServerTrustPolicyPlaceholder.swift in Sources */,
-				OBJ_142 /* SessionDelegate.swift in Sources */,
-				OBJ_143 /* SessionManager.swift in Sources */,
-				OBJ_144 /* TaskDelegate.swift in Sources */,
-				OBJ_145 /* Timeline.swift in Sources */,
-				OBJ_146 /* Validation.swift in Sources */,
+				OBJ_118 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_151 /* Sources */ = {
+		OBJ_123 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_152 /* AndroidInjection.swift in Sources */,
-				OBJ_153 /* AndroidInjectionHost.swift in Sources */,
-				OBJ_154 /* SwiftInternals.swift in Sources */,
+				OBJ_124 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_159 /* Sources */ = {
+		OBJ_129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_160 /* Exception.swift in Sources */,
-				OBJ_161 /* HashMap.swift in Sources */,
-				OBJ_162 /* JNICore.swift in Sources */,
-				OBJ_163 /* JNIField.swift in Sources */,
-				OBJ_164 /* JNIMethod.swift in Sources */,
-				OBJ_165 /* JNIObject.swift in Sources */,
-				OBJ_166 /* JNIProxy.swift in Sources */,
-				OBJ_167 /* JNIType.swift in Sources */,
-				OBJ_168 /* JavaClass.swift in Sources */,
-				OBJ_169 /* JavaEnum.swift in Sources */,
-				OBJ_170 /* JavaMap.swift in Sources */,
-				OBJ_171 /* JavaObject.swift in Sources */,
-				OBJ_172 /* JavaSet.swift in Sources */,
-				OBJ_173 /* Runnable.swift in Sources */,
-				OBJ_174 /* Throwable.swift in Sources */,
+				OBJ_130 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_70 /* Sources */ = {
+		OBJ_135 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_71 /* Package.swift in Sources */,
+				OBJ_136 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_76 /* Sources */ = {
+		OBJ_141 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_77 /* Package.swift in Sources */,
+				OBJ_142 /* Statics.swift in Sources */,
+				OBJ_143 /* SwiftMathBinding.swift in Sources */,
+				OBJ_144 /* SwiftMathBinding_Listener.swift in Sources */,
+				OBJ_145 /* SwiftMathBinding_Responder.swift in Sources */,
+				OBJ_146 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_82 /* Sources */ = {
+		OBJ_166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_83 /* Package.swift in Sources */,
+				OBJ_167 /* ATT.swift in Sources */,
+				OBJ_168 /* ATTProtocolDataUnit.swift in Sources */,
+				OBJ_169 /* Address.swift in Sources */,
+				OBJ_170 /* AdvertisingChannelHeader.swift in Sources */,
+				OBJ_171 /* BitMaskOption.swift in Sources */,
+				OBJ_172 /* BluetoothUUID.swift in Sources */,
+				OBJ_173 /* ByteValue.swift in Sources */,
+				OBJ_174 /* CompanyIdentifier.swift in Sources */,
+				OBJ_175 /* DefinedUUID.swift in Sources */,
+				OBJ_176 /* GATT.swift in Sources */,
+				OBJ_177 /* GATTAttributes.swift in Sources */,
+				OBJ_178 /* HCI.swift in Sources */,
+				OBJ_179 /* HCICommand.swift in Sources */,
+				OBJ_180 /* HCIError.swift in Sources */,
+				OBJ_181 /* HCIEvent.swift in Sources */,
+				OBJ_182 /* HCIGeneralEvent.swift in Sources */,
+				OBJ_183 /* HCIGeneralEventParameter.swift in Sources */,
+				OBJ_184 /* HCIVersion.swift in Sources */,
+				OBJ_185 /* Hexadecimal.swift in Sources */,
+				OBJ_186 /* Integer.swift in Sources */,
+				OBJ_187 /* LinkControlCommand.swift in Sources */,
+				OBJ_188 /* LinkControlCommandParameter.swift in Sources */,
+				OBJ_189 /* LowEnergyAddressType.swift in Sources */,
+				OBJ_190 /* LowEnergyCommand.swift in Sources */,
+				OBJ_191 /* LowEnergyCommandParameter.swift in Sources */,
+				OBJ_192 /* LowEnergyEvent.swift in Sources */,
+				OBJ_193 /* LowEnergyEventParameter.swift in Sources */,
+				OBJ_194 /* PSM.swift in Sources */,
+				OBJ_195 /* Range.swift in Sources */,
+				OBJ_196 /* String.swift in Sources */,
+				OBJ_197 /* UInt128.swift in Sources */,
+				OBJ_198 /* UUID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_88 /* Sources */ = {
+		OBJ_203 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_89 /* Package.swift in Sources */,
+				OBJ_204 /* Fortify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_94 /* Sources */ = {
+		OBJ_209 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_95 /* Package.swift in Sources */,
+				OBJ_210 /* AFError.swift in Sources */,
+				OBJ_211 /* Alamofire.swift in Sources */,
+				OBJ_212 /* CFString+String.swift in Sources */,
+				OBJ_213 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_214 /* MimeTypes.swift in Sources */,
+				OBJ_215 /* MultipartFormData.swift in Sources */,
+				OBJ_216 /* Notifications.swift in Sources */,
+				OBJ_217 /* ParameterEncoding.swift in Sources */,
+				OBJ_218 /* Request.swift in Sources */,
+				OBJ_219 /* Response.swift in Sources */,
+				OBJ_220 /* ResponseSerialization.swift in Sources */,
+				OBJ_221 /* Result.swift in Sources */,
+				OBJ_222 /* ServerTrustPolicyPlaceholder.swift in Sources */,
+				OBJ_223 /* SessionDelegate.swift in Sources */,
+				OBJ_224 /* SessionManager.swift in Sources */,
+				OBJ_225 /* TaskDelegate.swift in Sources */,
+				OBJ_226 /* Timeline.swift in Sources */,
+				OBJ_227 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_233 /* AndroidInjection.swift in Sources */,
+				OBJ_234 /* AndroidInjectionHost.swift in Sources */,
+				OBJ_235 /* SwiftInternals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_241 /* Exception.swift in Sources */,
+				OBJ_242 /* HashMap.swift in Sources */,
+				OBJ_243 /* JNICore.swift in Sources */,
+				OBJ_244 /* JNIField.swift in Sources */,
+				OBJ_245 /* JNIMethod.swift in Sources */,
+				OBJ_246 /* JNIObject.swift in Sources */,
+				OBJ_247 /* JNIProxy.swift in Sources */,
+				OBJ_248 /* JNIType.swift in Sources */,
+				OBJ_249 /* JavaClass.swift in Sources */,
+				OBJ_250 /* JavaEnum.swift in Sources */,
+				OBJ_251 /* JavaMap.swift in Sources */,
+				OBJ_252 /* JavaObject.swift in Sources */,
+				OBJ_253 /* JavaSet.swift in Sources */,
+				OBJ_254 /* Runnable.swift in Sources */,
+				OBJ_255 /* Throwable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_111 /* PBXTargetDependency */ = {
+		OBJ_153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Bluetooth::Bluetooth" /* Bluetooth */;
+			targetProxy = 6E45C7AD205D542200C76374 /* PBXContainerItemProxy */;
+		};
+		OBJ_155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Fortify::Fortify" /* Fortify */;
-			targetProxy = 51E50D31205C9FA400101BC9 /* PBXContainerItemProxy */;
+			targetProxy = 6E45C7AE205D542200C76374 /* PBXContainerItemProxy */;
 		};
-		OBJ_113 /* PBXTargetDependency */ = {
+		OBJ_157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 51E50D32205C9FA400101BC9 /* PBXContainerItemProxy */;
+			targetProxy = 6E45C7AF205D542200C76374 /* PBXContainerItemProxy */;
 		};
-		OBJ_115 /* PBXTargetDependency */ = {
+		OBJ_159 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "AndroidInjection::AndroidInjection" /* AndroidInjection */;
-			targetProxy = 51E50D33205C9FA400101BC9 /* PBXContainerItemProxy */;
+			targetProxy = 6E45C7B0205D542200C76374 /* PBXContainerItemProxy */;
 		};
-		OBJ_117 /* PBXTargetDependency */ = {
+		OBJ_161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "java_swift::java_swift" /* java_swift */;
-			targetProxy = 51E50D34205C9FA400101BC9 /* PBXContainerItemProxy */;
+			targetProxy = 6E45C7B1205D542200C76374 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_120 /* Debug */ = {
+		OBJ_103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-android-zlib.git-5881762900249083463",
+					"$(SRCROOT)/.build/checkouts/CJavaVM.git--1521134582023321205",
+					"$(SRCROOT)/.build/checkouts/swift-android-sqlite.git-5776622855185516904",
+				);
+				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/libswiftandroid_so_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = libswiftandroid.so;
+			};
+			name = Debug;
+		};
+		OBJ_140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-android-zlib.git-5881762900249083463",
+					"$(SRCROOT)/.build/checkouts/CJavaVM.git--1521134582023321205",
+					"$(SRCROOT)/.build/checkouts/swift-android-sqlite.git-5776622855185516904",
+				);
+				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/libswiftandroid_so_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = libswiftandroid.so;
+			};
+			name = Release;
+		};
+		OBJ_164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/Bluetooth_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Bluetooth;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Bluetooth;
+			};
+			name = Debug;
+		};
+		OBJ_165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/Bluetooth_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Bluetooth;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Bluetooth;
+			};
+			name = Release;
+		};
+		OBJ_201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -673,7 +1084,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_121 /* Release */ = {
+		OBJ_202 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -695,7 +1106,7 @@
 			};
 			name = Release;
 		};
-		OBJ_126 /* Debug */ = {
+		OBJ_207 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -717,7 +1128,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_127 /* Release */ = {
+		OBJ_208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -739,7 +1150,7 @@
 			};
 			name = Release;
 		};
-		OBJ_149 /* Debug */ = {
+		OBJ_230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -764,7 +1175,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_150 /* Release */ = {
+		OBJ_231 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -789,7 +1200,7 @@
 			};
 			name = Release;
 		};
-		OBJ_157 /* Debug */ = {
+		OBJ_238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -814,7 +1225,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_158 /* Release */ = {
+		OBJ_239 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -881,179 +1292,77 @@
 			};
 			name = Release;
 		};
-		OBJ_68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/swift-android-zlib.git-5881762900249083463",
-					"$(SRCROOT)/.build/checkouts/CJavaVM.git--1521134582023321205",
-					"$(SRCROOT)/.build/checkouts/swift-android-sqlite.git-5776622855185516904",
-				);
-				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/libswiftandroid_so_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = libswiftandroid.so;
-			};
-			name = Debug;
-		};
-		OBJ_99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/swift-android-zlib.git-5881762900249083463",
-					"$(SRCROOT)/.build/checkouts/CJavaVM.git--1521134582023321205",
-					"$(SRCROOT)/.build/checkouts/swift-android-sqlite.git-5776622855185516904",
-				);
-				INFOPLIST_FILE = libswiftandroid.so.xcodeproj/libswiftandroid_so_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = libswiftandroid.so;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_119 /* Build configuration list for PBXNativeTarget "Fortify" */ = {
+		OBJ_102 /* Build configuration list for PBXNativeTarget "libswiftandroid.soPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_120 /* Debug */,
-				OBJ_121 /* Release */,
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_125 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		OBJ_108 /* Build configuration list for PBXNativeTarget "BluetoothPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_126 /* Debug */,
-				OBJ_127 /* Release */,
+				OBJ_109 /* Debug */,
+				OBJ_110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_148 /* Build configuration list for PBXNativeTarget "AndroidInjection" */ = {
+		OBJ_114 /* Build configuration list for PBXNativeTarget "FortifyPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_149 /* Debug */,
-				OBJ_150 /* Release */,
+				OBJ_115 /* Debug */,
+				OBJ_116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_156 /* Build configuration list for PBXNativeTarget "java_swift" */ = {
+		OBJ_120 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_157 /* Debug */,
-				OBJ_158 /* Release */,
+				OBJ_121 /* Debug */,
+				OBJ_122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_126 /* Build configuration list for PBXNativeTarget "AndroidInjectionPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_127 /* Debug */,
+				OBJ_128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_132 /* Build configuration list for PBXNativeTarget "java_swiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_138 /* Build configuration list for PBXNativeTarget "libswiftandroid.so" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_139 /* Debug */,
+				OBJ_140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_163 /* Build configuration list for PBXNativeTarget "Bluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_164 /* Debug */,
+				OBJ_165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1067,56 +1376,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_67 /* Build configuration list for PBXNativeTarget "libswiftandroid.soPackageDescription" */ = {
+		OBJ_200 /* Build configuration list for PBXNativeTarget "Fortify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_68 /* Debug */,
-				OBJ_69 /* Release */,
+				OBJ_201 /* Debug */,
+				OBJ_202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_73 /* Build configuration list for PBXNativeTarget "FortifyPackageDescription" */ = {
+		OBJ_206 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_74 /* Debug */,
-				OBJ_75 /* Release */,
+				OBJ_207 /* Debug */,
+				OBJ_208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_79 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
+		OBJ_229 /* Build configuration list for PBXNativeTarget "AndroidInjection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_80 /* Debug */,
-				OBJ_81 /* Release */,
+				OBJ_230 /* Debug */,
+				OBJ_231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_85 /* Build configuration list for PBXNativeTarget "AndroidInjectionPackageDescription" */ = {
+		OBJ_237 /* Build configuration list for PBXNativeTarget "java_swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_86 /* Debug */,
-				OBJ_87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_91 /* Build configuration list for PBXNativeTarget "java_swiftPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_92 /* Debug */,
-				OBJ_93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_97 /* Build configuration list for PBXNativeTarget "libswiftandroid.so" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_98 /* Debug */,
-				OBJ_99 /* Release */,
+				OBJ_238 /* Debug */,
+				OBJ_239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

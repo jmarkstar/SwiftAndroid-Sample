@@ -15,12 +15,12 @@ public class SwiftMathBinding_ListenerProxy implements com.johnholdsworth.swiftb
         this.__swiftObject = __swiftObject;
     }
 
-    /// public abstract int com.johnholdsworth.swiftbindings.SwiftMathBinding$Listener.processSum(int,int)
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftMathBinding$Listener.processSum(int,int)
 
-    public native int __processSum( long __swiftObject, int num1, int num2 );
+    public native void __processSum( long __swiftObject, int num1, int num2 );
 
-    public int processSum( int num1, int num2 ) {
-        return __processSum( __swiftObject, num1, num2 );
+    public void processSum( int num1, int num2 ) {
+        __processSum( __swiftObject, num1, num2 );
     }
 
     public native void __finalize( long __swiftObject );

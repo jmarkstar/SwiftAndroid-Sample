@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "eefde80098de1f715ce716f555fd2276"
-build_time: [1521246852, 684763000]
-inputs:
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjection.swift": !dirty [1521244734, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjectionHost.swift": [1521245688, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/SwiftInternals.swift": [1521244734, 0]
