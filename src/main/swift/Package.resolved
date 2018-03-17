@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "Bluetooth",
+        "repositoryURL": "https://github.com/PureSwift/Bluetooth.git",
+        "state": {
+          "branch": null,
+          "revision": "c0aa0394517e0a5dd9fab0353404b1ae244c2f27",
+          "version": "1.5.7"
+        }
+      },
+      {
         "package": "CJavaVM",
         "repositoryURL": "https://github.com/SwiftJava/CJavaVM.git",
         "state": {

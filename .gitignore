@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+*.build
+src/main/swift/.build/
+src/main/jniLibs/

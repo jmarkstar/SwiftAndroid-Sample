@@ -1,7 +1,0 @@
-version: "Swift version 4.0-dev (LLVM b90f33daf1, Clang e352443ae3, Swift 7ade7c9336)"
-options: "1837dc65f0c2d9ff9c184b42d216a615"
-build_time: [1521247216, 438184000]
-inputs:
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjection.swift": [1521244734, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjectionHost.swift": [1521245688, 0]
-  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/SwiftInternals.swift": [1521244734, 0]
