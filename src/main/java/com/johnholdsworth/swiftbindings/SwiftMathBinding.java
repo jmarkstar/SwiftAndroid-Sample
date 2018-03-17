@@ -8,7 +8,7 @@ public interface SwiftMathBinding {
 
     // Messages from JavaActivity to Swift
     public interface Listener {
-        public int processSum( int num1, int num2 );
+        public void processSum( int num1, int num2 );
     }
 
     // Messages from Swift back to Activity

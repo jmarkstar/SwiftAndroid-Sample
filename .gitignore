@@ -10,3 +10,5 @@
 *.build
 src/main/swift/.build/
 src/main/jniLibs/
+
+src/main/swift/*.xcodeproj

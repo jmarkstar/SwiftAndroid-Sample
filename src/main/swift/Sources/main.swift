@@ -16,5 +16,17 @@ public func bind_samples( __env: UnsafeMutablePointer<JNIEnv?>, __this: jobject?
 
     // This Swift instance receives native calls from Java
     var locals = [jobject]()
-    return SwiftMathBinding_ListenerBase().localJavaObject( &locals )
+    return SwiftMathBinding_ListenerImpl().localJavaObject( &locals )
+}
+
+final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
+
+    override func processSum( num1: Int, num2: Int ) {
+        
+        let result = num1 + num2
+        
+        NSLog("Swift Math: \(num1) + \(num2) = \(result)")
+        
+        responder.processedSum(result: result)
+    }
 }
