@@ -29,6 +29,33 @@
         }
       },
       {
+        "package": "CCairo",
+        "repositoryURL": "https://github.com/PureSwift/CCairo.git",
+        "state": {
+          "branch": null,
+          "revision": "1bd46ac81056766182be22fccc2cdf0e457f042f",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "CFontConfig",
+        "repositoryURL": "https://github.com/PureSwift/CFontConfig.git",
+        "state": {
+          "branch": null,
+          "revision": "e5bae817dbd1eb402f395d960485c52350b2bd88",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "CFreeType",
+        "repositoryURL": "https://github.com/PureSwift/CFreeType.git",
+        "state": {
+          "branch": null,
+          "revision": "079909dc68c13c700bb6bab3059ddf51f642b43a",
+          "version": "1.0.4"
+        }
+      },
+      {
         "package": "CJavaVM",
         "repositoryURL": "https://github.com/SwiftJava/CJavaVM.git",
         "state": {
@@ -38,12 +65,75 @@
         }
       },
       {
+        "package": "CLCMS",
+        "repositoryURL": "https://github.com/PureSwift/CLCMS.git",
+        "state": {
+          "branch": null,
+          "revision": "20d18d62ebc642e52758512cab59af06f2d3655e",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "CSDL2",
+        "repositoryURL": "https://github.com/PureSwift/CSDL2.git",
+        "state": {
+          "branch": null,
+          "revision": "a4798aa0174f6661404b9df4ccaf2ba1dc9cc92c",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "Cacao",
+        "repositoryURL": "https://github.com/PureSwift/Cacao.git",
+        "state": {
+          "branch": null,
+          "revision": "81d7e311c96ad0bad6a5cdbccacb570f878f2456",
+          "version": "0.7.0"
+        }
+      },
+      {
+        "package": "Cairo",
+        "repositoryURL": "https://github.com/PureSwift/Cairo.git",
+        "state": {
+          "branch": null,
+          "revision": "bc207ab2e367fbafef51a47b85a7e1eb2821ce57",
+          "version": "1.2.3"
+        }
+      },
+      {
         "package": "Fortify",
         "repositoryURL": "https://github.com/johnno1962/Fortify.git",
         "state": {
           "branch": null,
           "revision": "9193eca317c588ef39c732d795595ee9a1f6d59d",
           "version": "1.0.2"
+        }
+      },
+      {
+        "package": "LittleCMS",
+        "repositoryURL": "https://github.com/PureSwift/LittleCMS.git",
+        "state": {
+          "branch": null,
+          "revision": "4143dfd3916be5b1ccd3cc46c27d939e9b63c0dd",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "SDL",
+        "repositoryURL": "https://github.com/PureSwift/SDL.git",
+        "state": {
+          "branch": null,
+          "revision": "7d73084635022234e399385ae2724ca03d47d2a5",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "Silica",
+        "repositoryURL": "https://github.com/PureSwift/Silica.git",
+        "state": {
+          "branch": null,
+          "revision": "6239656493fba609a11bef46efd495fca2379090",
+          "version": "1.3.2"
         }
       },
       {

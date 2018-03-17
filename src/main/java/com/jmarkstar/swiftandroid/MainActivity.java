@@ -1,30 +1,32 @@
 package com.jmarkstar.swiftandroid;
 
+import android.content.Context;
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ListView;
+import java.util.List;
+import java.util.zip.Inflater;
 
-import com.johnholdsworth.swiftbindings.SwiftMathBinding;
+import com.johnholdsworth.swiftbindings.SwiftListViewBinding;
 
-public class MainActivity extends AppCompatActivity implements SwiftMathBinding.Responder {
-
-    static SwiftMathBinding.Listener listener;
+public class MainActivity extends AppCompatActivity {
 
     private static void loadNativeDependencies() {
         System.loadLibrary("swiftandroid");
     }
 
-    private EditText etNum1, etNum2;
-    private Button btnSum;
-    private TextView tvResult;
-
-    /** Implemented in src/main/swift/Sources/main.swift */
-    @SuppressWarnings("JniMissingFunction")
-    native SwiftMathBinding.Listener bind(SwiftMathBinding.Responder self );
+    private ListView tableView;
+    private SwiftAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,11 @@ public class MainActivity extends AppCompatActivity implements SwiftMathBinding.
         setContentView(R.layout.activity_main);
 
         loadNativeDependencies();
-        listener = bind( this );
 
-        etNum1 = (EditText)findViewById(R.id.et_num1);
-        etNum2 = (EditText)findViewById(R.id.et_num2);
-        btnSum = (Button)findViewById(R.id.btn_sum);
-        tvResult = (TextView)findViewById(R.id.tv_result);
-
+        tableView = (ListView) findViewById(R.id.tableView);
+        adapter = SwiftAdapter.newInstance(this);
+        tableView.setAdapter(adapter);
+        /*
         btnSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,11 +57,87 @@ public class MainActivity extends AppCompatActivity implements SwiftMathBinding.
 
                 listener.processSum(num1, num2);
             }
-        });
+        });*/
     }
 
     //Response from Swift
+    /*
     @Override public void processedSum(int result) {
         tvResult.setText(String.valueOf(result));
+    }*/
+}
+
+class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder {
+
+    SwiftListViewBinding.Listener listener;
+
+    /** Implemented in src/main/swift/Sources/main.swift */
+    @SuppressWarnings("JniMissingFunction")
+    private native SwiftListViewBinding.Listener bind(SwiftListViewBinding.Responder self );
+
+    private LayoutInflater inflater;
+
+    public static SwiftAdapter newInstance(Context context) {
+
+        SwiftAdapter newInstance = new SwiftAdapter();
+        newInstance.bind(newInstance);
+        newInstance.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        return newInstance;
+    }
+
+    // adapter
+
+    @Override
+    public int getCount() {
+        return listener.numberOfRows();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        View view;
+        CustomCell cell;
+
+        // create
+        if (convertView == null) {
+
+            view = inflater.inflate(R.id.cell, parent, false);
+
+            cell = new CustomCell();
+            cell.textView = (TextView) view.findViewById(R.id.textView);
+
+            view.setTag(cell);
+
+        } else {
+
+            view = convertView;
+            cell = (CustomCell) view.getTag();
+        }
+
+        // configure
+        listener.configureCell(cell, position);
+
+        return convertView;
+    }
+
+    class CustomCell implements SwiftListViewBinding.Cell {
+
+        TextView textView;
+
+        @Override
+        public void setTitle(String title) {
+
+            textView.setText(title);
+        }
     }
 }
