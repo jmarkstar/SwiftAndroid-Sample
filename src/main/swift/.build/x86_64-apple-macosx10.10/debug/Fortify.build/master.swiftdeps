@@ -1,0 +1,5 @@
+version: "Swift version 4.0-dev (LLVM b90f33daf1, Clang e352443ae3, Swift 7ade7c9336)"
+options: "88f144e5df835ff2baefdb11afdd5051"
+build_time: [1521244739, 638047000]
+inputs:
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Fortify.git-1536294584922693076/Sources/Fortify.swift": [1521244734, 0]

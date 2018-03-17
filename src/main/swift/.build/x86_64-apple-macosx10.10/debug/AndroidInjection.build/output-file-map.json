@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/master.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjection.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjection.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjection.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjection~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjection.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/AndroidInjectionHost.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjectionHost.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjectionHost.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjectionHost~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/AndroidInjectionHost.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-injection.git--6051692336269504420/Sources/SwiftInternals.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/SwiftInternals.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/SwiftInternals.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/SwiftInternals~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.build/SwiftInternals.swiftdeps"
+  }
+}

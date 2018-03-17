@@ -1,0 +1,259 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So8CFStringC", ""]
+- ["So8CFStringC", "str"]
+depends-top-level:
+- !private "!="
+- !private "CFRangeMake"
+- "CFString"
+- !private "CFStringEncoding"
+- !private "CFStringGetCStringPtr"
+- !private "CFStringGetCharacters"
+- !private "CFStringGetLength"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "String"
+- !private "UTF16"
+- !private "UniChar"
+- !private "UnsafeBufferPointer"
+- !private "UnsafeMutablePointer"
+- !private "kCFStringEncodingUTF8"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "_fromCodeUnitSequence"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So8CFStringC", "CFRangeMake"]
+- !private ["So8CFStringC", "CFStringEncoding"]
+- !private ["So8CFStringC", "CFStringGetCStringPtr"]
+- !private ["So8CFStringC", "CFStringGetCharacters"]
+- !private ["So8CFStringC", "CFStringGetLength"]
+- ["So8CFStringC", "String"]
+- !private ["So8CFStringC", "UTF16"]
+- !private ["So8CFStringC", "UniChar"]
+- !private ["So8CFStringC", "UnsafeBufferPointer"]
+- !private ["So8CFStringC", "UnsafeMutablePointer"]
+- !private ["So8CFStringC", "kCFStringEncodingUTF8"]
+- ["So8CFStringC", "str"]
+- !private ["s7CVarArgP", "allocate"]
+- !private ["s7CVarArgP", "deallocate"]
+- !private ["s7CVarArgP", "deinitialize"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s10CollectionP", "_fromCodeUnitSequence"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "_fromCodeUnitSequence"]
+- !private ["s10ComparableP", "allocate"]
+- !private ["s10ComparableP", "deallocate"]
+- !private ["s10ComparableP", "deinitialize"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "_fromCodeUnitSequence"]
+- !private ["s28CustomDebugStringConvertibleP", "allocate"]
+- !private ["s28CustomDebugStringConvertibleP", "deallocate"]
+- !private ["s28CustomDebugStringConvertibleP", "deinitialize"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_fromCodeUnitSequence"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "allocate"]
+- !private ["s29CustomPlaygroundQuickLookableP", "deallocate"]
+- !private ["s29CustomPlaygroundQuickLookableP", "deinitialize"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_fromCodeUnitSequence"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "allocate"]
+- !private ["s17CustomReflectableP", "deallocate"]
+- !private ["s17CustomReflectableP", "deinitialize"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_fromCodeUnitSequence"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9DecodableP", "_fromCodeUnitSequence"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_fromCodeUnitSequence"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "_fromCodeUnitSequence"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "allocate"]
+- !private ["s9EquatableP", "deallocate"]
+- !private ["s9EquatableP", "deinitialize"]
+- !private ["s9EquatableP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_fromCodeUnitSequence"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "_fromCodeUnitSequence"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "_fromCodeUnitSequence"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "_fromCodeUnitSequence"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "allocate"]
+- !private ["s8HashableP", "deallocate"]
+- !private ["s8HashableP", "deinitialize"]
+- !private ["s8HashableP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_fromCodeUnitSequence"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "_fromCodeUnitSequence"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "_fromCodeUnitSequence"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "_fromCodeUnitSequence"]
+- !private ["s8SequenceP", "init"]
+- !private ["s10StrideableP", "allocate"]
+- !private ["s10StrideableP", "deallocate"]
+- !private ["s10StrideableP", "deinitialize"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "_fromCodeUnitSequence"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "_fromCodeUnitSequence"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "_fromCodeUnitSequence"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "_fromCodeUnitSequence"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s6UInt32V", "init"]
+- !private ["9Alamofire14URLConvertibleP", "_fromCodeUnitSequence"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["SR", "init"]
+- !private ["Sp", "allocate"]
+- !private ["Sp", "deallocate"]
+- !private ["Sp", "deinitialize"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s23_BidirectionalIndexableP", "_fromCodeUnitSequence"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "_fromCodeUnitSequence"]
+- !private ["10Foundation13_CFBridgeableP", "_getBuiltinLogicValue"]
+- !private ["10Foundation13_CFBridgeableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "_fromCodeUnitSequence"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "_fromCodeUnitSequence"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "_fromCodeUnitSequence"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "_fromCodeUnitSequence"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "_fromCodeUnitSequence"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s10_IndexableP", "_fromCodeUnitSequence"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "_fromCodeUnitSequence"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "CFRangeMake"]
+- !private ["10Foundation13_NSBridgeableP", "CFStringEncoding"]
+- !private ["10Foundation13_NSBridgeableP", "CFStringGetCStringPtr"]
+- !private ["10Foundation13_NSBridgeableP", "CFStringGetCharacters"]
+- !private ["10Foundation13_NSBridgeableP", "CFStringGetLength"]
+- !private ["10Foundation13_NSBridgeableP", "String"]
+- !private ["10Foundation13_NSBridgeableP", "UTF16"]
+- !private ["10Foundation13_NSBridgeableP", "UnsafeBufferPointer"]
+- !private ["10Foundation13_NSBridgeableP", "UnsafeMutablePointer"]
+- !private ["10Foundation13_NSBridgeableP", "_fromCodeUnitSequence"]
+- !private ["10Foundation13_NSBridgeableP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "kCFStringEncodingUTF8"]
+- !private ["10Foundation17_ObjectBridgeableP", "_fromCodeUnitSequence"]
+- !private ["10Foundation17_ObjectBridgeableP", "_getBuiltinLogicValue"]
+- !private ["10Foundation17_ObjectBridgeableP", "init"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "_fromCodeUnitSequence"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "_getBuiltinLogicValue"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "init"]
+- !private ["s8_PointerP", "allocate"]
+- !private ["s8_PointerP", "deallocate"]
+- !private ["s8_PointerP", "deinitialize"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "_fromCodeUnitSequence"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "allocate"]
+- !private ["s11_StrideableP", "deallocate"]
+- !private ["s11_StrideableP", "deinitialize"]
+- !private ["s11_StrideableP", "init"]
+- !private ["10Foundation16_SwiftBridgeableP", "CFRangeMake"]
+- !private ["10Foundation16_SwiftBridgeableP", "CFStringEncoding"]
+- !private ["10Foundation16_SwiftBridgeableP", "CFStringGetCStringPtr"]
+- !private ["10Foundation16_SwiftBridgeableP", "CFStringGetCharacters"]
+- !private ["10Foundation16_SwiftBridgeableP", "CFStringGetLength"]
+- !private ["10Foundation16_SwiftBridgeableP", "String"]
+- !private ["10Foundation16_SwiftBridgeableP", "UTF16"]
+- !private ["10Foundation16_SwiftBridgeableP", "UnsafeBufferPointer"]
+- !private ["10Foundation16_SwiftBridgeableP", "UnsafeMutablePointer"]
+- !private ["10Foundation16_SwiftBridgeableP", "kCFStringEncodingUTF8"]
+- !private ["s16_SwiftStringViewP", "_fromCodeUnitSequence"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "So8CFStringC"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s6UInt32V"
+- !private "9Alamofire14URLConvertibleP"
+- !private "SR"
+- !private "Sp"
+- !private "s15UnsignedIntegerP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "10Foundation13_CFBridgeableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation13_NSBridgeableP"
+- !private "10Foundation17_ObjectBridgeableP"
+- !private "10Foundation21_ObjectTypeBridgeableP"
+- !private "s8_PointerP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "10Foundation16_SwiftBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Glibc.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Dispatch.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Foundation.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Swift.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/glibc.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+interface-hash: "96c1bf383d42047175ce123e6af42d63"

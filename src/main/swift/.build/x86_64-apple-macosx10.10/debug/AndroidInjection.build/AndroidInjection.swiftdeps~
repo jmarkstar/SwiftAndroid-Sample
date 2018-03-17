@@ -1,0 +1,467 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "htons"
+- "ntohs"
+- "sockaddr_cast"
+- "EntryInfo"
+- "AndroidInjection"
+provides-nominal:
+- "16AndroidInjection9EntryInfoP"
+- "16AndroidInjectionAAC"
+provides-member:
+- ["16AndroidInjection9EntryInfoP", ""]
+- ["16AndroidInjectionAAC", ""]
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "<<"
+- !private "=="
+- !private ">="
+- !private ">>"
+- !private "??"
+- !private "AF_INET"
+- "AndroidInjection"
+- !private "AnyClass"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Bytef"
+- "ClassMetadataSwift"
+- !private "DispatchQueue"
+- !private "Dl_info"
+- "EntryInfo"
+- "FloatLiteralType"
+- !private "INJECTION_PORT"
+- !private "IPPROTO_TCP"
+- "Int"
+- "Int32"
+- "Int8"
+- "IntegerLiteralType"
+- "MemoryLayout"
+- !private "NSLog"
+- !private "NSTemporaryDirectory"
+- !private "RTLD_LAZY"
+- !private "RTLD_NOLOAD"
+- !private "SOCK_STREAM"
+- "String"
+- !private "TCP_NODELAY"
+- !private "TernaryPrecedence"
+- !private "Thread"
+- "UInt16"
+- !private "UInt64"
+- "UInt8"
+- !private "UnicodeScalarType"
+- "UnsafeMutablePointer"
+- "UnsafeMutableRawPointer"
+- "UnsafePointer"
+- !private "Z_OK"
+- !private "androidInjectionHost"
+- !private "close"
+- !private "connect"
+- !private "dladdr"
+- !private "dlerror"
+- !private "dlopen"
+- !private "dlsym"
+- !private "errno"
+- !private "fclose"
+- !private "fdopen"
+- !private "fflush"
+- !private "fopen"
+- !private "fread"
+- !private "free"
+- !private "fwrite"
+- "htons"
+- !private "inet_aton"
+- !private "malloc"
+- !private "memcpy"
+- "ntohs"
+- !private "pointerSize"
+- !private "sa_family_t"
+- !private "setsockopt"
+- "sockaddr"
+- "sockaddr_cast"
+- !private "sockaddr_in"
+- !private "socket"
+- !private "socklen_t"
+- !private "strerror"
+- !private "strlen"
+- !private "uLong"
+- !private "uLongf"
+- "uintptr_t"
+- !private "uncompress"
+- !private "unsafeBitCast"
+- !private "|"
+- !private "||"
+depends-member:
+- !private ["16AndroidInjectionAAC", "AF_INET"]
+- !private ["16AndroidInjectionAAC", "AndroidInjection"]
+- !private ["16AndroidInjectionAAC", "AnyClass"]
+- ["16AndroidInjectionAAC", "Bool"]
+- !private ["16AndroidInjectionAAC", "Bytef"]
+- ["16AndroidInjectionAAC", "ClassMetadataSwift"]
+- !private ["16AndroidInjectionAAC", "DispatchQueue"]
+- !private ["16AndroidInjectionAAC", "Dl_info"]
+- ["16AndroidInjectionAAC", "EntryInfo"]
+- !private ["16AndroidInjectionAAC", "INJECTION_PORT"]
+- !private ["16AndroidInjectionAAC", "IPPROTO_TCP"]
+- ["16AndroidInjectionAAC", "Int"]
+- ["16AndroidInjectionAAC", "Int32"]
+- ["16AndroidInjectionAAC", "Int8"]
+- !private ["16AndroidInjectionAAC", "MemoryLayout"]
+- !private ["16AndroidInjectionAAC", "NSLog"]
+- !private ["16AndroidInjectionAAC", "NSTemporaryDirectory"]
+- !private ["16AndroidInjectionAAC", "RTLD_LAZY"]
+- !private ["16AndroidInjectionAAC", "RTLD_NOLOAD"]
+- !private ["16AndroidInjectionAAC", "SOCK_STREAM"]
+- ["16AndroidInjectionAAC", "String"]
+- !private ["16AndroidInjectionAAC", "TCP_NODELAY"]
+- !private ["16AndroidInjectionAAC", "Thread"]
+- !private ["16AndroidInjectionAAC", "UInt64"]
+- ["16AndroidInjectionAAC", "UInt8"]
+- ["16AndroidInjectionAAC", "UnsafeMutablePointer"]
+- ["16AndroidInjectionAAC", "UnsafeMutableRawPointer"]
+- ["16AndroidInjectionAAC", "UnsafePointer"]
+- !private ["16AndroidInjectionAAC", "Z_OK"]
+- !private ["16AndroidInjectionAAC", "androidInjectionHost"]
+- !private ["16AndroidInjectionAAC", "close"]
+- !private ["16AndroidInjectionAAC", "connect"]
+- ["16AndroidInjectionAAC", "connectAndRun"]
+- ["16AndroidInjectionAAC", "connectTo"]
+- ["16AndroidInjectionAAC", "deinit"]
+- !private ["16AndroidInjectionAAC", "dladdr"]
+- !private ["16AndroidInjectionAAC", "dlerror"]
+- !private ["16AndroidInjectionAAC", "dlopen"]
+- !private ["16AndroidInjectionAAC", "dlsym"]
+- !private ["16AndroidInjectionAAC", "errno"]
+- !private ["16AndroidInjectionAAC", "fclose"]
+- !private ["16AndroidInjectionAAC", "fdopen"]
+- !private ["16AndroidInjectionAAC", "fflush"]
+- !private ["16AndroidInjectionAAC", "fopen"]
+- !private ["16AndroidInjectionAAC", "fread"]
+- !private ["16AndroidInjectionAAC", "free"]
+- !private ["16AndroidInjectionAAC", "fwrite"]
+- !private ["16AndroidInjectionAAC", "htons"]
+- !private ["16AndroidInjectionAAC", "inet_aton"]
+- ["16AndroidInjectionAAC", "init"]
+- ["16AndroidInjectionAAC", "injectionNumber"]
+- ["16AndroidInjectionAAC", "loadAndInject"]
+- !private ["16AndroidInjectionAAC", "malloc"]
+- !private ["16AndroidInjectionAAC", "memcpy"]
+- ["16AndroidInjectionAAC", "originals"]
+- !private ["16AndroidInjectionAAC", "pointerSize"]
+- ["16AndroidInjectionAAC", "process"]
+- !private ["16AndroidInjectionAAC", "sa_family_t"]
+- ["16AndroidInjectionAAC", "service"]
+- !private ["16AndroidInjectionAAC", "setsockopt"]
+- !private ["16AndroidInjectionAAC", "sockaddr_cast"]
+- !private ["16AndroidInjectionAAC", "sockaddr_in"]
+- !private ["16AndroidInjectionAAC", "socket"]
+- !private ["16AndroidInjectionAAC", "socklen_t"]
+- !private ["16AndroidInjectionAAC", "strerror"]
+- !private ["16AndroidInjectionAAC", "strlen"]
+- ["16AndroidInjectionAAC", "swizzleClass"]
+- !private ["16AndroidInjectionAAC", "uLong"]
+- !private ["16AndroidInjectionAAC", "uLongf"]
+- !private ["16AndroidInjectionAAC", "uncompress"]
+- !private ["16AndroidInjectionAAC", "unsafeBitCast"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "withCString"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "withMemoryRebound"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "withMemoryRebound"]
+- !private ["16AndroidInjection18ClassMetadataSwiftV", "ClassAddressPoint"]
+- !private ["16AndroidInjection18ClassMetadataSwiftV", "ClassSize"]
+- !private ["16AndroidInjection18ClassMetadataSwiftV", "IVarDestroyer"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "withCString"]
+- !private ["s10ComparableP", "assumingMemoryBound"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "pointee"]
+- !private ["s10ComparableP", "subscript"]
+- !private ["s10ComparableP", "withCString"]
+- !private ["s10ComparableP", "withMemoryRebound"]
+- !private ["s28CustomDebugStringConvertibleP", "assumingMemoryBound"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "sleep"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "withCString"]
+- !private ["s28CustomDebugStringConvertibleP", "withMemoryRebound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "assumingMemoryBound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "withCString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "withMemoryRebound"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "assumingMemoryBound"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "withCString"]
+- !private ["s17CustomReflectableP", "withMemoryRebound"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "sleep"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "withCString"]
+- !private ["s23CustomStringConvertibleP", "withMemoryRebound"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "withCString"]
+- !private ["s9DecodableP", "withMemoryRebound"]
+- ["s10DictionaryV", "init"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["8Dispatch0A6ObjectC", "async"]
+- !private ["8Dispatch0A6ObjectC", "global"]
+- !private ["8Dispatch0A5QueueC", "async"]
+- !private ["8Dispatch0A5QueueC", "global"]
+- !private ["SC7Dl_infoV", "dli_fname"]
+- !private ["SC7Dl_infoV", "dli_sname"]
+- !private ["SC7Dl_infoV", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "withCString"]
+- !private ["s9EncodableP", "withMemoryRebound"]
+- ["16AndroidInjection9EntryInfoP", "Int32"]
+- !private ["16AndroidInjection9EntryInfoP", ""]
+- ["16AndroidInjection9EntryInfoP", "kind"]
+- ["16AndroidInjection9EntryInfoP", "offset"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "assumingMemoryBound"]
+- !private ["s9EquatableP", "background"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "pointee"]
+- !private ["s9EquatableP", "sleep"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "withCString"]
+- !private ["s9EquatableP", "withMemoryRebound"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "withCString"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "withMemoryRebound"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "withCString"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "withCString"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s17FixedWidthIntegerP", "withMemoryRebound"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "assumingMemoryBound"]
+- !private ["s8HashableP", "background"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "pointee"]
+- !private ["s8HashableP", "sleep"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "withCString"]
+- !private ["s8HashableP", "withMemoryRebound"]
+- !private ["Si", "init"]
+- !private ["Si", "withMemoryRebound"]
+- !private ["s5Int32V", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "withCString"]
+- !private ["s25LosslessStringConvertibleP", "withMemoryRebound"]
+- ["s12MemoryLayoutO", "size"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "withCString"]
+- !private ["s10MirrorPathP", "withMemoryRebound"]
+- !private ["10Foundation8NSObjectC", "sleep"]
+- !private ["10Foundation16NSObjectProtocolP", "sleep"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "withMemoryRebound"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "withCString"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "withCString"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedIntegerP", "withMemoryRebound"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "withMemoryRebound"]
+- !private ["s10StrideableP", "assumingMemoryBound"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "pointee"]
+- !private ["s10StrideableP", "subscript"]
+- !private ["s10StrideableP", "withMemoryRebound"]
+- !private ["SS", "init"]
+- !private ["SS", "withCString"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "withCString"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "withCString"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "withCString"]
+- !private ["10Foundation6ThreadC", "sleep"]
+- !private ["Su", "init"]
+- !private ["s6UInt16V", "init"]
+- !private ["Sp", "init"]
+- !private ["Sp", "pointee"]
+- !private ["Sp", "subscript"]
+- !private ["Sp", "withMemoryRebound"]
+- !private ["Sv", "assumingMemoryBound"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "withCString"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s18_BitwiseOperationsP", "withMemoryRebound"]
+- !private ["10Foundation13_CFBridgeableP", "_getBuiltinLogicValue"]
+- ["10Foundation13_CFBridgeableP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "subscript"]
+- !private ["10Foundation13_CFBridgeableP", "withCString"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "withCString"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "withMemoryRebound"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "withCString"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "withCString"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "withCString"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "withCString"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "withCString"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "withCString"]
+- ["10Foundation13_NSBridgeableP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "subscript"]
+- !private ["10Foundation13_NSBridgeableP", "withCString"]
+- !private ["10Foundation17_ObjectBridgeableP", "_getBuiltinLogicValue"]
+- ["10Foundation17_ObjectBridgeableP", "init"]
+- !private ["10Foundation17_ObjectBridgeableP", "subscript"]
+- !private ["10Foundation17_ObjectBridgeableP", "withCString"]
+- !private ["10Foundation17_ObjectBridgeableP", "withMemoryRebound"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "_getBuiltinLogicValue"]
+- ["10Foundation21_ObjectTypeBridgeableP", "init"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "subscript"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "withCString"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "withMemoryRebound"]
+- !private ["s8_PointerP", "assumingMemoryBound"]
+- !private ["s8_PointerP", "init"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s8_PointerP", "subscript"]
+- !private ["s8_PointerP", "withMemoryRebound"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "withCString"]
+- !private ["s11_StrideableP", "assumingMemoryBound"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "pointee"]
+- !private ["s11_StrideableP", "subscript"]
+- !private ["s11_StrideableP", "withMemoryRebound"]
+- !private ["s14_StringElementP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "withCString"]
+- !private ["SC11sockaddr_inV", "init"]
+- !private ["SC11sockaddr_inV", "sin_addr"]
+- !private ["SC11sockaddr_inV", "sin_family"]
+- !private ["SC11sockaddr_inV", "sin_port"]
+depends-nominal:
+- "16AndroidInjectionAAC"
+- !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "16AndroidInjection18ClassMetadataSwiftV"
+- "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s10DictionaryV"
+- !private "8Dispatch0A6ObjectC"
+- !private "8Dispatch0A5QueueC"
+- !private "SC7Dl_infoV"
+- "s9EncodableP"
+- "16AndroidInjection9EntryInfoP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s8HashableP"
+- !private "Si"
+- !private "s5Int32V"
+- !private "s25LosslessStringConvertibleP"
+- "s12MemoryLayoutO"
+- !private "s10MirrorPathP"
+- !private "10Foundation8NSObjectC"
+- !private "10Foundation16NSObjectProtocolP"
+- !private "s7NumericP"
+- !private "8Dispatch0A3QoSV0B6SClassO"
+- !private "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation6ThreadC"
+- !private "Su"
+- !private "s6UInt16V"
+- !private "Sp"
+- !private "Sv"
+- !private "s15UnsignedIntegerP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- "10Foundation13_CFBridgeableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation13_NSBridgeableP"
+- "10Foundation17_ObjectBridgeableP"
+- "10Foundation21_ObjectTypeBridgeableP"
+- !private "s8_PointerP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s14_StringElementP"
+- !private "s16_SwiftStringViewP"
+- !private "SC11sockaddr_inV"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Glibc.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Dispatch.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Foundation.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Swift.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/glibc.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+interface-hash: "a203170d582f78cf9ebe376906807e7e"

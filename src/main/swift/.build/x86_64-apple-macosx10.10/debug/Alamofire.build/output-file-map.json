@@ -1,0 +1,113 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/master.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/AFError.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/AFError.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/AFError.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/AFError~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/AFError.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Alamofire.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Alamofire.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Alamofire.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Alamofire~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Alamofire.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/CFString+String.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/CFString+String.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/CFString+String.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/CFString+String~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/CFString+String.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/DispatchQueue+Alamofire.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/DispatchQueue+Alamofire.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/DispatchQueue+Alamofire.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/DispatchQueue+Alamofire~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/DispatchQueue+Alamofire.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/MimeTypes.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MimeTypes.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MimeTypes.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MimeTypes~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MimeTypes.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/MultipartFormData.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MultipartFormData.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MultipartFormData.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MultipartFormData~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/MultipartFormData.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Notifications.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Notifications.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Notifications.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Notifications~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Notifications.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/ParameterEncoding.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ParameterEncoding.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ParameterEncoding.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ParameterEncoding~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ParameterEncoding.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Request.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Request.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Request.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Request~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Request.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Response.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Response.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Response.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Response~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Response.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/ResponseSerialization.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ResponseSerialization.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ResponseSerialization.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ResponseSerialization~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ResponseSerialization.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Result.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Result.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Result.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Result.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/ServerTrustPolicyPlaceholder.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ServerTrustPolicyPlaceholder.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ServerTrustPolicyPlaceholder.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ServerTrustPolicyPlaceholder~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/ServerTrustPolicyPlaceholder.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/SessionDelegate.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionDelegate.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionDelegate.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionDelegate.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/SessionManager.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionManager.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionManager.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/SessionManager.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/TaskDelegate.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/TaskDelegate.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/TaskDelegate.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/TaskDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/TaskDelegate.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Timeline.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Timeline.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Timeline.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Timeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Timeline.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Validation.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Validation.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Validation.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Validation~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.build/Validation.swiftdeps"
+  }
+}

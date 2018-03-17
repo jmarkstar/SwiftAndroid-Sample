@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/SwiftJava/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "25b1abac09d1c5a94fbcdd7fd4eb2f135937c124",
+          "version": "4.5.1"
+        }
+      },
+      {
+        "package": "AndroidInjection",
+        "repositoryURL": "https://github.com/SwiftJava/swift-android-injection.git",
+        "state": {
+          "branch": null,
+          "revision": "e3878b355b41fb6c76083cf72987c534e40c125a",
+          "version": "1.0.4"
+        }
+      },
+      {
+        "package": "CJavaVM",
+        "repositoryURL": "https://github.com/SwiftJava/CJavaVM.git",
+        "state": {
+          "branch": null,
+          "revision": "6240b2a563f02d98a162d4dce856b6c9a7196c90",
+          "version": "1.1.4"
+        }
+      },
+      {
+        "package": "Fortify",
+        "repositoryURL": "https://github.com/johnno1962/Fortify.git",
+        "state": {
+          "branch": null,
+          "revision": "9193eca317c588ef39c732d795595ee9a1f6d59d",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "java_swift",
+        "repositoryURL": "https://github.com/SwiftJava/java_swift.git",
+        "state": {
+          "branch": null,
+          "revision": "1d31a0c46d90e3588a192509390aca022d03080b",
+          "version": "2.2.1"
+        }
+      },
+      {
+        "package": "libsqlite3",
+        "repositoryURL": "https://github.com/SwiftJava/swift-android-sqlite.git",
+        "state": {
+          "branch": null,
+          "revision": "f64fcda307ddc3ad96ef7129f1aa925e9442416f",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "zlib",
+        "repositoryURL": "https://github.com/SwiftJava/swift-android-zlib.git",
+        "state": {
+          "branch": null,
+          "revision": "ba1016398294dfdc71ae78d6ab5f202c3367d5fe",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
