@@ -143,7 +143,7 @@ class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder
         // configure
         listener.configureCell(cell, position);
 
-        return convertView;
+        return view;
     }
 
     class CustomCell implements SwiftListViewBinding.Cell {

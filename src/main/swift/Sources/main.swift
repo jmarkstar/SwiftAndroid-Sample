@@ -56,7 +56,7 @@ final class SwiftListViewBinding_ListenerImpl: SwiftListViewBinding_ListenerBase
         
         NSLog("\(type(of: self)): \(#function)")
         
-        return 5
+        return 1000
     }
     
     override func configureCell(cell: SwiftListViewBinding_Cell?, row: Int) {
