@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         tableView = (ListView) findViewById(R.id.tableView);
         adapter = SwiftAdapter.newInstance(this);
         tableView.setAdapter(adapter);
+        //adapter.notifyDataSetChanged();
+        //tableView.invalidateViews();
+        //tableView.refreshDrawableState();
+
         /*
         btnSum.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,8 +84,10 @@ class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder
 
     public static SwiftAdapter newInstance(Context context) {
 
+        Log.w("SwiftAdapter", "newInstance: ");
+
         SwiftAdapter newInstance = new SwiftAdapter();
-        newInstance.bind(newInstance);
+        newInstance.listener = newInstance.bind(newInstance);
         newInstance.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         return newInstance;
     }
@@ -89,6 +96,13 @@ class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder
 
     @Override
     public int getCount() {
+
+        Log.w("SwiftAdapter", "getCount: ");
+
+        if (listener == null) {
+            return 0;
+        }
+
         return listener.numberOfRows();
     }
 
@@ -105,13 +119,15 @@ class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        Log.w("SwiftAdapter", "getView: ");
+
         View view;
         CustomCell cell;
 
         // create
         if (convertView == null) {
 
-            view = inflater.inflate(R.id.cell, parent, false);
+            view = inflater.inflate(R.layout.cell, parent, false);
 
             cell = new CustomCell();
             cell.textView = (TextView) view.findViewById(R.id.textView);
@@ -136,6 +152,8 @@ class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder
 
         @Override
         public void setTitle(String title) {
+
+            Log.w("CustomCell", "setTitle: ");
 
             textView.setText(title);
         }
