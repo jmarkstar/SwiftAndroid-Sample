@@ -1,0 +1,778 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JNI_OnLoad"
+- "JNI_DetachCurrentThread"
+- "JNI"
+- "JNICore"
+provides-nominal:
+- "10java_swift7JNICoreC"
+provides-member:
+- ["10java_swift7JNICoreC", ""]
+- ["10java_swift9JavaClassC", ""]
+- ["10java_swift9JavaClassC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "+="
+- !private "..<"
+- !private "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Date"
+- !private "DispatchQueue"
+- "Int"
+- "Int8"
+- "JNI"
+- "JNICore"
+- "JNIEnv"
+- !private "JNIMethod"
+- "JNINativeInterface_"
+- !private "JNI_CreateJavaVM"
+- "JNI_DetachCurrentThread"
+- !private "JNI_OK"
+- "JNI_OnLoad"
+- !private "JNI_VERSION_1_6"
+- "JavaClass"
+- "JavaVM"
+- !private "JavaVMInitArgs"
+- !private "JavaVMOption"
+- "NSLock"
+- !private "NSLog"
+- !private "RunLoop"
+- "StaticString"
+- "String"
+- !private "StringLiteralType"
+- !private "Throwable"
+- !private "UnicodeScalarType"
+- "UnsafeMutablePointer"
+- !private "UnsafeMutableRawPointer"
+- "UnsafePointer"
+- "UnsafeRawPointer"
+- !private "getenv"
+- "jclass"
+- "jint"
+- "jmethodID"
+- "jobject"
+- "jobjectArray"
+- !private "jsize"
+- "jthrowable"
+- !private "jvalue"
+- !private "pthread_self"
+- "pthread_t"
+- !private "strdup"
+- !private "strncmp"
+- !private "withUnsafeMutablePointer"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "init"]
+- !private ["Sa", "removeLast"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "optionString"]
+- !private ["s10ArraySliceV", "withCString"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "localJavaObject"]
+- !private ["s23BidirectionalCollectionP", "optionString"]
+- !private ["s23BidirectionalCollectionP", "removeLast"]
+- !private ["s23BidirectionalCollectionP", "replacingOccurrences"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s23BidirectionalCollectionP", "withCString"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "global"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "localJavaObject"]
+- !private ["s7CVarArgP", "lock"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "removeLast"]
+- !private ["s7CVarArgP", "removeValue"]
+- !private ["s7CVarArgP", "replacingOccurrences"]
+- !private ["s7CVarArgP", "run"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "unlock"]
+- !private ["s7CVarArgP", "withCString"]
+- !private ["s7CVarArgP", "withMemoryRebound"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "count"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isEmpty"]
+- !private ["s10CollectionP", "localJavaObject"]
+- !private ["s10CollectionP", "optionString"]
+- !private ["s10CollectionP", "removeLast"]
+- !private ["s10CollectionP", "removeValue"]
+- !private ["s10CollectionP", "replacingOccurrences"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "withCString"]
+- !private ["s10ComparableP", "distantFuture"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "localJavaObject"]
+- !private ["s10ComparableP", "pointee"]
+- !private ["s10ComparableP", "replacingOccurrences"]
+- !private ["s10ComparableP", "withCString"]
+- !private ["s10ComparableP", "withMemoryRebound"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "distantFuture"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "localJavaObject"]
+- !private ["s28CustomDebugStringConvertibleP", "lock"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "optionString"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "removeLast"]
+- !private ["s28CustomDebugStringConvertibleP", "removeValue"]
+- !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
+- !private ["s28CustomDebugStringConvertibleP", "run"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "unlock"]
+- !private ["s28CustomDebugStringConvertibleP", "withCString"]
+- !private ["s28CustomDebugStringConvertibleP", "withMemoryRebound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "distantFuture"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "localJavaObject"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s29CustomPlaygroundQuickLookableP", "replacingOccurrences"]
+- !private ["s29CustomPlaygroundQuickLookableP", "withCString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "withMemoryRebound"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "distantFuture"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "localJavaObject"]
+- !private ["s17CustomReflectableP", "optionString"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "removeLast"]
+- !private ["s17CustomReflectableP", "removeValue"]
+- !private ["s17CustomReflectableP", "replacingOccurrences"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "withCString"]
+- !private ["s17CustomReflectableP", "withMemoryRebound"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "distantFuture"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "localJavaObject"]
+- !private ["s23CustomStringConvertibleP", "lock"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "optionString"]
+- !private ["s23CustomStringConvertibleP", "removeLast"]
+- !private ["s23CustomStringConvertibleP", "removeValue"]
+- !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
+- !private ["s23CustomStringConvertibleP", "run"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "unlock"]
+- !private ["s23CustomStringConvertibleP", "withCString"]
+- !private ["10Foundation4DateV", "distantFuture"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "distantFuture"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "isEmpty"]
+- !private ["s9DecodableP", "localJavaObject"]
+- !private ["s9DecodableP", "removeLast"]
+- !private ["s9DecodableP", "removeValue"]
+- !private ["s9DecodableP", "replacingOccurrences"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "withCString"]
+- ["s10DictionaryV", "init"]
+- !private ["s10DictionaryV", "isEmpty"]
+- !private ["s10DictionaryV", "removeValue"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "global"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "distantFuture"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "isEmpty"]
+- !private ["s9EncodableP", "localJavaObject"]
+- !private ["s9EncodableP", "removeLast"]
+- !private ["s9EncodableP", "removeValue"]
+- !private ["s9EncodableP", "replacingOccurrences"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "withCString"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "distantFuture"]
+- !private ["s9EquatableP", "global"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "localJavaObject"]
+- !private ["s9EquatableP", "lock"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "pointee"]
+- !private ["s9EquatableP", "replacingOccurrences"]
+- !private ["s9EquatableP", "run"]
+- !private ["s9EquatableP", "unlock"]
+- !private ["s9EquatableP", "withCString"]
+- !private ["s9EquatableP", "withMemoryRebound"]
+- !private ["s5ErrorP", "init"]
+- !private ["s5ErrorP", "printStackTrace"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "optionString"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeLast"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "withCString"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "removeValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "localJavaObject"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "withCString"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "localJavaObject"]
+- !private ["s26ExpressibleByStringLiteralP", "replacingOccurrences"]
+- !private ["s26ExpressibleByStringLiteralP", "withCString"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "localJavaObject"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "withCString"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "distantFuture"]
+- !private ["s8HashableP", "global"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "localJavaObject"]
+- !private ["s8HashableP", "lock"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "pointee"]
+- !private ["s8HashableP", "replacingOccurrences"]
+- !private ["s8HashableP", "run"]
+- !private ["s8HashableP", "unlock"]
+- !private ["s8HashableP", "withCString"]
+- !private ["s8HashableP", "withMemoryRebound"]
+- !private ["s5Int32V", "init"]
+- ["10java_swift7JNICoreC", "AttachCurrentThread"]
+- ["10java_swift7JNICoreC", "Bool"]
+- ["10java_swift7JNICoreC", "CachedFindClass"]
+- !private ["10java_swift7JNICoreC", "Date"]
+- ["10java_swift7JNICoreC", "DeleteLocalRef"]
+- !private ["10java_swift7JNICoreC", "DispatchQueue"]
+- ["10java_swift7JNICoreC", "ExceptionCheck"]
+- ["10java_swift7JNICoreC", "ExceptionReset"]
+- ["10java_swift7JNICoreC", "FindClass"]
+- ["10java_swift7JNICoreC", "GetEnv"]
+- ["10java_swift7JNICoreC", "GetObjectClass"]
+- ["10java_swift7JNICoreC", "Int"]
+- ["10java_swift7JNICoreC", "Int8"]
+- !private ["10java_swift7JNICoreC", "JNI"]
+- !private ["10java_swift7JNICoreC", "JNICore"]
+- ["10java_swift7JNICoreC", "JNIEnv"]
+- !private ["10java_swift7JNICoreC", "JNIMethod"]
+- ["10java_swift7JNICoreC", "JNINativeInterface_"]
+- !private ["10java_swift7JNICoreC", "JNI_CreateJavaVM"]
+- !private ["10java_swift7JNICoreC", "JNI_OK"]
+- !private ["10java_swift7JNICoreC", "JNI_VERSION_1_6"]
+- ["10java_swift7JNICoreC", "JavaVM"]
+- !private ["10java_swift7JNICoreC", "JavaVMInitArgs"]
+- !private ["10java_swift7JNICoreC", "JavaVMOption"]
+- ["10java_swift7JNICoreC", "NSLock"]
+- !private ["10java_swift7JNICoreC", "NSLog"]
+- ["10java_swift7JNICoreC", "NewObjectArray"]
+- !private ["10java_swift7JNICoreC", "RunLoop"]
+- ["10java_swift7JNICoreC", "StaticString"]
+- ["10java_swift7JNICoreC", "String"]
+- !private ["10java_swift7JNICoreC", "Throwable"]
+- ["10java_swift7JNICoreC", "UnsafeMutablePointer"]
+- !private ["10java_swift7JNICoreC", "UnsafeMutableRawPointer"]
+- ["10java_swift7JNICoreC", "UnsafePointer"]
+- ["10java_swift7JNICoreC", "api"]
+- !private ["10java_swift7JNICoreC", "autoInit"]
+- ["10java_swift7JNICoreC", "background"]
+- ["10java_swift7JNICoreC", "check"]
+- ["10java_swift7JNICoreC", "classLoader"]
+- ["10java_swift7JNICoreC", "deinit"]
+- ["10java_swift7JNICoreC", "env"]
+- ["10java_swift7JNICoreC", "envCache"]
+- !private ["10java_swift7JNICoreC", "envLock"]
+- !private ["10java_swift7JNICoreC", "getenv"]
+- ["10java_swift7JNICoreC", "init"]
+- ["10java_swift7JNICoreC", "initJVM"]
+- !private ["10java_swift7JNICoreC", "java_lang_ObjectClass"]
+- ["10java_swift7JNICoreC", "jclass"]
+- !private ["10java_swift7JNICoreC", "jint"]
+- ["10java_swift7JNICoreC", "jmethodID"]
+- ["10java_swift7JNICoreC", "jobject"]
+- ["10java_swift7JNICoreC", "jobjectArray"]
+- !private ["10java_swift7JNICoreC", "jsize"]
+- ["10java_swift7JNICoreC", "jthrowable"]
+- !private ["10java_swift7JNICoreC", "jvalue"]
+- ["10java_swift7JNICoreC", "jvm"]
+- !private ["10java_swift7JNICoreC", "loadClassMethodID"]
+- !private ["10java_swift7JNICoreC", "pthread_self"]
+- ["10java_swift7JNICoreC", "pthread_t"]
+- ["10java_swift7JNICoreC", "report"]
+- ["10java_swift7JNICoreC", "run"]
+- !private ["10java_swift7JNICoreC", "strdup"]
+- !private ["10java_swift7JNICoreC", "strncmp"]
+- ["10java_swift7JNICoreC", "threadKey"]
+- !private ["10java_swift7JNICoreC", "thrownCache"]
+- !private ["10java_swift7JNICoreC", "thrownLock"]
+- !private ["10java_swift7JNICoreC", "withPointerToRawPointer"]
+- !private ["10java_swift7JNICoreC", "withUnsafeMutablePointer"]
+- !private ["SC19JNIInvokeInterface_V", "AttachCurrentThread"]
+- !private ["SC19JNIInvokeInterface_V", "DetachCurrentThread"]
+- !private ["SC19JNIInvokeInterface_V", "GetEnv"]
+- !private ["10java_swift9JNIMethodC", "CallObjectMethod"]
+- !private ["SC19JNINativeInterface_V", "CallObjectMethodA"]
+- !private ["SC19JNINativeInterface_V", "CallStaticObjectMethodA"]
+- !private ["SC19JNINativeInterface_V", "DeleteLocalRef"]
+- !private ["SC19JNINativeInterface_V", "ExceptionCheck"]
+- !private ["SC19JNINativeInterface_V", "ExceptionClear"]
+- !private ["SC19JNINativeInterface_V", "ExceptionDescribe"]
+- !private ["SC19JNINativeInterface_V", "ExceptionOccurred"]
+- !private ["SC19JNINativeInterface_V", "FindClass"]
+- !private ["SC19JNINativeInterface_V", "GetMethodID"]
+- !private ["SC19JNINativeInterface_V", "GetObjectClass"]
+- !private ["SC19JNINativeInterface_V", "GetStaticMethodID"]
+- !private ["SC19JNINativeInterface_V", "NewGlobalRef"]
+- !private ["SC19JNINativeInterface_V", "NewObjectArray"]
+- !private ["10java_swift9JNIObjectC", "JNI"]
+- ["10java_swift9JNIObjectC", "String"]
+- ["10java_swift9JNIObjectC", "init"]
+- !private ["10java_swift9JNIObjectC", "printStackTrace"]
+- !private ["10java_swift13JNIObjectInitP", "JNI"]
+- !private ["10java_swift13JNIObjectInitP", "init"]
+- !private ["10java_swift13JNIObjectInitP", "localJavaObject"]
+- !private ["10java_swift13JNIObjectInitP", "printStackTrace"]
+- !private ["10java_swift13JNIObjectInitP", "replacingOccurrences"]
+- !private ["10java_swift13JNIObjectInitP", "withCString"]
+- !private ["10java_swift17JNIObjectProtocolP", "JNI"]
+- !private ["10java_swift17JNIObjectProtocolP", "init"]
+- !private ["10java_swift17JNIObjectProtocolP", "localJavaObject"]
+- !private ["10java_swift17JNIObjectProtocolP", "printStackTrace"]
+- !private ["10java_swift17JNIObjectProtocolP", "replacingOccurrences"]
+- !private ["10java_swift17JNIObjectProtocolP", "withCString"]
+- !private ["10java_swift9JavaClassC", "JNI"]
+- ["10java_swift9JavaClassC", "String"]
+- ["10java_swift9JavaClassC", "init"]
+- !private ["10java_swift10JavaObjectC", "JNI"]
+- ["10java_swift10JavaObjectC", "String"]
+- ["10java_swift10JavaObjectC", "init"]
+- !private ["10java_swift10JavaObjectC", "printStackTrace"]
+- !private ["10java_swift12JavaProtocolP", "JNI"]
+- !private ["10java_swift12JavaProtocolP", "init"]
+- !private ["10java_swift12JavaProtocolP", "printStackTrace"]
+- !private ["SC14JavaVMInitArgsV", "init"]
+- !private ["SC14JavaVMInitArgsV", "nOptions"]
+- !private ["SC14JavaVMInitArgsV", "options"]
+- !private ["SC14JavaVMInitArgsV", "version"]
+- !private ["SC12JavaVMOptionV", "init"]
+- !private ["SC12JavaVMOptionV", "optionString"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "localJavaObject"]
+- !private ["s25LosslessStringConvertibleP", "replacingOccurrences"]
+- !private ["s25LosslessStringConvertibleP", "withCString"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "localJavaObject"]
+- !private ["s10MirrorPathP", "replacingOccurrences"]
+- !private ["s10MirrorPathP", "withCString"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "optionString"]
+- !private ["s17MutableCollectionP", "removeLast"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["s17MutableCollectionP", "withCString"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "localJavaObject"]
+- !private ["So8NSCodingP", "replacingOccurrences"]
+- !private ["So8NSCodingP", "withCString"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "localJavaObject"]
+- !private ["So9NSCopyingP", "replacingOccurrences"]
+- !private ["So9NSCopyingP", "withCString"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "localJavaObject"]
+- !private ["So21NSItemProviderReadingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderReadingP", "withCString"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "localJavaObject"]
+- !private ["So21NSItemProviderWritingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderWritingP", "withCString"]
+- ["So6NSLockC", "init"]
+- !private ["So6NSLockC", "lock"]
+- !private ["So6NSLockC", "unlock"]
+- ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "lock"]
+- !private ["So9NSLockingP", "unlock"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "localJavaObject"]
+- !private ["So16NSMutableCopyingP", "replacingOccurrences"]
+- !private ["So16NSMutableCopyingP", "withCString"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "global"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "localJavaObject"]
+- !private ["So8NSObjectC", "lock"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "replacingOccurrences"]
+- !private ["So8NSObjectC", "run"]
+- !private ["So8NSObjectC", "unlock"]
+- !private ["So8NSObjectC", "withCString"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "global"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "localJavaObject"]
+- !private ["So16NSObjectProtocolP", "lock"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "replacingOccurrences"]
+- !private ["So16NSObjectProtocolP", "run"]
+- !private ["So16NSObjectProtocolP", "unlock"]
+- !private ["So16NSObjectProtocolP", "withCString"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "localJavaObject"]
+- !private ["So14NSSecureCodingP", "replacingOccurrences"]
+- !private ["So14NSSecureCodingP", "withCString"]
+- !private ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "localJavaObject"]
+- !private ["So8NSStringC", "replacingOccurrences"]
+- !private ["So8NSStringC", "withCString"]
+- !private ["s7NumericP", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "default"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "optionString"]
+- !private ["s22RandomAccessCollectionP", "removeLast"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "withCString"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "localJavaObject"]
+- !private ["s26RangeReplaceableCollectionP", "optionString"]
+- !private ["s26RangeReplaceableCollectionP", "removeLast"]
+- !private ["s26RangeReplaceableCollectionP", "replacingOccurrences"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "withCString"]
+- !private ["10Foundation20ReferenceConvertibleP", "distantFuture"]
+- !private ["So7RunLoopC", "main"]
+- !private ["So7RunLoopC", "run"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "count"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isEmpty"]
+- !private ["s8SequenceP", "localJavaObject"]
+- !private ["s8SequenceP", "optionString"]
+- !private ["s8SequenceP", "removeLast"]
+- !private ["s8SequenceP", "removeValue"]
+- !private ["s8SequenceP", "replacingOccurrences"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "withCString"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "pointee"]
+- !private ["s10StrideableP", "withMemoryRebound"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["SS", "localJavaObject"]
+- !private ["SS", "replacingOccurrences"]
+- !private ["SS", "withCString"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "localJavaObject"]
+- !private ["s14StringProtocolP", "replacingOccurrences"]
+- !private ["s14StringProtocolP", "withCString"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "localJavaObject"]
+- !private ["s16TextOutputStreamP", "replacingOccurrences"]
+- !private ["s16TextOutputStreamP", "withCString"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "localJavaObject"]
+- !private ["s20TextOutputStreamableP", "replacingOccurrences"]
+- !private ["s20TextOutputStreamableP", "withCString"]
+- !private ["10java_swift9ThrowableC", "init"]
+- !private ["10java_swift9ThrowableC", "printStackTrace"]
+- !private ["10java_swift19UnavailableProtocolP", "JNI"]
+- !private ["10java_swift19UnavailableProtocolP", "init"]
+- !private ["10java_swift19UnavailableProtocolP", "printStackTrace"]
+- !private ["Sp", "pointee"]
+- !private ["Sp", "withMemoryRebound"]
+- !private ["SP", "pointee"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "optionString"]
+- !private ["s14_ArrayProtocolP", "removeLast"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "withCString"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "localJavaObject"]
+- !private ["s23_BidirectionalIndexableP", "optionString"]
+- !private ["s23_BidirectionalIndexableP", "removeLast"]
+- !private ["s23_BidirectionalIndexableP", "replacingOccurrences"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "withCString"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "optionString"]
+- !private ["s24_DestructorSafeContainerP", "removeLast"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "withCString"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "localJavaObject"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "withCString"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "localJavaObject"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "replacingOccurrences"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "withCString"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "localJavaObject"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "replacingOccurrences"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "withCString"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "localJavaObject"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "withCString"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "localJavaObject"]
+- !private ["s33_ExpressibleByStringInterpolationP", "replacingOccurrences"]
+- !private ["s33_ExpressibleByStringInterpolationP", "withCString"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "localJavaObject"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "withCString"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "count"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "isEmpty"]
+- !private ["s10_IndexableP", "localJavaObject"]
+- !private ["s10_IndexableP", "optionString"]
+- !private ["s10_IndexableP", "removeLast"]
+- !private ["s10_IndexableP", "removeValue"]
+- !private ["s10_IndexableP", "replacingOccurrences"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "withCString"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "count"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "isEmpty"]
+- !private ["s14_IndexableBaseP", "localJavaObject"]
+- !private ["s14_IndexableBaseP", "optionString"]
+- !private ["s14_IndexableBaseP", "removeLast"]
+- !private ["s14_IndexableBaseP", "removeValue"]
+- !private ["s14_IndexableBaseP", "replacingOccurrences"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "withCString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localJavaObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replacingOccurrences"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "withCString"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "optionString"]
+- !private ["s17_MutableIndexableP", "removeLast"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s17_MutableIndexableP", "withCString"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "distantFuture"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "localJavaObject"]
+- !private ["s21_ObjectiveCBridgeableP", "removeLast"]
+- !private ["s21_ObjectiveCBridgeableP", "removeValue"]
+- !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "withCString"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s8_PointerP", "withMemoryRebound"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "optionString"]
+- !private ["s22_RandomAccessIndexableP", "removeLast"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "withCString"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "localJavaObject"]
+- !private ["s26_RangeReplaceableIndexableP", "optionString"]
+- !private ["s26_RangeReplaceableIndexableP", "removeLast"]
+- !private ["s26_RangeReplaceableIndexableP", "replacingOccurrences"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "withCString"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "pointee"]
+- !private ["s11_StrideableP", "withMemoryRebound"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "localJavaObject"]
+- !private ["s16_SwiftStringViewP", "replacingOccurrences"]
+- !private ["s16_SwiftStringViewP", "withCString"]
+- !private ["SC6jvalueV", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- "s9DecodableP"
+- "s10DictionaryV"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "s5Int32V"
+- "10java_swift7JNICoreC"
+- !private "SC19JNIInvokeInterface_V"
+- !private "10java_swift9JNIMethodC"
+- !private "SC19JNINativeInterface_V"
+- "10java_swift9JNIObjectC"
+- !private "10java_swift13JNIObjectInitP"
+- !private "10java_swift17JNIObjectProtocolP"
+- "10java_swift9JavaClassC"
+- "10java_swift10JavaObjectC"
+- !private "10java_swift12JavaProtocolP"
+- !private "SC14JavaVMInitArgsV"
+- !private "SC12JavaVMOptionV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So6NSLockC"
+- "So9NSLockingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "So9OS_objectC"
+- !private "8Dispatch0A3QoSV0B6SClassO"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So7RunLoopC"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10java_swift9ThrowableC"
+- !private "10java_swift19UnavailableProtocolP"
+- !private "Sp"
+- !private "SP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+- !private "SC6jvalueV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "744a816c28473cee60e740f83e484be3"

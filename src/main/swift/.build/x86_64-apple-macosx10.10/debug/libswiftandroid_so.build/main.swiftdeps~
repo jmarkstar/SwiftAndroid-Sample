@@ -1,0 +1,106 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "bind_samples"
+provides-nominal:
+provides-member:
+depends-top-level:
+- "AssignmentPrecedence"
+- "JNIEnv"
+- !private "SwiftMathBinding_ListenerBase"
+- !private "SwiftMathBinding_ResponderForward"
+- "UnsafeMutablePointer"
+- "bind_samples"
+- "jobject"
+- !private "responder"
+depends-member:
+- !private ["Sa", "init"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s10CollectionP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["10java_swift9JNIObjectC", "init"]
+- !private ["10java_swift16JNIObjectForwardC", "init"]
+- !private ["10java_swift13JNIObjectInitP", "init"]
+- !private ["10java_swift17JNIObjectProtocolP", "init"]
+- !private ["10java_swift17JNIObjectProtocolP", "localJavaObject"]
+- !private ["10java_swift12JavaProtocolP", "init"]
+- !private ["10java_swift12JavaProtocolP", "localJavaObject"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "init"]
+- !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "localJavaObject"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "deinit"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "init"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "localJavaObject"]
+- !private ["18libswiftandroid_so26SwiftMathBinding_ResponderP", "init"]
+- !private ["18libswiftandroid_so33SwiftMathBinding_ResponderForwardC", "init"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "init"]
+- !private ["10Foundation17_ObjectBridgeableP", "init"]
+- !private ["10Foundation21_ObjectTypeBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "s10CollectionP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "10java_swift9JNIObjectC"
+- !private "10java_swift16JNIObjectForwardC"
+- !private "10java_swift13JNIObjectInitP"
+- !private "10java_swift17JNIObjectProtocolP"
+- !private "10java_swift12JavaProtocolP"
+- !private "s17MutableCollectionP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "18libswiftandroid_so25SwiftMathBinding_ListenerP"
+- !private "18libswiftandroid_so29SwiftMathBinding_ListenerBaseC"
+- !private "18libswiftandroid_so26SwiftMathBinding_ResponderP"
+- !private "18libswiftandroid_so33SwiftMathBinding_ResponderForwardC"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "10Foundation13_CFBridgeableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "10Foundation13_NSBridgeableP"
+- !private "10Foundation17_ObjectBridgeableP"
+- !private "10Foundation21_ObjectTypeBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Glibc.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Alamofire.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Dispatch.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Foundation.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/AndroidInjection.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Swift.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/java_swift.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/XCTest.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/Fortify.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/glibc.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-sqlite.git-5776622855185516904/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+interface-hash: "f53d36190087a9ad2cf6f1ea85ad66f0"

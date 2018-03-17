@@ -1,0 +1,19 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "4f24ea4148686ebe16cd29241742fd30"
+build_time: [1521246852, 682677000]
+inputs:
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/Exception.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/HashMap.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNICore.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNIField.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNIMethod.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNIObject.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNIProxy.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JNIType.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JavaClass.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JavaEnum.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JavaMap.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JavaObject.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/JavaSet.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/Runnable.swift": [1521244733, 0]
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/java_swift.git-9082904271628832338/Sources/Throwable.swift": [1521244733, 0]

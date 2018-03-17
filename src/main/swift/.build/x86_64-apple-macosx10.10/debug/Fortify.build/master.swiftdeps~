@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "08ac13d048b958915d8aaf7b63047ce2"
+build_time: [1521246852, 686242000]
+inputs:
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Fortify.git-1536294584922693076/Sources/Fortify.swift": !dirty [1521244734, 0]

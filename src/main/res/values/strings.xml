@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SwiftAndroid_Sample1</string>
+    <string name="app_name">Swift on Android</string>
+    <string name="btn_sum">SUM</string>
+    <string name="hint_num_1">Num 1</string>
+    <string name="hint_num_2">Num 2</string>
+    <string name="title_math">MATH</string>
 </resources>

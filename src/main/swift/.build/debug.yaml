@@ -2,10 +2,10 @@ client:
   name: swift-build
 tools: {}
 targets:
-  "main": ["<libswiftandroid.so.module>","<java_swift.module>","<libswiftandroid.so.exe>"]
-  "test": ["<libswiftandroid.so.module>","<java_swift.module>","<libswiftandroid.so.exe>"]
-  "libswiftandroid.so.module": ["<libswiftandroid.so.module>"]
+  "main": ["<java_swift.module>","<libswiftandroid.so.module>","<libswiftandroid.so.exe>"]
+  "test": ["<java_swift.module>","<libswiftandroid.so.module>","<libswiftandroid.so.exe>"]
   "java_swift.module": ["<java_swift.module>"]
+  "libswiftandroid.so.module": ["<libswiftandroid.so.module>"]
   "libswiftandroid.so.exe": ["<libswiftandroid.so.exe>"]
 default: "main"
 commands: 

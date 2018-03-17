@@ -1,0 +1,795 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataResponseSerializerProtocol"
+- "DataResponseSerializer"
+- "DownloadResponseSerializerProtocol"
+- "DownloadResponseSerializer"
+provides-nominal:
+- "9Alamofire30DataResponseSerializerProtocolP"
+- "9Alamofire22DataResponseSerializerV"
+- "9Alamofire34DownloadResponseSerializerProtocolP"
+- "9Alamofire26DownloadResponseSerializerV"
+provides-member:
+- ["9Alamofire30DataResponseSerializerProtocolP", ""]
+- ["9Alamofire22DataResponseSerializerV", ""]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", ""]
+- ["9Alamofire26DownloadResponseSerializerV", ""]
+- ["9Alamofire7RequestC", ""]
+- ["9Alamofire11DataRequestC", ""]
+- ["9Alamofire15DownloadRequestC", ""]
+- ["9Alamofire7RequestC", "timeline"]
+- ["9Alamofire11DataRequestC", "response"]
+- ["9Alamofire11DataRequestC", "response"]
+- ["9Alamofire15DownloadRequestC", "response"]
+- ["9Alamofire15DownloadRequestC", "response"]
+- ["9Alamofire7RequestC", "serializeResponseData"]
+- ["9Alamofire11DataRequestC", "dataResponseSerializer"]
+- ["9Alamofire11DataRequestC", "responseData"]
+- ["9Alamofire15DownloadRequestC", "dataResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "responseData"]
+- ["9Alamofire7RequestC", "serializeResponseString"]
+- ["9Alamofire11DataRequestC", "stringResponseSerializer"]
+- ["9Alamofire11DataRequestC", "responseString"]
+- ["9Alamofire15DownloadRequestC", "stringResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "responseString"]
+- ["9Alamofire7RequestC", "serializeResponseJSON"]
+- ["9Alamofire11DataRequestC", "jsonResponseSerializer"]
+- ["9Alamofire11DataRequestC", "responseJSON"]
+- ["9Alamofire15DownloadRequestC", "jsonResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "responseJSON"]
+- ["9Alamofire7RequestC", "serializeResponsePropertyList"]
+- ["9Alamofire11DataRequestC", "propertyListResponseSerializer"]
+- ["9Alamofire11DataRequestC", "responsePropertyList"]
+- ["9Alamofire15DownloadRequestC", "propertyListResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "responsePropertyList"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private ">"
+- !private "??"
+- !private "AFError"
+- "Array"
+- "AssignmentPrecedence"
+- !private "CFAbsoluteTimeGetCurrent"
+- !private "CFString"
+- !private "CFStringConvertEncodingToNSStringEncoding"
+- !private "CFStringConvertIANACharSetNameToEncoding"
+- "CastingPrecedence"
+- "Data"
+- "DataRequest"
+- "DataResponse"
+- "DataResponseSerializer"
+- "DataResponseSerializerProtocol"
+- "DefaultDataResponse"
+- "DefaultDownloadResponse"
+- "DispatchQueue"
+- "DownloadRequest"
+- "DownloadResponse"
+- "DownloadResponseSerializer"
+- "DownloadResponseSerializerProtocol"
+- "Error"
+- "HTTPURLResponse"
+- "Int"
+- "JSONSerialization"
+- !private "NSNull"
+- "PropertyListSerialization"
+- "Request"
+- "Result"
+- "Set"
+- "String"
+- !private "StringLiteralType"
+- "Timeline"
+- "URL"
+- "URLRequest"
+- "Void"
+- !private "emptyDataStatusCodes"
+depends-member:
+- !private ["9Alamofire7AFErrorO", "deinit"]
+- !private ["9Alamofire7AFErrorO", "responseSerializationFailed"]
+- ["s23BidirectionalCollectionP", "Encoding"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "Encoding"]
+- ["s7CVarArgP", "ReadOptions"]
+- ["s7CVarArgP", "ReadingOptions"]
+- !private ["s7CVarArgP", "addOperation"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "destinationURL"]
+- !private ["s7CVarArgP", "error"]
+- !private ["s7CVarArgP", "fileURL"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initialResponseTime"]
+- !private ["s7CVarArgP", "jsonObject"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "metrics"]
+- !private ["s7CVarArgP", "propertyList"]
+- !private ["s7CVarArgP", "queue"]
+- !private ["s7CVarArgP", "resumeData"]
+- !private ["s7CVarArgP", "statusCode"]
+- !private ["s7CVarArgP", "temporaryURL"]
+- !private ["s7CVarArgP", "textEncodingName"]
+- ["s10CollectionP", "Encoding"]
+- !private ["s10CollectionP", "contains"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- ["s10ComparableP", "Encoding"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AFError"]
+- !private ["s28CustomDebugStringConvertibleP", "CFAbsoluteTimeGetCurrent"]
+- !private ["s28CustomDebugStringConvertibleP", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["s28CustomDebugStringConvertibleP", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["s28CustomDebugStringConvertibleP", "Data"]
+- !private ["s28CustomDebugStringConvertibleP", "DataRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "DataResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "DataResponseSerializer"]
+- !private ["s28CustomDebugStringConvertibleP", "DefaultDataResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "DefaultDownloadResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "DownloadRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "DownloadResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "DownloadResponseSerializer"]
+- ["s28CustomDebugStringConvertibleP", "Encoding"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONSerialization"]
+- !private ["s28CustomDebugStringConvertibleP", "NSNull"]
+- !private ["s28CustomDebugStringConvertibleP", "PropertyListSerialization"]
+- ["s28CustomDebugStringConvertibleP", "ReadOptions"]
+- ["s28CustomDebugStringConvertibleP", "ReadingOptions"]
+- !private ["s28CustomDebugStringConvertibleP", "Request"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "Timeline"]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "addOperation"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "dataResponseSerializer"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "destinationURL"]
+- !private ["s28CustomDebugStringConvertibleP", "downloadDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "emptyDataStatusCodes"]
+- !private ["s28CustomDebugStringConvertibleP", "endTime"]
+- !private ["s28CustomDebugStringConvertibleP", "error"]
+- !private ["s28CustomDebugStringConvertibleP", "failure"]
+- !private ["s28CustomDebugStringConvertibleP", "fileURL"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initialResponseTime"]
+- !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
+- !private ["s28CustomDebugStringConvertibleP", "jsonResponseSerializer"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "metrics"]
+- !private ["s28CustomDebugStringConvertibleP", "propertyList"]
+- !private ["s28CustomDebugStringConvertibleP", "propertyListResponseSerializer"]
+- !private ["s28CustomDebugStringConvertibleP", "queue"]
+- !private ["s28CustomDebugStringConvertibleP", "request"]
+- !private ["s28CustomDebugStringConvertibleP", "response"]
+- !private ["s28CustomDebugStringConvertibleP", "resumeData"]
+- !private ["s28CustomDebugStringConvertibleP", "serializeResponseData"]
+- !private ["s28CustomDebugStringConvertibleP", "serializeResponseJSON"]
+- !private ["s28CustomDebugStringConvertibleP", "serializeResponsePropertyList"]
+- !private ["s28CustomDebugStringConvertibleP", "serializeResponseString"]
+- !private ["s28CustomDebugStringConvertibleP", "startTime"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- !private ["s28CustomDebugStringConvertibleP", "stringResponseSerializer"]
+- !private ["s28CustomDebugStringConvertibleP", "success"]
+- !private ["s28CustomDebugStringConvertibleP", "temporaryURL"]
+- !private ["s28CustomDebugStringConvertibleP", "textEncodingName"]
+- !private ["s28CustomDebugStringConvertibleP", "timeline"]
+- ["s29CustomPlaygroundQuickLookableP", "Encoding"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "Encoding"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "async"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "AFError"]
+- !private ["s23CustomStringConvertibleP", "CFAbsoluteTimeGetCurrent"]
+- !private ["s23CustomStringConvertibleP", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["s23CustomStringConvertibleP", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["s23CustomStringConvertibleP", "Data"]
+- !private ["s23CustomStringConvertibleP", "DataRequest"]
+- !private ["s23CustomStringConvertibleP", "DataResponse"]
+- !private ["s23CustomStringConvertibleP", "DataResponseSerializer"]
+- !private ["s23CustomStringConvertibleP", "DefaultDataResponse"]
+- !private ["s23CustomStringConvertibleP", "DefaultDownloadResponse"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "DownloadRequest"]
+- !private ["s23CustomStringConvertibleP", "DownloadResponse"]
+- !private ["s23CustomStringConvertibleP", "DownloadResponseSerializer"]
+- ["s23CustomStringConvertibleP", "Encoding"]
+- !private ["s23CustomStringConvertibleP", "JSONSerialization"]
+- !private ["s23CustomStringConvertibleP", "NSNull"]
+- !private ["s23CustomStringConvertibleP", "PropertyListSerialization"]
+- ["s23CustomStringConvertibleP", "ReadOptions"]
+- ["s23CustomStringConvertibleP", "ReadingOptions"]
+- !private ["s23CustomStringConvertibleP", "Request"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "Timeline"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "addOperation"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "dataResponseSerializer"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "destinationURL"]
+- !private ["s23CustomStringConvertibleP", "downloadDelegate"]
+- !private ["s23CustomStringConvertibleP", "emptyDataStatusCodes"]
+- !private ["s23CustomStringConvertibleP", "endTime"]
+- !private ["s23CustomStringConvertibleP", "error"]
+- !private ["s23CustomStringConvertibleP", "failure"]
+- !private ["s23CustomStringConvertibleP", "fileURL"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initialResponseTime"]
+- !private ["s23CustomStringConvertibleP", "isoLatin1"]
+- !private ["s23CustomStringConvertibleP", "jsonObject"]
+- !private ["s23CustomStringConvertibleP", "jsonResponseSerializer"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "metrics"]
+- !private ["s23CustomStringConvertibleP", "propertyList"]
+- !private ["s23CustomStringConvertibleP", "propertyListResponseSerializer"]
+- !private ["s23CustomStringConvertibleP", "queue"]
+- !private ["s23CustomStringConvertibleP", "request"]
+- !private ["s23CustomStringConvertibleP", "response"]
+- !private ["s23CustomStringConvertibleP", "resumeData"]
+- !private ["s23CustomStringConvertibleP", "serializeResponseData"]
+- !private ["s23CustomStringConvertibleP", "serializeResponseJSON"]
+- !private ["s23CustomStringConvertibleP", "serializeResponsePropertyList"]
+- !private ["s23CustomStringConvertibleP", "serializeResponseString"]
+- !private ["s23CustomStringConvertibleP", "startTime"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["s23CustomStringConvertibleP", "stringResponseSerializer"]
+- !private ["s23CustomStringConvertibleP", "success"]
+- !private ["s23CustomStringConvertibleP", "temporaryURL"]
+- !private ["s23CustomStringConvertibleP", "textEncodingName"]
+- !private ["s23CustomStringConvertibleP", "timeline"]
+- !private ["10Foundation4DataV", "count"]
+- !private ["10Foundation4DataV", "init"]
+- ["9Alamofire11DataRequestC", "Data"]
+- !private ["9Alamofire11DataRequestC", "DataRequest"]
+- ["9Alamofire11DataRequestC", "DataResponse"]
+- ["9Alamofire11DataRequestC", "DataResponseSerializer"]
+- ["9Alamofire11DataRequestC", "DataResponseSerializerProtocol"]
+- ["9Alamofire11DataRequestC", "DefaultDataResponse"]
+- ["9Alamofire11DataRequestC", "DispatchQueue"]
+- ["9Alamofire11DataRequestC", "JSONSerialization"]
+- ["9Alamofire11DataRequestC", "PropertyListSerialization"]
+- !private ["9Alamofire11DataRequestC", "Request"]
+- ["9Alamofire11DataRequestC", "String"]
+- ["9Alamofire11DataRequestC", "Void"]
+- ["9Alamofire11DataRequestC", "dataResponseSerializer"]
+- !private ["9Alamofire11DataRequestC", "delegate"]
+- ["9Alamofire11DataRequestC", "jsonResponseSerializer"]
+- ["9Alamofire11DataRequestC", "propertyListResponseSerializer"]
+- !private ["9Alamofire11DataRequestC", "request"]
+- ["9Alamofire11DataRequestC", "response"]
+- ["9Alamofire11DataRequestC", "responseData"]
+- ["9Alamofire11DataRequestC", "responseJSON"]
+- ["9Alamofire11DataRequestC", "responsePropertyList"]
+- ["9Alamofire11DataRequestC", "responseString"]
+- ["9Alamofire11DataRequestC", "stringResponseSerializer"]
+- !private ["9Alamofire11DataRequestC", "timeline"]
+- !private ["9Alamofire12DataResponseV", "add"]
+- !private ["9Alamofire12DataResponseV", "deinit"]
+- !private ["9Alamofire12DataResponseV", "init"]
+- ["9Alamofire22DataResponseSerializerV", "Data"]
+- ["9Alamofire22DataResponseSerializerV", "Error"]
+- ["9Alamofire22DataResponseSerializerV", "HTTPURLResponse"]
+- ["9Alamofire22DataResponseSerializerV", "Result"]
+- ["9Alamofire22DataResponseSerializerV", "SerializedObject"]
+- ["9Alamofire22DataResponseSerializerV", "URLRequest"]
+- ["9Alamofire22DataResponseSerializerV", "Value"]
+- ["9Alamofire22DataResponseSerializerV", "deinit"]
+- ["9Alamofire22DataResponseSerializerV", "init"]
+- ["9Alamofire22DataResponseSerializerV", "serializeResponse"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "Data"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "Error"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "HTTPURLResponse"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "Result"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "SerializedObject"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "URLRequest"]
+- !private ["9Alamofire30DataResponseSerializerProtocolP", "init"]
+- ["9Alamofire30DataResponseSerializerProtocolP", "serializeResponse"]
+- ["9Alamofire30DataResponseSerializerProtocolP", ""]
+- ["s9DecodableP", "Encoding"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "async"]
+- !private ["s9DecodableP", "contains"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["9Alamofire19DefaultDataResponseV", "add"]
+- !private ["9Alamofire19DefaultDataResponseV", "deinit"]
+- !private ["9Alamofire19DefaultDataResponseV", "init"]
+- !private ["9Alamofire23DefaultDownloadResponseV", "add"]
+- !private ["9Alamofire23DefaultDownloadResponseV", "deinit"]
+- !private ["9Alamofire23DefaultDownloadResponseV", "init"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "main"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "main"]
+- !private ["9Alamofire15DownloadRequestC", "AFError"]
+- ["9Alamofire15DownloadRequestC", "Data"]
+- ["9Alamofire15DownloadRequestC", "DefaultDownloadResponse"]
+- ["9Alamofire15DownloadRequestC", "DispatchQueue"]
+- !private ["9Alamofire15DownloadRequestC", "DownloadRequest"]
+- ["9Alamofire15DownloadRequestC", "DownloadResponse"]
+- ["9Alamofire15DownloadRequestC", "DownloadResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "DownloadResponseSerializerProtocol"]
+- ["9Alamofire15DownloadRequestC", "JSONSerialization"]
+- ["9Alamofire15DownloadRequestC", "PropertyListSerialization"]
+- !private ["9Alamofire15DownloadRequestC", "Request"]
+- ["9Alamofire15DownloadRequestC", "String"]
+- ["9Alamofire15DownloadRequestC", "Void"]
+- ["9Alamofire15DownloadRequestC", "dataResponseSerializer"]
+- !private ["9Alamofire15DownloadRequestC", "delegate"]
+- !private ["9Alamofire15DownloadRequestC", "downloadDelegate"]
+- ["9Alamofire15DownloadRequestC", "jsonResponseSerializer"]
+- ["9Alamofire15DownloadRequestC", "propertyListResponseSerializer"]
+- !private ["9Alamofire15DownloadRequestC", "request"]
+- ["9Alamofire15DownloadRequestC", "response"]
+- ["9Alamofire15DownloadRequestC", "responseData"]
+- ["9Alamofire15DownloadRequestC", "responseJSON"]
+- ["9Alamofire15DownloadRequestC", "responsePropertyList"]
+- ["9Alamofire15DownloadRequestC", "responseString"]
+- ["9Alamofire15DownloadRequestC", "stringResponseSerializer"]
+- !private ["9Alamofire15DownloadRequestC", "timeline"]
+- !private ["9Alamofire16DownloadResponseV", "add"]
+- !private ["9Alamofire16DownloadResponseV", "deinit"]
+- !private ["9Alamofire16DownloadResponseV", "init"]
+- ["9Alamofire26DownloadResponseSerializerV", "Error"]
+- ["9Alamofire26DownloadResponseSerializerV", "HTTPURLResponse"]
+- ["9Alamofire26DownloadResponseSerializerV", "Result"]
+- ["9Alamofire26DownloadResponseSerializerV", "SerializedObject"]
+- ["9Alamofire26DownloadResponseSerializerV", "URL"]
+- ["9Alamofire26DownloadResponseSerializerV", "URLRequest"]
+- ["9Alamofire26DownloadResponseSerializerV", "Value"]
+- ["9Alamofire26DownloadResponseSerializerV", "deinit"]
+- ["9Alamofire26DownloadResponseSerializerV", "init"]
+- ["9Alamofire26DownloadResponseSerializerV", "serializeResponse"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "Error"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "HTTPURLResponse"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "Result"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "SerializedObject"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "URL"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "URLRequest"]
+- !private ["9Alamofire34DownloadResponseSerializerProtocolP", "init"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", "serializeResponse"]
+- ["9Alamofire34DownloadResponseSerializerProtocolP", ""]
+- !private ["9Alamofire20DownloadTaskDelegateC", "destinationURL"]
+- !private ["9Alamofire20DownloadTaskDelegateC", "error"]
+- !private ["9Alamofire20DownloadTaskDelegateC", "fileURL"]
+- !private ["9Alamofire20DownloadTaskDelegateC", "resumeData"]
+- !private ["9Alamofire20DownloadTaskDelegateC", "temporaryURL"]
+- ["s9EncodableP", "Encoding"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "async"]
+- !private ["s9EncodableP", "contains"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["SS10FoundationE8EncodingV", "init"]
+- !private ["SS10FoundationE8EncodingV", "isoLatin1"]
+- ["s9EquatableP", "Encoding"]
+- ["s9EquatableP", "ReadOptions"]
+- ["s9EquatableP", "ReadingOptions"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addOperation"]
+- !private ["s9EquatableP", "allowFragments"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "data"]
+- !private ["s9EquatableP", "destinationURL"]
+- !private ["s9EquatableP", "error"]
+- !private ["s9EquatableP", "fileURL"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "initialResponseTime"]
+- !private ["s9EquatableP", "isoLatin1"]
+- !private ["s9EquatableP", "jsonObject"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "metrics"]
+- !private ["s9EquatableP", "propertyList"]
+- !private ["s9EquatableP", "queue"]
+- !private ["s9EquatableP", "resumeData"]
+- !private ["s9EquatableP", "statusCode"]
+- !private ["s9EquatableP", "temporaryURL"]
+- !private ["s9EquatableP", "textEncodingName"]
+- !private ["s5ErrorP", "responseSerializationFailed"]
+- !private ["s25ExpressibleByArrayLiteralP", "allowFragments"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "async"]
+- ["s26ExpressibleByStringLiteralP", "Encoding"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Encoding"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So15HTTPURLResponseC", "statusCode"]
+- !private ["So15HTTPURLResponseC", "textEncodingName"]
+- ["s8HashableP", "Encoding"]
+- ["s8HashableP", "ReadOptions"]
+- ["s8HashableP", "ReadingOptions"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addOperation"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "contains"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "data"]
+- !private ["s8HashableP", "destinationURL"]
+- !private ["s8HashableP", "error"]
+- !private ["s8HashableP", "fileURL"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "initialResponseTime"]
+- !private ["s8HashableP", "isoLatin1"]
+- !private ["s8HashableP", "jsonObject"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "metrics"]
+- !private ["s8HashableP", "propertyList"]
+- !private ["s8HashableP", "queue"]
+- !private ["s8HashableP", "resumeData"]
+- !private ["s8HashableP", "statusCode"]
+- !private ["s8HashableP", "temporaryURL"]
+- !private ["s8HashableP", "textEncodingName"]
+- ["So17JSONSerializationC", "ReadingOptions"]
+- !private ["So17JSONSerializationC", "jsonObject"]
+- !private ["10Foundation14LocalizedErrorP", "responseSerializationFailed"]
+- ["s25LosslessStringConvertibleP", "Encoding"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "Encoding"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So8NSCodingP", "textEncodingName"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "statusCode"]
+- !private ["So9NSCopyingP", "textEncodingName"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So6NSNullC", "init"]
+- ["So8NSObjectC", "ReadOptions"]
+- ["So8NSObjectC", "ReadingOptions"]
+- !private ["So8NSObjectC", "addOperation"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "destinationURL"]
+- !private ["So8NSObjectC", "error"]
+- !private ["So8NSObjectC", "fileURL"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "initialResponseTime"]
+- !private ["So8NSObjectC", "jsonObject"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "metrics"]
+- !private ["So8NSObjectC", "propertyList"]
+- !private ["So8NSObjectC", "queue"]
+- !private ["So8NSObjectC", "resumeData"]
+- !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectC", "temporaryURL"]
+- !private ["So8NSObjectC", "textEncodingName"]
+- ["So16NSObjectProtocolP", "ReadOptions"]
+- ["So16NSObjectProtocolP", "ReadingOptions"]
+- !private ["So16NSObjectProtocolP", "addOperation"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So16NSObjectProtocolP", "destinationURL"]
+- !private ["So16NSObjectProtocolP", "error"]
+- !private ["So16NSObjectProtocolP", "fileURL"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "initialResponseTime"]
+- !private ["So16NSObjectProtocolP", "jsonObject"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "metrics"]
+- !private ["So16NSObjectProtocolP", "propertyList"]
+- !private ["So16NSObjectProtocolP", "queue"]
+- !private ["So16NSObjectProtocolP", "resumeData"]
+- !private ["So16NSObjectProtocolP", "statusCode"]
+- !private ["So16NSObjectProtocolP", "temporaryURL"]
+- !private ["So16NSObjectProtocolP", "textEncodingName"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["So14NSSecureCodingP", "textEncodingName"]
+- !private ["So8NSStringC", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So14OperationQueueC", "addOperation"]
+- !private ["s9OptionSetP", "allowFragments"]
+- !private ["Sq", "async"]
+- ["So25PropertyListSerializationC", "ReadOptions"]
+- !private ["So25PropertyListSerializationC", "propertyList"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "Encoding"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "allowFragments"]
+- !private ["s16RawRepresentableP", "init"]
+- !private ["s16RawRepresentableP", "isoLatin1"]
+- !private ["So17JSONSerializationC14ReadingOptionsV", "allowFragments"]
+- !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["9Alamofire7RequestC", "AFError"]
+- !private ["9Alamofire7RequestC", "CFAbsoluteTimeGetCurrent"]
+- !private ["9Alamofire7RequestC", "CFString"]
+- !private ["9Alamofire7RequestC", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["9Alamofire7RequestC", "CFStringConvertIANACharSetNameToEncoding"]
+- ["9Alamofire7RequestC", "Data"]
+- !private ["9Alamofire7RequestC", "DataRequest"]
+- ["9Alamofire7RequestC", "DataResponse"]
+- ["9Alamofire7RequestC", "DataResponseSerializer"]
+- ["9Alamofire7RequestC", "DataResponseSerializerProtocol"]
+- ["9Alamofire7RequestC", "DefaultDataResponse"]
+- ["9Alamofire7RequestC", "DefaultDownloadResponse"]
+- ["9Alamofire7RequestC", "DispatchQueue"]
+- !private ["9Alamofire7RequestC", "DownloadRequest"]
+- ["9Alamofire7RequestC", "DownloadResponse"]
+- ["9Alamofire7RequestC", "DownloadResponseSerializer"]
+- ["9Alamofire7RequestC", "DownloadResponseSerializerProtocol"]
+- ["9Alamofire7RequestC", "Error"]
+- ["9Alamofire7RequestC", "HTTPURLResponse"]
+- ["9Alamofire7RequestC", "JSONSerialization"]
+- !private ["9Alamofire7RequestC", "NSNull"]
+- ["9Alamofire7RequestC", "PropertyListSerialization"]
+- !private ["9Alamofire7RequestC", "Request"]
+- ["9Alamofire7RequestC", "Result"]
+- ["9Alamofire7RequestC", "String"]
+- ["9Alamofire7RequestC", "Timeline"]
+- ["9Alamofire7RequestC", "Void"]
+- ["9Alamofire7RequestC", "dataResponseSerializer"]
+- !private ["9Alamofire7RequestC", "delegate"]
+- !private ["9Alamofire7RequestC", "downloadDelegate"]
+- !private ["9Alamofire7RequestC", "emptyDataStatusCodes"]
+- !private ["9Alamofire7RequestC", "endTime"]
+- ["9Alamofire7RequestC", "jsonResponseSerializer"]
+- ["9Alamofire7RequestC", "propertyListResponseSerializer"]
+- !private ["9Alamofire7RequestC", "request"]
+- ["9Alamofire7RequestC", "response"]
+- ["9Alamofire7RequestC", "responseData"]
+- ["9Alamofire7RequestC", "responseJSON"]
+- ["9Alamofire7RequestC", "responsePropertyList"]
+- ["9Alamofire7RequestC", "responseString"]
+- ["9Alamofire7RequestC", "serializeResponseData"]
+- ["9Alamofire7RequestC", "serializeResponseJSON"]
+- ["9Alamofire7RequestC", "serializeResponsePropertyList"]
+- ["9Alamofire7RequestC", "serializeResponseString"]
+- !private ["9Alamofire7RequestC", "startTime"]
+- ["9Alamofire7RequestC", "stringResponseSerializer"]
+- ["9Alamofire7RequestC", "timeline"]
+- !private ["9Alamofire8ResponseP", "add"]
+- !private ["9Alamofire8ResponseP", "init"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "inputDataNil"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "inputDataNilOrZeroLength"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "inputFileNil"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "inputFileReadFailed"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "jsonSerializationFailed"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "propertyListSerializationFailed"]
+- !private ["9Alamofire7AFErrorO34ResponseSerializationFailureReasonO", "stringSerializationFailed"]
+- !private ["9Alamofire6ResultO", "failure"]
+- !private ["9Alamofire6ResultO", "success"]
+- ["s8SequenceP", "Encoding"]
+- !private ["s8SequenceP", "contains"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s3SetV", "contains"]
+- !private ["s10SetAlgebraP", "allowFragments"]
+- !private ["s10SetAlgebraP", "contains"]
+- ["SS", "Encoding"]
+- !private ["SS", "init"]
+- ["s14StringProtocolP", "Encoding"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["9Alamofire12TaskDelegateC", "data"]
+- !private ["9Alamofire12TaskDelegateC", "destinationURL"]
+- !private ["9Alamofire12TaskDelegateC", "error"]
+- !private ["9Alamofire12TaskDelegateC", "fileURL"]
+- !private ["9Alamofire12TaskDelegateC", "initialResponseTime"]
+- !private ["9Alamofire12TaskDelegateC", "metrics"]
+- !private ["9Alamofire12TaskDelegateC", "queue"]
+- !private ["9Alamofire12TaskDelegateC", "resumeData"]
+- !private ["9Alamofire12TaskDelegateC", "temporaryURL"]
+- ["s16TextOutputStreamP", "Encoding"]
+- !private ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "Encoding"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire8TimelineV", "init"]
+- ["9Alamofire14URLConvertibleP", "Encoding"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["So11URLResponseC", "statusCode"]
+- !private ["So11URLResponseC", "textEncodingName"]
+- !private ["So18URLSessionDelegateP", "destinationURL"]
+- !private ["So18URLSessionDelegateP", "error"]
+- !private ["So18URLSessionDelegateP", "fileURL"]
+- !private ["So18URLSessionDelegateP", "resumeData"]
+- !private ["So18URLSessionDelegateP", "temporaryURL"]
+- !private ["So26URLSessionDownloadDelegateP", "destinationURL"]
+- !private ["So26URLSessionDownloadDelegateP", "error"]
+- !private ["So26URLSessionDownloadDelegateP", "fileURL"]
+- !private ["So26URLSessionDownloadDelegateP", "resumeData"]
+- !private ["So26URLSessionDownloadDelegateP", "temporaryURL"]
+- !private ["So22URLSessionTaskDelegateP", "destinationURL"]
+- !private ["So22URLSessionTaskDelegateP", "error"]
+- !private ["So22URLSessionTaskDelegateP", "fileURL"]
+- !private ["So22URLSessionTaskDelegateP", "resumeData"]
+- !private ["So22URLSessionTaskDelegateP", "temporaryURL"]
+- ["s23_BidirectionalIndexableP", "Encoding"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "Encoding"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "Encoding"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "Encoding"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "Encoding"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "Encoding"]
+- !private ["s10_IndexableP", "contains"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "Encoding"]
+- !private ["s14_IndexableBaseP", "contains"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ReadOptions"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ReadingOptions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addOperation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destinationURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "error"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initialResponseTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "metrics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "propertyList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "queue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resumeData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "temporaryURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textEncodingName"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "Encoding"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "async"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "Encoding"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "Encoding"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "9Alamofire7AFErrorO"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
+- "9Alamofire22DataResponseSerializerV"
+- "9Alamofire30DataResponseSerializerProtocolP"
+- "s9DecodableP"
+- !private "9Alamofire19DefaultDataResponseV"
+- !private "9Alamofire23DefaultDownloadResponseV"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- "9Alamofire15DownloadRequestC"
+- !private "9Alamofire16DownloadResponseV"
+- "9Alamofire26DownloadResponseSerializerV"
+- "9Alamofire34DownloadResponseSerializerProtocolP"
+- !private "9Alamofire20DownloadTaskDelegateC"
+- "s9EncodableP"
+- !private "SS10FoundationE8EncodingV"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So15HTTPURLResponseC"
+- "s8HashableP"
+- "So17JSONSerializationC"
+- !private "10Foundation14LocalizedErrorP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So6NSNullC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "So9OS_objectC"
+- !private "So14OperationQueueC"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "So25PropertyListSerializationC"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "So17JSONSerializationC14ReadingOptionsV"
+- !private "10Foundation20ReferenceConvertibleP"
+- "9Alamofire7RequestC"
+- !private "9Alamofire8ResponseP"
+- !private "9Alamofire7AFErrorO34ResponseSerializationFailureReasonO"
+- !private "9Alamofire6ResultO"
+- "s8SequenceP"
+- !private "s3SetV"
+- !private "s10SetAlgebraP"
+- "SS"
+- "s14StringProtocolP"
+- !private "9Alamofire12TaskDelegateC"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "9Alamofire8TimelineV"
+- "9Alamofire14URLConvertibleP"
+- !private "So11URLResponseC"
+- !private "So18URLSessionDelegateP"
+- !private "So26URLSessionDownloadDelegateP"
+- !private "So22URLSessionTaskDelegateP"
+- "s23_BidirectionalIndexableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "fb008ffa79a79129577ffaf62aa12524"

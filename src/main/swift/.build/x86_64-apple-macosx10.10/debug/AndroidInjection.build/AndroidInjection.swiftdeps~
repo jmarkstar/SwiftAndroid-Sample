@@ -11,6 +11,7 @@ provides-nominal:
 provides-member:
 - ["16AndroidInjection9EntryInfoP", ""]
 - ["16AndroidInjectionAAC", ""]
+provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "!="
@@ -177,9 +178,13 @@ depends-member:
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["s13BinaryIntegerP", "withMemoryRebound"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "global"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "sleep"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "withCString"]
 - !private ["s7CVarArgP", "withMemoryRebound"]
 - !private ["16AndroidInjection18ClassMetadataSwiftV", "ClassAddressPoint"]
 - !private ["16AndroidInjection18ClassMetadataSwiftV", "ClassSize"]
@@ -194,6 +199,8 @@ depends-member:
 - !private ["s10ComparableP", "withCString"]
 - !private ["s10ComparableP", "withMemoryRebound"]
 - !private ["s28CustomDebugStringConvertibleP", "assumingMemoryBound"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "pointee"]
 - !private ["s28CustomDebugStringConvertibleP", "sleep"]
@@ -215,6 +222,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "withCString"]
 - !private ["s17CustomReflectableP", "withMemoryRebound"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "global"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "sleep"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -227,25 +236,24 @@ depends-member:
 - !private ["s9DecodableP", "withMemoryRebound"]
 - ["s10DictionaryV", "init"]
 - !private ["s10DictionaryV", "subscript"]
-- !private ["8Dispatch0A6ObjectC", "async"]
-- !private ["8Dispatch0A6ObjectC", "global"]
-- !private ["8Dispatch0A5QueueC", "async"]
-- !private ["8Dispatch0A5QueueC", "global"]
-- !private ["SC7Dl_infoV", "dli_fname"]
-- !private ["SC7Dl_infoV", "dli_sname"]
-- !private ["SC7Dl_infoV", "init"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "global"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "withCString"]
 - !private ["s9EncodableP", "withMemoryRebound"]
 - ["16AndroidInjection9EntryInfoP", "Int32"]
-- !private ["16AndroidInjection9EntryInfoP", ""]
 - ["16AndroidInjection9EntryInfoP", "kind"]
 - ["16AndroidInjection9EntryInfoP", "offset"]
+- !private ["16AndroidInjection9EntryInfoP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "assumingMemoryBound"]
+- !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "background"]
+- !private ["s9EquatableP", "global"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "pointee"]
 - !private ["s9EquatableP", "sleep"]
@@ -267,7 +275,9 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "withMemoryRebound"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "assumingMemoryBound"]
+- !private ["s8HashableP", "async"]
 - !private ["s8HashableP", "background"]
+- !private ["s8HashableP", "global"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "pointee"]
 - !private ["s8HashableP", "sleep"]
@@ -285,10 +295,33 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "withCString"]
 - !private ["s10MirrorPathP", "withMemoryRebound"]
-- !private ["10Foundation8NSObjectC", "sleep"]
-- !private ["10Foundation16NSObjectProtocolP", "sleep"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "withCString"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "withCString"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "withCString"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "withCString"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "withCString"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "global"]
+- !private ["So8NSObjectC", "sleep"]
+- !private ["So8NSObjectC", "withCString"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "global"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "sleep"]
+- !private ["So16NSObjectProtocolP", "withCString"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "withCString"]
+- !private ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "withCString"]
 - !private ["s7NumericP", "init"]
 - !private ["s7NumericP", "withMemoryRebound"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
 - !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "withCString"]
@@ -312,9 +345,10 @@ depends-member:
 - !private ["s16TextOutputStreamP", "withCString"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "withCString"]
-- !private ["10Foundation6ThreadC", "sleep"]
+- !private ["So6ThreadC", "sleep"]
 - !private ["Su", "init"]
-- !private ["s6UInt16V", "init"]
+- !private ["s6UInt32V", "init"]
+- !private ["s5UInt8V", "init"]
 - !private ["Sp", "init"]
 - !private ["Sp", "pointee"]
 - !private ["Sp", "subscript"]
@@ -325,10 +359,6 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "withCString"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s18_BitwiseOperationsP", "withMemoryRebound"]
-- !private ["10Foundation13_CFBridgeableP", "_getBuiltinLogicValue"]
-- ["10Foundation13_CFBridgeableP", "init"]
-- !private ["10Foundation13_CFBridgeableP", "subscript"]
-- !private ["10Foundation13_CFBridgeableP", "withCString"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "withCString"]
@@ -342,25 +372,24 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "withCString"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "withCString"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "withCString"]
 - ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "subscript"]
 - !private ["s10_IndexableP", "withCString"]
 - ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s14_IndexableBaseP", "withCString"]
-- ["10Foundation13_NSBridgeableP", "init"]
-- !private ["10Foundation13_NSBridgeableP", "subscript"]
-- !private ["10Foundation13_NSBridgeableP", "withCString"]
-- !private ["10Foundation17_ObjectBridgeableP", "_getBuiltinLogicValue"]
-- ["10Foundation17_ObjectBridgeableP", "init"]
-- !private ["10Foundation17_ObjectBridgeableP", "subscript"]
-- !private ["10Foundation17_ObjectBridgeableP", "withCString"]
-- !private ["10Foundation17_ObjectBridgeableP", "withMemoryRebound"]
-- !private ["10Foundation21_ObjectTypeBridgeableP", "_getBuiltinLogicValue"]
-- ["10Foundation21_ObjectTypeBridgeableP", "init"]
-- !private ["10Foundation21_ObjectTypeBridgeableP", "subscript"]
-- !private ["10Foundation21_ObjectTypeBridgeableP", "withCString"]
-- !private ["10Foundation21_ObjectTypeBridgeableP", "withMemoryRebound"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sleep"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "withCString"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "withCString"]
+- !private ["s21_ObjectiveCBridgeableP", "withMemoryRebound"]
 - !private ["s8_PointerP", "assumingMemoryBound"]
 - !private ["s8_PointerP", "init"]
 - !private ["s8_PointerP", "pointee"]
@@ -376,6 +405,9 @@ depends-member:
 - !private ["s14_StringElementP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "withCString"]
+- !private ["SC7dl_infoV", "dli_fname"]
+- !private ["SC7dl_infoV", "dli_sname"]
+- !private ["SC7dl_infoV", "init"]
 - !private ["SC11sockaddr_inV", "init"]
 - !private ["SC11sockaddr_inV", "sin_addr"]
 - !private ["SC11sockaddr_inV", "sin_family"]
@@ -385,7 +417,7 @@ depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
 - !private "16AndroidInjection18ClassMetadataSwiftV"
 - "s10CollectionP"
 - !private "s10ComparableP"
@@ -395,9 +427,8 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - "s9DecodableP"
 - "s10DictionaryV"
-- !private "8Dispatch0A6ObjectC"
-- !private "8Dispatch0A5QueueC"
-- !private "SC7Dl_infoV"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
 - "s9EncodableP"
 - "16AndroidInjection9EntryInfoP"
 - !private "s9EquatableP"
@@ -414,9 +445,17 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - "s12MemoryLayoutO"
 - !private "s10MirrorPathP"
-- !private "10Foundation8NSObjectC"
-- !private "10Foundation16NSObjectProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - !private "s7NumericP"
+- !private "So9OS_objectC"
 - !private "8Dispatch0A3QoSV0B6SClassO"
 - !private "s26RangeReplaceableCollectionP"
 - "s8SequenceP"
@@ -427,15 +466,15 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "10Foundation6ThreadC"
+- !private "So6ThreadC"
 - !private "Su"
-- !private "s6UInt16V"
+- !private "s6UInt32V"
+- !private "s5UInt8V"
 - !private "Sp"
 - !private "Sv"
 - !private "s15UnsignedIntegerP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
-- "10Foundation13_CFBridgeableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
@@ -443,25 +482,35 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "s10_IndexableP"
 - "s14_IndexableBaseP"
-- "10Foundation13_NSBridgeableP"
-- "10Foundation17_ObjectBridgeableP"
-- "10Foundation21_ObjectTypeBridgeableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
 - !private "s26_RangeReplaceableIndexableP"
 - !private "s11_StrideableP"
 - !private "s14_StringElementP"
 - !private "s16_SwiftStringViewP"
+- !private "SC7dl_infoV"
 - !private "SC11sockaddr_inV"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Glibc.swiftmodule"
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Dispatch.swiftmodule"
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Foundation.swiftmodule"
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/Swift.swiftmodule"
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/SwiftOnoneSupport.swiftmodule"
-- "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/glibc.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
 - "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "a203170d582f78cf9ebe376906807e7e"

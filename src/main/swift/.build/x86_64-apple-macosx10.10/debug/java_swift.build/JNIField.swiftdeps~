@@ -1,0 +1,301 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JNIField"
+provides-nominal:
+- "10java_swift8JNIFieldC"
+provides-member:
+- ["10java_swift8JNIFieldC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "FloatLiteralType"
+- "Int"
+- "Int8"
+- "IntegerLiteralType"
+- !private "JNI"
+- "JNIField"
+- "StaticString"
+- !private "String"
+- "StringLiteralType"
+- "UnsafeMutablePointer"
+- "UnsafePointer"
+- "jboolean"
+- "jbyte"
+- "jchar"
+- "jclass"
+- "jdouble"
+- "jfieldID"
+- "jfloat"
+- "jint"
+- "jlong"
+- "jobject"
+- "jshort"
+depends-member:
+- !private ["Sa", "init"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "pointee"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "pointee"]
+- !private ["10java_swift7JNICoreC", "CachedFindClass"]
+- !private ["10java_swift7JNICoreC", "GetObjectClass"]
+- !private ["10java_swift7JNICoreC", "api"]
+- !private ["10java_swift7JNICoreC", "check"]
+- !private ["10java_swift7JNICoreC", "env"]
+- !private ["10java_swift7JNICoreC", "report"]
+- ["10java_swift8JNIFieldC", "GetBooleanField"]
+- ["10java_swift8JNIFieldC", "GetByteField"]
+- ["10java_swift8JNIFieldC", "GetCharField"]
+- ["10java_swift8JNIFieldC", "GetDoubleField"]
+- ["10java_swift8JNIFieldC", "GetFloatField"]
+- ["10java_swift8JNIFieldC", "GetIntField"]
+- ["10java_swift8JNIFieldC", "GetLongField"]
+- ["10java_swift8JNIFieldC", "GetObjectField"]
+- ["10java_swift8JNIFieldC", "GetShortField"]
+- ["10java_swift8JNIFieldC", "GetStaticBooleanField"]
+- ["10java_swift8JNIFieldC", "GetStaticByteField"]
+- ["10java_swift8JNIFieldC", "GetStaticCharField"]
+- ["10java_swift8JNIFieldC", "GetStaticDoubleField"]
+- ["10java_swift8JNIFieldC", "GetStaticFloatField"]
+- ["10java_swift8JNIFieldC", "GetStaticIntField"]
+- ["10java_swift8JNIFieldC", "GetStaticLongField"]
+- ["10java_swift8JNIFieldC", "GetStaticObjectField"]
+- ["10java_swift8JNIFieldC", "GetStaticShortField"]
+- ["10java_swift8JNIFieldC", "Int"]
+- ["10java_swift8JNIFieldC", "Int8"]
+- !private ["10java_swift8JNIFieldC", "JNI"]
+- ["10java_swift8JNIFieldC", "SetBooleanField"]
+- ["10java_swift8JNIFieldC", "SetByteField"]
+- ["10java_swift8JNIFieldC", "SetCharField"]
+- ["10java_swift8JNIFieldC", "SetDoubleField"]
+- ["10java_swift8JNIFieldC", "SetFloatField"]
+- ["10java_swift8JNIFieldC", "SetIntField"]
+- ["10java_swift8JNIFieldC", "SetLongField"]
+- ["10java_swift8JNIFieldC", "SetObjectField"]
+- ["10java_swift8JNIFieldC", "SetShortField"]
+- ["10java_swift8JNIFieldC", "SetStaticBooleanField"]
+- ["10java_swift8JNIFieldC", "SetStaticByteField"]
+- ["10java_swift8JNIFieldC", "SetStaticCharField"]
+- ["10java_swift8JNIFieldC", "SetStaticDoubleField"]
+- ["10java_swift8JNIFieldC", "SetStaticFloatField"]
+- ["10java_swift8JNIFieldC", "SetStaticIntField"]
+- ["10java_swift8JNIFieldC", "SetStaticLongField"]
+- ["10java_swift8JNIFieldC", "SetStaticObjectField"]
+- ["10java_swift8JNIFieldC", "SetStaticShortField"]
+- ["10java_swift8JNIFieldC", "StaticString"]
+- !private ["10java_swift8JNIFieldC", "String"]
+- ["10java_swift8JNIFieldC", "UnsafeMutablePointer"]
+- ["10java_swift8JNIFieldC", "UnsafePointer"]
+- ["10java_swift8JNIFieldC", "deinit"]
+- ["10java_swift8JNIFieldC", "getFieldID"]
+- ["10java_swift8JNIFieldC", "getStaticFieldID"]
+- ["10java_swift8JNIFieldC", "init"]
+- ["10java_swift8JNIFieldC", "jboolean"]
+- ["10java_swift8JNIFieldC", "jbyte"]
+- ["10java_swift8JNIFieldC", "jchar"]
+- ["10java_swift8JNIFieldC", "jclass"]
+- ["10java_swift8JNIFieldC", "jdouble"]
+- ["10java_swift8JNIFieldC", "jfieldID"]
+- ["10java_swift8JNIFieldC", "jfloat"]
+- ["10java_swift8JNIFieldC", "jint"]
+- ["10java_swift8JNIFieldC", "jlong"]
+- ["10java_swift8JNIFieldC", "jobject"]
+- ["10java_swift8JNIFieldC", "jshort"]
+- !private ["SC19JNINativeInterface_V", "GetBooleanField"]
+- !private ["SC19JNINativeInterface_V", "GetByteField"]
+- !private ["SC19JNINativeInterface_V", "GetCharField"]
+- !private ["SC19JNINativeInterface_V", "GetDoubleField"]
+- !private ["SC19JNINativeInterface_V", "GetFieldID"]
+- !private ["SC19JNINativeInterface_V", "GetFloatField"]
+- !private ["SC19JNINativeInterface_V", "GetIntField"]
+- !private ["SC19JNINativeInterface_V", "GetLongField"]
+- !private ["SC19JNINativeInterface_V", "GetObjectField"]
+- !private ["SC19JNINativeInterface_V", "GetShortField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticBooleanField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticByteField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticCharField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticDoubleField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticFieldID"]
+- !private ["SC19JNINativeInterface_V", "GetStaticFloatField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticIntField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticLongField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticObjectField"]
+- !private ["SC19JNINativeInterface_V", "GetStaticShortField"]
+- !private ["SC19JNINativeInterface_V", "SetBooleanField"]
+- !private ["SC19JNINativeInterface_V", "SetByteField"]
+- !private ["SC19JNINativeInterface_V", "SetCharField"]
+- !private ["SC19JNINativeInterface_V", "SetDoubleField"]
+- !private ["SC19JNINativeInterface_V", "SetFloatField"]
+- !private ["SC19JNINativeInterface_V", "SetIntField"]
+- !private ["SC19JNINativeInterface_V", "SetLongField"]
+- !private ["SC19JNINativeInterface_V", "SetObjectField"]
+- !private ["SC19JNINativeInterface_V", "SetShortField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticBooleanField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticByteField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticCharField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticDoubleField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticFloatField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticIntField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticLongField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticObjectField"]
+- !private ["SC19JNINativeInterface_V", "SetStaticShortField"]
+- !private ["10java_swift13JNIObjectInitP", "init"]
+- !private ["10java_swift17JNIObjectProtocolP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "pointee"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["Sp", "pointee"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "pointee"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s8HashableP"
+- !private "10java_swift7JNICoreC"
+- "10java_swift8JNIFieldC"
+- !private "SC19JNINativeInterface_V"
+- !private "10java_swift13JNIObjectInitP"
+- !private "10java_swift17JNIObjectProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "Sp"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
+- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "26a74ec9471ac567f70db6a9091fc1f0"
