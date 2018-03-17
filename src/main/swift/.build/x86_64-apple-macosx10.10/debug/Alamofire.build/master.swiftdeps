@@ -1,6 +1,6 @@
 version: "Swift version 4.0-dev (LLVM b90f33daf1, Clang e352443ae3, Swift 7ade7c9336)"
 options: "80689b42838dcd04c288321e7d567913"
-build_time: [1521244739, 756000000]
+build_time: [1521247216, 486986000]
 inputs:
   "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/AFError.swift": [1521244731, 0]
   "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/Alamofire.git-8369878224867254261/Source/Alamofire.swift": [1521244731, 0]

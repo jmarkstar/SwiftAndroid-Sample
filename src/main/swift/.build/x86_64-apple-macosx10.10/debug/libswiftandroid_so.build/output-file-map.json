@@ -2,6 +2,12 @@
   "": {
     "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/master.swiftdeps"
   },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/Statics.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/Statics.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/Statics.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/Statics~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/Statics.swiftdeps"
+  },
   "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/SwiftMathBinding.swift": {
     "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/SwiftMathBinding.d",
     "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/SwiftMathBinding.swift.o",
@@ -19,5 +25,11 @@
     "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/SwiftMathBinding_Responder.swift.o",
     "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/SwiftMathBinding_Responder~partial.swiftmodule",
     "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/SwiftMathBinding_Responder.swiftdeps"
+  },
+  "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/Sources/main.swift": {
+    "dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/main.d",
+    "object": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/main.swift.o",
+    "swiftmodule": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/libswiftandroid_so.build/main.swiftdeps"
   }
 }

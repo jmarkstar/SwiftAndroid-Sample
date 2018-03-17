@@ -29,6 +29,7 @@ depends-top-level:
 - !private "JNIReleasableProxy__finalize_thunk"
 - !private "JNI_OK"
 - "JavaProtocol"
+- !private "NSLog"
 - "String"
 - "StringLiteralType"
 - "SwiftMathBinding_Listener"
@@ -37,6 +38,7 @@ depends-top-level:
 - !private "SwiftMathBinding_ListenerLocal_"
 - !private "SwiftMathBinding_Listener_processSum_0"
 - !private "SwiftMathBinding_Listener_processSum_0_type"
+- !private "Thread"
 - "UnsafeMutablePointer"
 - !private "UnsafeMutableRawPointer"
 - "jclass"
@@ -45,6 +47,7 @@ depends-top-level:
 - "jmethodID"
 - "jobject"
 - !private "jvalue"
+- !private "responder"
 - !private "strdup"
 - !private "unsafeBitCast"
 - !private "withUnsafePointer"
@@ -67,7 +70,9 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isMainThread"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -79,7 +84,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isMainThread"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
@@ -92,7 +99,9 @@ depends-member:
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "current"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isMainThread"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
@@ -104,7 +113,9 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "current"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isMainThread"]
 - !private ["Si", "init"]
 - !private ["10java_swift7JNICoreC", "DeleteLocalRef"]
 - !private ["10java_swift7JNICoreC", "FindClass"]
@@ -149,6 +160,7 @@ depends-member:
 - !private ["10java_swift9JNIObjectC", "jvalue"]
 - ["10java_swift9JNIObjectC", "processSum"]
 - ["10java_swift9JNIObjectC", "processSum_MethodID_2"]
+- !private ["10java_swift9JNIObjectC", "processedSum"]
 - ["10java_swift16JNIObjectForwardC", "Int"]
 - !private ["10java_swift16JNIObjectForwardC", "JNIMethod"]
 - !private ["10java_swift16JNIObjectForwardC", "SwiftMathBinding_ListenerForward"]
@@ -163,6 +175,7 @@ depends-member:
 - !private ["10java_swift16JNIObjectForwardC", "jvalue"]
 - ["10java_swift16JNIObjectForwardC", "processSum"]
 - ["10java_swift16JNIObjectForwardC", "processSum_MethodID_2"]
+- !private ["10java_swift16JNIObjectForwardC", "processedSum"]
 - !private ["10java_swift13JNIObjectInitP", "Int"]
 - !private ["10java_swift13JNIObjectInitP", "JNIMethod"]
 - !private ["10java_swift13JNIObjectInitP", "SwiftMathBinding_ListenerForward"]
@@ -174,15 +187,18 @@ depends-member:
 - !private ["10java_swift13JNIObjectInitP", "jvalue"]
 - ["10java_swift13JNIObjectInitP", "processSum"]
 - !private ["10java_swift13JNIObjectInitP", "processSum_MethodID_2"]
+- !private ["10java_swift13JNIObjectInitP", "processedSum"]
 - ["10java_swift17JNIObjectProtocolP", "Int"]
 - !private ["10java_swift17JNIObjectProtocolP", "JNI"]
 - !private ["10java_swift17JNIObjectProtocolP", "JNIMethod"]
 - !private ["10java_swift17JNIObjectProtocolP", "JNINativeMethod"]
 - !private ["10java_swift17JNIObjectProtocolP", "JNIReleasableProxy__finalize_thunk"]
 - !private ["10java_swift17JNIObjectProtocolP", "JNI_OK"]
+- !private ["10java_swift17JNIObjectProtocolP", "NSLog"]
 - !private ["10java_swift17JNIObjectProtocolP", "SwiftMathBinding_ListenerForward"]
 - !private ["10java_swift17JNIObjectProtocolP", "SwiftMathBinding_ListenerLocal_"]
 - !private ["10java_swift17JNIObjectProtocolP", "SwiftMathBinding_Listener_processSum_0"]
+- !private ["10java_swift17JNIObjectProtocolP", "Thread"]
 - ["10java_swift17JNIObjectProtocolP", "UnsafeMutablePointer"]
 - !private ["10java_swift17JNIObjectProtocolP", "UnsafeMutableRawPointer"]
 - ["10java_swift17JNIObjectProtocolP", ""]
@@ -195,7 +211,9 @@ depends-member:
 - ["10java_swift17JNIObjectProtocolP", "localJavaObject"]
 - ["10java_swift17JNIObjectProtocolP", "processSum"]
 - !private ["10java_swift17JNIObjectProtocolP", "processSum_MethodID_2"]
+- !private ["10java_swift17JNIObjectProtocolP", "processedSum"]
 - !private ["10java_swift17JNIObjectProtocolP", "proxyClassName"]
+- !private ["10java_swift17JNIObjectProtocolP", "responder"]
 - !private ["10java_swift17JNIObjectProtocolP", "strdup"]
 - !private ["10java_swift17JNIObjectProtocolP", "swiftObject"]
 - !private ["10java_swift17JNIObjectProtocolP", "unsafeBitCast"]
@@ -220,8 +238,10 @@ depends-member:
 - !private ["10java_swift18JNIReleasableProxyC", "withUnsafePointer"]
 - ["10java_swift12JavaProtocolP", "Int"]
 - !private ["10java_swift12JavaProtocolP", "JNIMethod"]
+- !private ["10java_swift12JavaProtocolP", "NSLog"]
 - !private ["10java_swift12JavaProtocolP", "SwiftMathBinding_ListenerForward"]
 - !private ["10java_swift12JavaProtocolP", "SwiftMathBinding_ListenerLocal_"]
+- !private ["10java_swift12JavaProtocolP", "Thread"]
 - ["10java_swift12JavaProtocolP", "UnsafeMutablePointer"]
 - ["10java_swift12JavaProtocolP", ""]
 - !private ["10java_swift12JavaProtocolP", "javaObject"]
@@ -231,6 +251,8 @@ depends-member:
 - ["10java_swift12JavaProtocolP", "localJavaObject"]
 - ["10java_swift12JavaProtocolP", "processSum"]
 - !private ["10java_swift12JavaProtocolP", "processSum_MethodID_2"]
+- !private ["10java_swift12JavaProtocolP", "processedSum"]
+- !private ["10java_swift12JavaProtocolP", "responder"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -238,6 +260,10 @@ depends-member:
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "subscript"]
+- !private ["10Foundation8NSObjectC", "current"]
+- !private ["10Foundation8NSObjectC", "isMainThread"]
+- !private ["10Foundation16NSObjectProtocolP", "current"]
+- !private ["10Foundation16NSObjectProtocolP", "isMainThread"]
 - !private ["s7NumericP", "init"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
@@ -259,8 +285,10 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "Int"]
 - !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "JNIMethod"]
+- !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "NSLog"]
 - !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "SwiftMathBinding_ListenerForward"]
 - !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "SwiftMathBinding_ListenerLocal_"]
+- !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "Thread"]
 - ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "UnsafeMutablePointer"]
 - ["18libswiftandroid_so25SwiftMathBinding_ListenerP", ""]
 - !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "javaObject"]
@@ -270,11 +298,15 @@ depends-member:
 - ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "localJavaObject"]
 - ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "processSum"]
 - !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "processSum_MethodID_2"]
+- !private ["18libswiftandroid_so25SwiftMathBinding_ListenerP", "responder"]
 - ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "Int"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "NSLog"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "Thread"]
 - ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "deinit"]
 - ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "init"]
 - ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "localJavaObject"]
 - ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "processSum"]
+- !private ["18libswiftandroid_so29SwiftMathBinding_ListenerBaseC", "responder"]
 - ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "Int"]
 - !private ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "JNIMethod"]
 - !private ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "SwiftMathBinding_ListenerForward"]
@@ -289,8 +321,13 @@ depends-member:
 - !private ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "jvalue"]
 - ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "processSum"]
 - !private ["18libswiftandroid_so32SwiftMathBinding_ListenerForwardC", "processSum_MethodID_2"]
+- !private ["18libswiftandroid_so26SwiftMathBinding_ResponderP", "processedSum"]
+- !private ["18libswiftandroid_so33SwiftMathBinding_ResponderForwardC", "deinit"]
+- !private ["18libswiftandroid_so33SwiftMathBinding_ResponderForwardC", "processedSum"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation6ThreadC", "current"]
+- !private ["10Foundation6ThreadC", "isMainThread"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
@@ -392,6 +429,8 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
+- !private "10Foundation8NSObjectC"
+- !private "10Foundation16NSObjectProtocolP"
 - !private "s7NumericP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
@@ -405,8 +444,11 @@ depends-nominal:
 - "18libswiftandroid_so25SwiftMathBinding_ListenerP"
 - "18libswiftandroid_so29SwiftMathBinding_ListenerBaseC"
 - "18libswiftandroid_so32SwiftMathBinding_ListenerForwardC"
+- !private "18libswiftandroid_so26SwiftMathBinding_ResponderP"
+- !private "18libswiftandroid_so33SwiftMathBinding_ResponderForwardC"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "10Foundation6ThreadC"
 - !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
@@ -439,7 +481,5 @@ depends-external:
 - "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/x86_64-apple-macosx10.10/debug/java_swift.swiftmodule"
 - "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/SwiftOnoneSupport.swiftmodule"
 - "/Users/jmarkstar/MillerTech/crossplatform/tools/swift-install/usr/lib/swift/android/armv7/glibc.modulemap"
-- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-zlib.git-5881762900249083463/module.modulemap"
-- "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/swift-android-sqlite.git-5776622855185516904/module.modulemap"
 - "/Users/jmarkstar/MillerTech/crossplatform/code/SwiftAndroid_Sample1/src/main/swift/.build/checkouts/CJavaVM.git--1521134582023321205/module.modulemap"
-interface-hash: "3faa882861c83199782815aa16c445ac"
+interface-hash: "e62c084926663e66d0b36ce9d2299366"
