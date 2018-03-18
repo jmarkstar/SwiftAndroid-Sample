@@ -12,14 +12,20 @@ import com.johnholdsworth.swiftbindings.SwiftAdapterBinding
  * Created by coleman on 3/18/18.
  */
 
-internal class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
+open class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
 
-    var listener: SwiftAdapterBinding.Listener? = null
+    private var listener: SwiftAdapterBinding.Listener? = null
 
     private var inflater: LayoutInflater? = null
 
     /** Implemented in src/main/swift/Sources/main.swift  */
     private external fun bind(self: SwiftAdapterBinding.Responder): SwiftAdapterBinding.Listener
+
+    init {
+
+        this.listener = newInstance.bind(newInstance)
+        this.inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    }
 
     // adapter
 
@@ -31,10 +37,12 @@ internal class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
     }
 
     override fun getItem(position: Int): Any? {
+
         return null
     }
 
     override fun getItemId(position: Int): Long {
+
         return position.toLong()
     }
 
@@ -76,19 +84,6 @@ internal class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
             //Log.w("CustomCell", "setTitle: ");
 
             textView!!.text = title
-        }
-    }
-
-    companion object {
-
-        fun newInstance(context: Context): SwiftAdapter {
-
-            //Log.w("SwiftAdapter", "newInstance: ");
-
-            val newInstance = SwiftAdapter()
-            newInstance.listener = newInstance.bind(newInstance)
-            newInstance.inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            return newInstance
         }
     }
 }

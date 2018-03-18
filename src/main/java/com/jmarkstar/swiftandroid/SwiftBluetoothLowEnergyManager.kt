@@ -11,7 +11,7 @@ import android.bluetooth.le.ScanResult
  * Created by coleman on 3/17/18.
  */
 
-public final class SwiftBluetoothLowEnergyManager(val context: Context) : Responder {
+/* public final */ class SwiftBluetoothLowEnergyManager(val context: Context) : Responder {
 
     private val listener: Listener
 
