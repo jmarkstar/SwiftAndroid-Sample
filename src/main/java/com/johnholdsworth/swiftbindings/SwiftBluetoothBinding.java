@@ -19,7 +19,7 @@ public interface SwiftBluetoothBinding {
 
         public void startScan(ScanSettings settings, ScanCallback callback);
 
-        public void stopScan();
+        public void stopScan(ScanCallback callback);
     }
 
     // From Swift to Java
@@ -100,21 +100,59 @@ public interface SwiftBluetoothBinding {
 
     public interface Peripheral {
 
-        public Listener getListener();
-
-        public Responder getResponder();
-
         // Messages from Java to Swift
         public interface Listener {
 
+            public void onConnectionStateChange(Listener gatt, int status,
+                                                int newState);
 
+            public void onServicesDiscovered(Listener gatt, int status);
 
+            public void onCharacteristicRead(Listener gatt, GATTCharacteristic characteristic,
+                                             int status);
+
+            public void onCharacteristicWrite(Listener gatt,
+                                              GATTCharacteristic characteristic, int status);
+
+            public void onCharacteristicChanged(Listener gatt,
+                                                GATTCharacteristic characteristic);
+
+            public void onDescriptorRead(Listener gatt, GATTDescriptor descriptor,
+                                         int status);
+
+            public void onDescriptorWrite(Listener gatt, GATTDescriptor descriptor,
+                                          int status);
+
+            public void onReliableWriteCompleted(Listener gatt, int status);
+
+            public void onReadRemoteRssi(Listener gatt, int rssi, int status);
+
+            public void onMtuChanged(Listener gatt, int mtu, int status);
         }
 
         // Messages from Swift back to Java
         public interface Responder {
 
+            public void close();
 
+            public boolean refresh();
+
+            public List<GATTService> getServices();
         }
+    }
+
+    public interface GATTService {
+
+
+    }
+
+    public interface GATTCharacteristic {
+
+
+    }
+
+    public interface GATTDescriptor {
+
+
     }
 }

@@ -27,10 +27,6 @@ public protocol SwiftBluetoothBinding_BluetoothDevice: JavaProtocol {
 
     func getType() -> Int
 
-    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.isConnected()
-
-    func isConnected() -> Bool
-
 }
 
 
@@ -40,13 +36,13 @@ open class SwiftBluetoothBinding_BluetoothDeviceForward: JNIObjectForward, Swift
 
     /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.connect(int)
 
-    private static var connect_MethodID_7: jmethodID?
+    private static var connect_MethodID_6: jmethodID?
 
     open func connect( transport: Int ) -> SwiftBluetoothBinding_Peripheral! {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
         __args[0] = jvalue( i: jint(transport) )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "connect", methodSig: "(I)Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Peripheral;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.connect_MethodID_7, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "connect", methodSig: "(I)Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Peripheral;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.connect_MethodID_6, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
         return __return != nil ? SwiftBluetoothBinding_PeripheralForward( javaObject: __return ) : nil
     }
@@ -57,12 +53,12 @@ open class SwiftBluetoothBinding_BluetoothDeviceForward: JNIObjectForward, Swift
 
     /// public abstract java.lang.String com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getAddress()
 
-    private static var getAddress_MethodID_8: jmethodID?
+    private static var getAddress_MethodID_7: jmethodID?
 
     open func getAddress() -> String! {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getAddress", methodSig: "()Ljava/lang/String;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getAddress_MethodID_8, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getAddress", methodSig: "()Ljava/lang/String;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getAddress_MethodID_7, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
         return __return != nil ? String( javaObject: __return ) : nil
     }
@@ -70,24 +66,24 @@ open class SwiftBluetoothBinding_BluetoothDeviceForward: JNIObjectForward, Swift
 
     /// public abstract int com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getDeviceClass()
 
-    private static var getDeviceClass_MethodID_9: jmethodID?
+    private static var getDeviceClass_MethodID_8: jmethodID?
 
     open func getDeviceClass() -> Int {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getDeviceClass", methodSig: "()I", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getDeviceClass_MethodID_9, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getDeviceClass", methodSig: "()I", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getDeviceClass_MethodID_8, args: &__args, locals: &__locals )
         return Int(__return)
     }
 
 
     /// public abstract java.lang.String com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getName()
 
-    private static var getName_MethodID_10: jmethodID?
+    private static var getName_MethodID_9: jmethodID?
 
     open func getName() -> String! {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getName", methodSig: "()Ljava/lang/String;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getName_MethodID_10, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getName", methodSig: "()Ljava/lang/String;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getName_MethodID_9, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
         return __return != nil ? String( javaObject: __return ) : nil
     }
@@ -95,25 +91,13 @@ open class SwiftBluetoothBinding_BluetoothDeviceForward: JNIObjectForward, Swift
 
     /// public abstract int com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getType()
 
-    private static var getType_MethodID_11: jmethodID?
+    private static var getType_MethodID_10: jmethodID?
 
     open func getType() -> Int {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getType", methodSig: "()I", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getType_MethodID_11, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getType", methodSig: "()I", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.getType_MethodID_10, args: &__args, locals: &__locals )
         return Int(__return)
-    }
-
-
-    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.isConnected()
-
-    private static var isConnected_MethodID_12: jmethodID?
-
-    open func isConnected() -> Bool {
-        var __locals = [jobject]()
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "isConnected", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.isConnected_MethodID_12, args: &__args, locals: &__locals )
-        return __return != jboolean(JNI_FALSE)
     }
 
 

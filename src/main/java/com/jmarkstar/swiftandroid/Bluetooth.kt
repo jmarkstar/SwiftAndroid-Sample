@@ -31,43 +31,53 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
 
         val leScanSettingsBuilder = android.bluetooth.le.ScanSettings.Builder()
         leScanSettingsBuilder.setScanMode(settings.scanMode)
-        leScanSettingsBuilder.setCallbackType(settings.callbackType)
+        //leScanSettingsBuilder.setCallbackType(settings.callbackType)
         leScanSettingsBuilder.setReportDelay(settings.reportDelayMiliseconds)
-        leScanSettingsBuilder.setNumOfMatches(settings.numberOfMatchesPerFilter)
+        //leScanSettingsBuilder.setNumOfMatches(settings.numberOfMatchesPerFilter)
         val leScanSettings = leScanSettingsBuilder.build() as android.bluetooth.le.ScanSettings
 
-        val leScanCallback = SwiftScanCallback(callback)
+        val leScanCallback = SwiftScanCallback()
+        leScanCallback.callback = callback
 
-        adapter.bluetoothLeScanner.startScan(null, leScanSettings, leScanCallback)
+        adapter.bluetoothLeScanner.startScan(
+                null,
+                leScanSettings,
+                leScanCallback
+        )
     }
 
-    override func stopScan() {
+    override fun stopScan(callback: SwiftBluetoothBinding.ScanCallback) {
 
-        adapter.bluetoothLeScanner.stopScan()
+        val leScanCallback = SwiftScanCallback()
+        leScanCallback.callback = callback
+
+        adapter.bluetoothLeScanner.stopScan(leScanCallback)
     }
 
     private class SwiftScanCallback: android.bluetooth.le.ScanCallback() {
 
-        var callback: SwiftBluetoothBinding.ScanCallback?
+        var callback: SwiftBluetoothBinding.ScanCallback? = null
 
-        override fun onScanResult(callbackType: Int, result: ScanResult?) {
+        override fun onScanResult(callbackType: Int, result: android.bluetooth.le.ScanResult?) {
 
-            callback?.onScanResult(callbackType, result)
+            if (result != null) {
+
+                val swiftResult = SwiftScanResult(result!!)
+
+                callback?.onScanResult(callbackType, swiftResult)
+            }
         }
 
         override fun onBatchScanResults(results: MutableList<ScanResult>?) {
 
-            val swiftResults = results.map {
+            val swiftResults = results!!.map { SwiftScanResult(it) }
 
-
-            }
-
-            callback?.onBatchScanResults(results)
+            callback?.onBatchScanResults(swiftResults)
         }
 
         override fun onScanFailed(errorCode: Int) {
 
-
+            callback?.onScanFailed(errorCode)
         }
     }
 
@@ -81,26 +91,24 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
         }
 
 
-        fun getDevice(): SwiftBluetoothBinding.BluetoothDevice {
+        override fun getDevice(): SwiftBluetoothBinding.BluetoothDevice {
 
-            val device: android.bluetooth.BluetoothDevice = this.scanResult.device
-
-            return SwiftBluetoothDevice(device: device)
+            return SwiftBluetoothDevice(device = scanResult.device)
         }
 
         // Scan record, including advertising data and scan response data.
-        fun getScanRecord(): SwiftBluetoothBinding.ScanRecord {
+        override fun getScanRecord(): SwiftBluetoothBinding.ScanRecord {
 
-
+            return Swiftscan
         }
 
         // Received signal strength.
-        fun getRSSI(): Int {
+        override fun getRSSI(): Int {
 
 
         }
 
-        fun getTimeStamp(): Long {
+        override fun getTimeStamp(): Long {
 
 
         }
@@ -108,6 +116,16 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
         override fun toString(): String {
 
             this
+        }
+    }
+
+    private class SwiftBluetoothScanRecord(record: android.bluetooth.le.ScanRecord): SwiftBluetoothBinding.ScanRecord {
+
+        val scanResult: android.bluetooth.le.ScanResult
+
+        init {
+
+            this.scanResult = result
         }
     }
 
