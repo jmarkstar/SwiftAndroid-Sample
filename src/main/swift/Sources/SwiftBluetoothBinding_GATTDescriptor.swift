@@ -5,12 +5,12 @@ import java_swift
 
 /// interface com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$GATTDescriptor ///
 
-public protocol SwiftBluetoothBinding_GATTDescriptor: JavaProtocol {
+public protocol SwiftBluetoothBinding_GATTDescriptor: SwiftBluetoothBinding_GATTAttribute {
 
 }
 
 
-open class SwiftBluetoothBinding_GATTDescriptorForward: JNIObjectForward, SwiftBluetoothBinding_GATTDescriptor {
+open class SwiftBluetoothBinding_GATTDescriptorForward: SwiftBluetoothBinding_GATTAttributeForward, SwiftBluetoothBinding_GATTDescriptor {
 
     private static var SwiftBluetoothBinding_GATTDescriptorJNIClass: jclass?
 

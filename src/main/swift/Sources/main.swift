@@ -47,6 +47,7 @@ final class SwiftListViewBinding_ListenerImpl: SwiftListViewBinding_ListenerBase
     }
     
     init(responder: SwiftListViewBinding_ResponderForward) {
+        NSLog("\(type(of: self)): \(#function)")
         self.responder = responder
     }
     

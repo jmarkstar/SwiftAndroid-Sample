@@ -18,6 +18,7 @@ import android.widget.ListView;
 import java.util.List;
 import java.util.zip.Inflater;
 
+import com.johnholdsworth.swiftbindings.SwiftAdapterBinding;
 import com.johnholdsworth.swiftbindings.SwiftListViewBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView tableView;
     private SwiftAdapter adapter;
+    private SwiftBluetoothLowEnergyManager bluetoothManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loadNativeDependencies();
+        bluetoothManager = new SwiftBluetoothLowEnergyManager(this);
 
         tableView = (ListView) findViewById(R.id.tableView);
         adapter = SwiftAdapter.newInstance(this);
@@ -70,92 +73,4 @@ public class MainActivity extends AppCompatActivity {
     @Override public void processedSum(int result) {
         tvResult.setText(String.valueOf(result));
     }*/
-}
-
-class SwiftAdapter extends BaseAdapter implements SwiftListViewBinding.Responder {
-
-    SwiftListViewBinding.Listener listener;
-
-    /** Implemented in src/main/swift/Sources/main.swift */
-    @SuppressWarnings("JniMissingFunction")
-    private native SwiftListViewBinding.Listener bind(SwiftListViewBinding.Responder self );
-
-    private LayoutInflater inflater;
-
-    public static SwiftAdapter newInstance(Context context) {
-
-        Log.w("SwiftAdapter", "newInstance: ");
-
-        SwiftAdapter newInstance = new SwiftAdapter();
-        newInstance.listener = newInstance.bind(newInstance);
-        newInstance.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        return newInstance;
-    }
-
-    // adapter
-
-    @Override
-    public int getCount() {
-
-        Log.w("SwiftAdapter", "getCount: ");
-
-        if (listener == null) {
-            return 0;
-        }
-
-        return listener.numberOfRows();
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-
-        Log.w("SwiftAdapter", "getView: ");
-
-        View view;
-        CustomCell cell;
-
-        // create
-        if (convertView == null) {
-
-            view = inflater.inflate(R.layout.cell, parent, false);
-
-            cell = new CustomCell();
-            cell.textView = (TextView) view.findViewById(R.id.textView);
-
-            view.setTag(cell);
-
-        } else {
-
-            view = convertView;
-            cell = (CustomCell) view.getTag();
-        }
-
-        // configure
-        listener.configureCell(cell, position);
-
-        return view;
-    }
-
-    class CustomCell implements SwiftListViewBinding.Cell {
-
-        TextView textView;
-
-        @Override
-        public void setTitle(String title) {
-
-            Log.w("CustomCell", "setTitle: ");
-
-            textView.setText(title);
-        }
-    }
 }

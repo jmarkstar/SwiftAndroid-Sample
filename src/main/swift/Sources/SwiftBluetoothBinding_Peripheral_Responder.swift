@@ -20,6 +20,10 @@ public protocol SwiftBluetoothBinding_Peripheral_Responder: JavaProtocol {
 
     func close()
 
+    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.connect()
+
+    func connect() -> Bool
+
     /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.disconnect()
 
     func disconnect()
@@ -39,10 +43,6 @@ public protocol SwiftBluetoothBinding_Peripheral_Responder: JavaProtocol {
     /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.readRemoteRssi()
 
     func readRemoteRssi() -> Bool
-
-    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.refresh()
-
-    func refresh() -> Bool
 
     /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.requestConnectionPriority(int)
 
@@ -101,37 +101,49 @@ open class SwiftBluetoothBinding_Peripheral_ResponderForward: JNIObjectForward, 
     }
 
 
+    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.connect()
+
+    private static var connect_MethodID_17: jmethodID?
+
+    open func connect() -> Bool {
+        var __locals = [jobject]()
+        var __args = [jvalue]( repeating: jvalue(), count: 1 )
+        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "connect", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.connect_MethodID_17, args: &__args, locals: &__locals )
+        return __return != jboolean(JNI_FALSE)
+    }
+
+
     /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.disconnect()
 
-    private static var disconnect_MethodID_17: jmethodID?
+    private static var disconnect_MethodID_18: jmethodID?
 
     open func disconnect() {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        JNIMethod.CallVoidMethod( object: javaObject, methodName: "disconnect", methodSig: "()V", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.disconnect_MethodID_17, args: &__args, locals: &__locals )
+        JNIMethod.CallVoidMethod( object: javaObject, methodName: "disconnect", methodSig: "()V", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.disconnect_MethodID_18, args: &__args, locals: &__locals )
     }
 
 
     /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.executeReliableWrite()
 
-    private static var executeReliableWrite_MethodID_18: jmethodID?
+    private static var executeReliableWrite_MethodID_19: jmethodID?
 
     open func executeReliableWrite() -> Bool {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "executeReliableWrite", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.executeReliableWrite_MethodID_18, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "executeReliableWrite", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.executeReliableWrite_MethodID_19, args: &__args, locals: &__locals )
         return __return != jboolean(JNI_FALSE)
     }
 
 
     /// public abstract java.util.List com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.getServices()
 
-    private static var getServices_MethodID_19: jmethodID?
+    private static var getServices_MethodID_20: jmethodID?
 
     open func getServices() -> java_util.List! {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getServices", methodSig: "()Ljava/util/List;", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.getServices_MethodID_19, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getServices", methodSig: "()Ljava/util/List;", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.getServices_MethodID_20, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
         return __return != nil ? java_util.ListForward( javaObject: __return ) : nil
     }
@@ -139,13 +151,13 @@ open class SwiftBluetoothBinding_Peripheral_ResponderForward: JNIObjectForward, 
 
     /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.readDescriptor(com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$GATTDescriptor)
 
-    private static var readDescriptor_MethodID_20: jmethodID?
+    private static var readDescriptor_MethodID_21: jmethodID?
 
     open func readDescriptor( descriptor: SwiftBluetoothBinding_GATTDescriptor? ) -> Bool {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
         __args[0] = JNIType.toJava( value: descriptor, locals: &__locals )
-        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "readDescriptor", methodSig: "(Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$GATTDescriptor;)Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.readDescriptor_MethodID_20, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "readDescriptor", methodSig: "(Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$GATTDescriptor;)Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.readDescriptor_MethodID_21, args: &__args, locals: &__locals )
         return __return != jboolean(JNI_FALSE)
     }
 
@@ -155,24 +167,12 @@ open class SwiftBluetoothBinding_Peripheral_ResponderForward: JNIObjectForward, 
 
     /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.readRemoteRssi()
 
-    private static var readRemoteRssi_MethodID_21: jmethodID?
+    private static var readRemoteRssi_MethodID_22: jmethodID?
 
     open func readRemoteRssi() -> Bool {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "readRemoteRssi", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.readRemoteRssi_MethodID_21, args: &__args, locals: &__locals )
-        return __return != jboolean(JNI_FALSE)
-    }
-
-
-    /// public abstract boolean com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder.refresh()
-
-    private static var refresh_MethodID_22: jmethodID?
-
-    open func refresh() -> Bool {
-        var __locals = [jobject]()
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "refresh", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.refresh_MethodID_22, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallBooleanMethod( object: javaObject, methodName: "readRemoteRssi", methodSig: "()Z", methodCache: &SwiftBluetoothBinding_Peripheral_ResponderForward.readRemoteRssi_MethodID_22, args: &__args, locals: &__locals )
         return __return != jboolean(JNI_FALSE)
     }
 

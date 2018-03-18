@@ -42,6 +42,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "java_util::java_util"
+               BuildableName = "java_util.framework"
+               BlueprintName = "java_util"
+               ReferencedContainer = "container:libswiftandroid.so.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "java_lang::java_lang"
+               BuildableName = "java_lang.framework"
+               BlueprintName = "java_lang"
+               ReferencedContainer = "container:libswiftandroid.so.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "java_swift::java_swift"
                BuildableName = "java_swift.framework"
                BlueprintName = "java_swift"

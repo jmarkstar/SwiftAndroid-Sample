@@ -133,7 +133,7 @@ public interface SwiftBluetoothBinding {
 
             public void disconnect();
 
-            public boolean refresh();
+            public boolean connect();
 
             public List<GATTService> getServices();
 
@@ -158,17 +158,22 @@ public interface SwiftBluetoothBinding {
         }
     }
 
-    public interface GATTService {
+    public interface GATTAttribute {
+
+        public String getUUID();
+    }
+
+    public interface GATTService extends GATTAttribute {
 
 
     }
 
-    public interface GATTCharacteristic {
+    public interface GATTCharacteristic extends GATTAttribute {
 
 
     }
 
-    public interface GATTDescriptor {
+    public interface GATTDescriptor extends GATTAttribute {
 
 
     }

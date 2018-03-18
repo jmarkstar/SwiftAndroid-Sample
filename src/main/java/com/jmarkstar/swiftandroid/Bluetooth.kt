@@ -283,31 +283,76 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
             this.gattClient = gattClient
         }
 
-        abstract fun close()
+        override fun close() {
 
-        abstract fun disconnect()
+            gattClient.close()
+        }
 
-        abstract fun refresh(): Boolean
+        override fun disconnect() {
 
-        abstract fun getServices(): List<GATTService>
+            gattClient.disconnect()
+        }
 
-        abstract fun readDescriptor(descriptor: GATTDescriptor): Boolean
+        override fun connect(): Boolean {
 
-        abstract fun writeDescriptor(descriptor: GATTDescriptor): Boolean
+            return gattClient.connect()
+        }
 
-        abstract fun beginReliableWrite(): Boolean
+        override fun getServices(): List<SwiftBluetoothBinding.GATTService> {
 
-        abstract fun executeReliableWrite(): Boolean
+            return gattClient.services.map { SwiftService(it) }
+        }
 
-        abstract fun abortReliableWrite()
+        override fun readDescriptor(descriptor: SwiftBluetoothBinding.GATTDescriptor): Boolean {
 
-        abstract fun setCharacteristicNotification(characteristic: GATTCharacteristic,
-                                                   enable: Boolean): Boolean
+            val swiftDescriptor = descriptor as SwiftDescriptor
 
-        abstract fun readRemoteRssi(): Boolean
+            return gattClient.readDescriptor(swiftDescriptor.descriptor)
+        }
 
-        abstract fun requestMtu(mtu: Int): Boolean
+        override fun writeDescriptor(descriptor: SwiftBluetoothBinding.GATTDescriptor): Boolean {
 
-        abstract fun requestConnectionPriority(connectionPriority: Int): Boolean
+            val swiftDescriptor = descriptor as SwiftDescriptor
+
+            return gattClient.writeDescriptor(swiftDescriptor.descriptor)
+        }
+
+        override fun beginReliableWrite(): Boolean {
+
+            return gattClient.beginReliableWrite()
+        }
+
+        override fun executeReliableWrite(): Boolean {
+
+            return gattClient.executeReliableWrite()
+        }
+
+        override fun abortReliableWrite() {
+
+            gattClient.abortReliableWrite()
+        }
+
+        override fun setCharacteristicNotification(characteristic: SwiftBluetoothBinding.GATTCharacteristic,
+                                                   enable: Boolean): Boolean {
+
+            val swiftCharacteristic = characteristic as SwiftCharacteristic
+
+            return gattClient.setCharacteristicNotification(swiftCharacteristic.characteristic, enable)
+        }
+
+        override fun readRemoteRssi(): Boolean {
+
+            return gattClient.readRemoteRssi()
+        }
+
+        override fun requestMtu(mtu: Int): Boolean {
+
+            return gattClient.requestMtu(mtu)
+        }
+
+        override fun requestConnectionPriority(connectionPriority: Int): Boolean {
+
+            return gattClient.requestConnectionPriority(connectionPriority)
+        }
     }
 }
