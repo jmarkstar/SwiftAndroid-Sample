@@ -12,20 +12,14 @@ import com.johnholdsworth.swiftbindings.SwiftAdapterBinding
  * Created by coleman on 3/18/18.
  */
 
-open class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
+open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.Responder {
 
-    private var listener: SwiftAdapterBinding.Listener? = null
+    private val listener by lazy { this.bind(this) }
 
-    private var inflater: LayoutInflater? = null
+    private var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     /** Implemented in src/main/swift/Sources/main.swift  */
     private external fun bind(self: SwiftAdapterBinding.Responder): SwiftAdapterBinding.Listener
-
-    init {
-
-        this.listener = newInstance.bind(newInstance)
-        this.inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-    }
 
     // adapter
 
@@ -33,7 +27,7 @@ open class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
 
         //Log.w("SwiftAdapter", "getCount: ");
 
-        return listener?.numberOfRows() ?: 0
+        return listener.numberOfRows() ?: 0
     }
 
     override fun getItem(position: Int): Any? {
@@ -70,7 +64,7 @@ open class SwiftAdapter : BaseAdapter(), SwiftAdapterBinding.Responder {
         }
 
         // configure
-        listener!!.configureCell(cell, position)
+        listener.configureCell(cell, position)
 
         return view
     }
