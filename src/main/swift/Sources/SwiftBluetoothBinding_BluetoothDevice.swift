@@ -7,9 +7,9 @@ import java_swift
 
 public protocol SwiftBluetoothBinding_BluetoothDevice: JavaProtocol {
 
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.connect(int)
+    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.connect(int,com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Listener)
 
-    func connect( transport: Int ) -> SwiftBluetoothBinding_Peripheral!
+    func connect( transport: Int, listener: SwiftBluetoothBinding_Peripheral_Listener? ) -> SwiftBluetoothBinding_Peripheral_Responder!
 
     /// public abstract java.lang.String com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getAddress()
 
@@ -34,21 +34,22 @@ open class SwiftBluetoothBinding_BluetoothDeviceForward: JNIObjectForward, Swift
 
     private static var SwiftBluetoothBinding_BluetoothDeviceJNIClass: jclass?
 
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.connect(int)
+    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.connect(int,com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Peripheral$Listener)
 
     private static var connect_MethodID_6: jmethodID?
 
-    open func connect( transport: Int ) -> SwiftBluetoothBinding_Peripheral! {
+    open func connect( transport: Int, listener: SwiftBluetoothBinding_Peripheral_Listener? ) -> SwiftBluetoothBinding_Peripheral_Responder! {
         var __locals = [jobject]()
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
+        var __args = [jvalue]( repeating: jvalue(), count: 2 )
         __args[0] = jvalue( i: jint(transport) )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "connect", methodSig: "(I)Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Peripheral;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.connect_MethodID_6, args: &__args, locals: &__locals )
+        __args[1] = JNIType.toJava( value: listener, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "connect", methodSig: "(ILcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Peripheral$Listener;)Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Peripheral$Responder;", methodCache: &SwiftBluetoothBinding_BluetoothDeviceForward.connect_MethodID_6, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
-        return __return != nil ? SwiftBluetoothBinding_PeripheralForward( javaObject: __return ) : nil
+        return __return != nil ? SwiftBluetoothBinding_Peripheral_ResponderForward( javaObject: __return ) : nil
     }
 
-    open func connect( _ _transport: Int ) -> SwiftBluetoothBinding_Peripheral! {
-        return connect( transport: _transport )
+    open func connect( _ _transport: Int, _ _listener: SwiftBluetoothBinding_Peripheral_Listener? ) -> SwiftBluetoothBinding_Peripheral_Responder! {
+        return connect( transport: _transport, listener: _listener )
     }
 
     /// public abstract java.lang.String com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$BluetoothDevice.getAddress()

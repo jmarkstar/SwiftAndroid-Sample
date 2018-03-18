@@ -11,9 +11,9 @@ public protocol SwiftBluetoothBinding_Responder: JavaProtocol {
 
     func startScan( settings: SwiftBluetoothBinding_ScanSettings?, callback: SwiftBluetoothBinding_ScanCallback? )
 
-    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder.stopScan()
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder.stopScan(com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$ScanCallback)
 
-    func stopScan()
+    func stopScan( callback: SwiftBluetoothBinding_ScanCallback? )
 
 }
 
@@ -38,16 +38,20 @@ open class SwiftBluetoothBinding_ResponderForward: JNIObjectForward, SwiftBlueto
         startScan( settings: _settings, callback: _callback )
     }
 
-    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder.stopScan()
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder.stopScan(com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$ScanCallback)
 
     private static var stopScan_MethodID_4: jmethodID?
 
-    open func stopScan() {
+    open func stopScan( callback: SwiftBluetoothBinding_ScanCallback? ) {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        JNIMethod.CallVoidMethod( object: javaObject, methodName: "stopScan", methodSig: "()V", methodCache: &SwiftBluetoothBinding_ResponderForward.stopScan_MethodID_4, args: &__args, locals: &__locals )
+        __args[0] = JNIType.toJava( value: callback, locals: &__locals )
+        JNIMethod.CallVoidMethod( object: javaObject, methodName: "stopScan", methodSig: "(Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$ScanCallback;)V", methodCache: &SwiftBluetoothBinding_ResponderForward.stopScan_MethodID_4, args: &__args, locals: &__locals )
     }
 
+    open func stopScan( _ _callback: SwiftBluetoothBinding_ScanCallback? ) {
+        stopScan( callback: _callback )
+    }
 
 }
 

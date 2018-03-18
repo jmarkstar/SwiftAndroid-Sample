@@ -1,10 +1,10 @@
 package com.jmarkstar.swiftandroid
 
+import android.bluetooth.*
 import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding;
 import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Listener;
 import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Responder;
 import android.content.Context
-import android.bluetooth.BluetoothManager
 import android.bluetooth.le.ScanResult
 
 /**
@@ -38,6 +38,7 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
 
         val leScanCallback = SwiftScanCallback()
         leScanCallback.callback = callback
+        leScanCallback.context = context
 
         adapter.bluetoothLeScanner.startScan(
                 null,
@@ -50,6 +51,7 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
 
         val leScanCallback = SwiftScanCallback()
         leScanCallback.callback = callback
+        leScanCallback.context = context
 
         adapter.bluetoothLeScanner.stopScan(leScanCallback)
     }
@@ -58,11 +60,13 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
 
         var callback: SwiftBluetoothBinding.ScanCallback? = null
 
+        var context: Context? = null
+
         override fun onScanResult(callbackType: Int, result: android.bluetooth.le.ScanResult?) {
 
             if (result != null) {
 
-                val swiftResult = SwiftScanResult(result!!)
+                val swiftResult = SwiftScanResult(result!!, context!!)
 
                 callback?.onScanResult(callbackType, swiftResult)
             }
@@ -70,7 +74,7 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
 
         override fun onBatchScanResults(results: MutableList<ScanResult>?) {
 
-            val swiftResults = results!!.map { SwiftScanResult(it) }
+            val swiftResults = results!!.map { SwiftScanResult(it, this.context!!) }
 
             callback?.onBatchScanResults(swiftResults)
         }
@@ -81,51 +85,54 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
         }
     }
 
-    private class SwiftScanResult(result: android.bluetooth.le.ScanResult): SwiftBluetoothBinding.ScanResult {
+    private class SwiftScanResult(result: android.bluetooth.le.ScanResult, context: Context): SwiftBluetoothBinding.ScanResult {
 
         val scanResult: android.bluetooth.le.ScanResult
 
+        val context: Context
+
         init {
 
+            this.context = context
             this.scanResult = result
         }
 
 
         override fun getDevice(): SwiftBluetoothBinding.BluetoothDevice {
 
-            return SwiftBluetoothDevice(device = scanResult.device)
+            return SwiftBluetoothDevice(device = scanResult.device, context = context)
         }
 
         // Scan record, including advertising data and scan response data.
         override fun getScanRecord(): SwiftBluetoothBinding.ScanRecord {
 
-            return Swiftscan
+            return SwiftScanRecord(scanResult.scanRecord)
         }
 
         // Received signal strength.
         override fun getRSSI(): Int {
 
-
+            return scanResult.rssi
         }
 
         override fun getTimeStamp(): Long {
 
-
+            return scanResult.timestampNanos
         }
 
         override fun toString(): String {
 
-            this
+            return scanResult.toString()
         }
     }
 
-    private class SwiftBluetoothScanRecord(record: android.bluetooth.le.ScanRecord): SwiftBluetoothBinding.ScanRecord {
+    private class SwiftScanRecord(record: android.bluetooth.le.ScanRecord): SwiftBluetoothBinding.ScanRecord {
 
-        val scanResult: android.bluetooth.le.ScanResult
+        val record: android.bluetooth.le.ScanRecord
 
         init {
 
-            this.scanResult = result
+            this.record = record
         }
     }
 
@@ -161,33 +168,146 @@ public final class SwiftBluetoothLowEnergyManager(val context: Context) : Respon
             return device.bluetoothClass.hashCode()
         }
 
-        override fun connect(transport: Int): SwiftBluetoothBinding.Peripheral {
+        override fun connect(transport: Int, listener: SwiftBluetoothBinding.Peripheral.Listener): SwiftBluetoothBinding.Peripheral.Responder {
 
-            var
+            val gattCallback = SwiftPeripheralListener()
+            gattCallback.listener = listener
 
-            val bluetoothGATT = device.connectGatt(context, false, transport)
+            val gattClient = device.connectGatt(context, false, gattCallback, transport)
 
-
+            return SwiftPeripheralResponder(gattClient)
         }
     }
 
-    private class SwiftPeripheral(val gattClient: android.bluetooth.BluetoothGatt) : SwiftBluetoothBinding.Peripheral {
+    private class SwiftService(service: BluetoothGattService): SwiftBluetoothBinding.GATTService {
 
-        val responder: SwiftPeripheralResponder
-
-        var listener:
+        val service: BluetoothGattService
 
         init {
 
-            this.device = device
-            this.context = context
+            this.service = service
+        }
+
+        fun getUUID(): String {
+
+            return service.uuid.toString()
         }
     }
 
-    private class SwiftPeripheralResponder: SwiftBluetoothBinding.Peripheral.Responder {
+    private class SwiftCharacteristic(characteristic: BluetoothGattCharacteristic): SwiftBluetoothBinding.GATTCharacteristic {
+
+        val characteristic: BluetoothGattCharacteristic
+
+        init {
+
+            this.characteristic = characteristic
+        }
+    }
+
+    private class SwiftDescriptor(descriptor: BluetoothGattDescriptor): SwiftBluetoothBinding.GATTDescriptor {
+
+        val descriptor: BluetoothGattDescriptor
+
+        init {
+
+            this.descriptor = descriptor
+        }
+    }
+
+    private class SwiftPeripheralListener: BluetoothGattCallback() {
+
+        var listener: SwiftBluetoothBinding.Peripheral.Listener? = null
+
+        override fun onServicesDiscovered(gatt: BluetoothGatt, status: Int) {
+
+            listener?.onServicesDiscovered(status)
+        }
+
+        override fun onCharacteristicRead(gatt: BluetoothGatt, characteristic: BluetoothGattCharacteristic, status: Int) {
+
+            val swiftCharacteristic = SwiftCharacteristic(characteristic!!)
+
+            listener?.onCharacteristicRead(swiftCharacteristic, status)
+        }
+
+        override fun onCharacteristicWrite(gatt: BluetoothGatt, characteristic: BluetoothGattCharacteristic, status: Int) {
+
+            val swiftCharacteristic = SwiftCharacteristic(characteristic!!)
+
+            listener?.onCharacteristicWrite(swiftCharacteristic, status)
+        }
+
+        override fun onCharacteristicChanged(gatt: BluetoothGatt, characteristic: BluetoothGattCharacteristic) {
+
+            val swiftCharacteristic = SwiftCharacteristic(characteristic!!)
+
+            listener?.onCharacteristicChanged(swiftCharacteristic)
+        }
+
+        override fun onDescriptorRead(gatt: BluetoothGatt, descriptor: BluetoothGattDescriptor, status: Int) {
+
+            val swiftDescriptor = SwiftDescriptor(descriptor)
+
+            listener?.onDescriptorRead(swiftDescriptor, status)
+        }
+
+        override fun onDescriptorWrite(gatt: BluetoothGatt, descriptor: BluetoothGattDescriptor, status: Int) {
+
+            val swiftDescriptor = SwiftDescriptor(descriptor)
+
+            listener?.onDescriptorRead(swiftDescriptor, status)
+        }
+
+        override fun onReliableWriteCompleted(gatt: BluetoothGatt, status: Int) {
+
+            listener?.onReliableWriteCompleted(status)
+        }
+
+        override fun onReadRemoteRssi(gatt: BluetoothGatt, rssi: Int, status: Int) {
+
+            listener?.onReadRemoteRssi(rssi, status)
+        }
+
+        override fun onMtuChanged(gatt: BluetoothGatt, mtu: Int, status: Int) {
+
+            listener?.onMtuChanged(mtu, status)
+        }
+    }
+
+    private class SwiftPeripheralResponder(gattClient: android.bluetooth.BluetoothGatt): SwiftBluetoothBinding.Peripheral.Responder {
 
         val gattClient: android.bluetooth.BluetoothGatt
 
+        init {
 
+            this.gattClient = gattClient
+        }
+
+        abstract fun close()
+
+        abstract fun disconnect()
+
+        abstract fun refresh(): Boolean
+
+        abstract fun getServices(): List<GATTService>
+
+        abstract fun readDescriptor(descriptor: GATTDescriptor): Boolean
+
+        abstract fun writeDescriptor(descriptor: GATTDescriptor): Boolean
+
+        abstract fun beginReliableWrite(): Boolean
+
+        abstract fun executeReliableWrite(): Boolean
+
+        abstract fun abortReliableWrite()
+
+        abstract fun setCharacteristicNotification(characteristic: GATTCharacteristic,
+                                                   enable: Boolean): Boolean
+
+        abstract fun readRemoteRssi(): Boolean
+
+        abstract fun requestMtu(mtu: Int): Boolean
+
+        abstract fun requestConnectionPriority(connectionPriority: Int): Boolean
     }
 }

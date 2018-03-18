@@ -95,7 +95,7 @@ public interface SwiftBluetoothBinding {
 
         public int getDeviceClass();
 
-        public Peripheral connect(int transport);
+        public Peripheral.Responder connect(int transport, Peripheral.Listener listener);
     }
 
     public interface Peripheral {
@@ -103,31 +103,27 @@ public interface SwiftBluetoothBinding {
         // Messages from Java to Swift
         public interface Listener {
 
-            public void onConnectionStateChange(Listener gatt, int status,
-                                                int newState);
+            public void onConnectionStateChange(int status, int newState);
 
-            public void onServicesDiscovered(Listener gatt, int status);
+            public void onServicesDiscovered(int status);
 
-            public void onCharacteristicRead(Listener gatt, GATTCharacteristic characteristic,
-                                             int status);
+            public void onCharacteristicRead(GATTCharacteristic characteristic, int status);
 
-            public void onCharacteristicWrite(Listener gatt,
-                                              GATTCharacteristic characteristic, int status);
+            public void onCharacteristicWrite(GATTCharacteristic characteristic, int status);
 
-            public void onCharacteristicChanged(Listener gatt,
-                                                GATTCharacteristic characteristic);
+            public void onCharacteristicChanged(GATTCharacteristic characteristic);
 
-            public void onDescriptorRead(Listener gatt, GATTDescriptor descriptor,
+            public void onDescriptorRead(GATTDescriptor descriptor,
                                          int status);
 
-            public void onDescriptorWrite(Listener gatt, GATTDescriptor descriptor,
+            public void onDescriptorWrite(GATTDescriptor descriptor,
                                           int status);
 
-            public void onReliableWriteCompleted(Listener gatt, int status);
+            public void onReliableWriteCompleted(int status);
 
-            public void onReadRemoteRssi(Listener gatt, int rssi, int status);
+            public void onReadRemoteRssi(int rssi, int status);
 
-            public void onMtuChanged(Listener gatt, int mtu, int status);
+            public void onMtuChanged(int mtu, int status);
         }
 
         // Messages from Swift back to Java
@@ -135,9 +131,30 @@ public interface SwiftBluetoothBinding {
 
             public void close();
 
+            public void disconnect();
+
             public boolean refresh();
 
             public List<GATTService> getServices();
+
+            public boolean readDescriptor(GATTDescriptor descriptor);
+
+            public boolean writeDescriptor(GATTDescriptor descriptor);
+
+            public boolean beginReliableWrite();
+
+            public boolean executeReliableWrite();
+
+            public void abortReliableWrite();
+
+            public boolean setCharacteristicNotification(GATTCharacteristic characteristic,
+                                                         boolean enable);
+
+            public boolean readRemoteRssi();
+
+            public boolean requestMtu(int mtu);
+
+            public boolean requestConnectionPriority(int connectionPriority);
         }
     }
 
