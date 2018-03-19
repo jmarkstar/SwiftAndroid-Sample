@@ -16,7 +16,7 @@ public interface SwiftAdapterBinding {
 
     public interface Responder {
 
-
+        public void reloadData();
     }
 
     public interface Cell {

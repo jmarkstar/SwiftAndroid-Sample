@@ -40,7 +40,8 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
         
         NSLog("\(type(of: self)): \(#function)")
         
-        // called swift method
+        responder.getAdapter().reloadData()
+        
         try! bluetoothManager.startScan()
     }
 }
@@ -103,8 +104,6 @@ final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     let responder: SwiftAdapterBinding_ResponderForward
     
     override func numberOfRows() -> Int {
-        
-        NSLog("")
         
         return 1000
     }

@@ -66,6 +66,6 @@ public final class AndroidBluetoothManager {
         
         NSLog("\(type(of: self)): \(#function)")
         
-        //responder.startScan(settings: , callback: )
+        //responder.startScan(settings: nil, callback: nil)
     }
 }

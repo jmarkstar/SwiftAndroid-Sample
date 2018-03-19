@@ -21,6 +21,11 @@ open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.R
     /** Implemented in src/main/swift/Sources/main.swift  */
     private external fun bind(self: SwiftAdapterBinding.Responder): SwiftAdapterBinding.Listener
 
+    override fun reloadData() {
+
+        this.notifyDataSetChanged()
+    }
+
     // adapter
 
     override fun getCount(): Int {
