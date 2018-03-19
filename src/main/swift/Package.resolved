@@ -110,6 +110,15 @@
         }
       },
       {
+        "package": "JNI",
+        "repositoryURL": "https://github.com/PureSwift/JNI.git",
+        "state": {
+          "branch": null,
+          "revision": "96f93a6e22b01218e368d95fe6e26b4b98c03373",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "LittleCMS",
         "repositoryURL": "https://github.com/PureSwift/LittleCMS.git",
         "state": {
