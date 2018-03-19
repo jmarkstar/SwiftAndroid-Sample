@@ -16,11 +16,11 @@ public interface SwiftAdapterBinding {
 
     public interface Responder {
 
-
+        public void reloadData();
     }
 
     public interface Cell {
 
-        //public void setTitle(String title);
+        public void setTitle(String title);
     }
 }
