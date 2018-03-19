@@ -9,6 +9,7 @@ import Foundation
 import java_swift
 import java_util
 
+// dummy
 final class SwiftBluetoothBinding_ListenerImpl: SwiftBluetoothBinding_ListenerBase {
     
     //static private(set) var shared: SwiftBluetoothBinding_ListenerImpl!
@@ -41,4 +42,30 @@ final class SwiftBluetoothBinding_ListenerImpl: SwiftBluetoothBinding_ListenerBa
     private let responder: SwiftBluetoothBinding_ResponderForward
     
     
+}
+
+public final class AndroidBluetoothManager {
+    
+    public typealias Responder = SwiftBluetoothBinding_Responder
+    
+    private let responder: Responder
+    
+    deinit {
+        
+        NSLog("\(type(of: self)): \(#function)")
+    }
+    
+    public init(_ responder: Responder) {
+        
+        NSLog("\(type(of: self)): \(#function)")
+        
+        self.responder = responder
+    }
+    
+    public func startScan() throws {
+        
+        NSLog("\(type(of: self)): \(#function)")
+        
+        //responder.startScan(settings: , callback: )
+    }
 }

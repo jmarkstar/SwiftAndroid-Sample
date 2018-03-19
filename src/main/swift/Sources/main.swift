@@ -1,5 +1,7 @@
 
 import java_swift
+import java_lang
+import java_util
 import Foundation
 
 final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothScannerActivityBinding_ListenerBase {
@@ -16,13 +18,31 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
         return SwiftBluetoothScannerActivityBinding_ListenerImpl(responder: responder).localJavaObject( &locals )
     }
     
+    deinit {
+        
+        NSLog("\(type(of: self)): \(#function)")
+    }
+    
     init(responder: SwiftBluetoothScannerActivityBinding_ResponderForward) {
+        
+        NSLog("\(type(of: self)): \(#function)")
+        
         self.responder = responder
+        
+        //let javaClass = JavaClass.forName("")
     }
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
-
     
+    lazy var bluetoothManager: AndroidBluetoothManager = AndroidBluetoothManager(self.responder.getBluetoothManager())
+
+    override func viewDidLoad() {
+        
+        NSLog("\(type(of: self)): \(#function)")
+        
+        // called swift method
+        try! bluetoothManager.startScan()
+    }
 }
 
 final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
@@ -84,7 +104,7 @@ final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
     override func numberOfRows() -> Int {
         
-        return 1000
+        return 3
     }
     
     override func configureCell(cell: SwiftAdapterBinding_Cell?, row: Int) {
