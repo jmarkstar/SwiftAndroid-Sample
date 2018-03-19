@@ -73,7 +73,7 @@ open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.R
 
         var textView: TextView? = null
 
-        fun setTitle(title: String) {
+        override fun setTitle(title: String) {
 
             //Log.w("CustomCell", "setTitle: ");
 

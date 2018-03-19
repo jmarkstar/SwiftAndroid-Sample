@@ -7,12 +7,31 @@ import java_swift
 
 public protocol SwiftAdapterBinding_Cell: JavaProtocol {
 
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftAdapterBinding$Cell.setTitle(java.lang.String)
+
+    func setTitle( title: String? )
+
 }
 
 
 open class SwiftAdapterBinding_CellForward: JNIObjectForward, SwiftAdapterBinding_Cell {
 
     private static var SwiftAdapterBinding_CellJNIClass: jclass?
+
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftAdapterBinding$Cell.setTitle(java.lang.String)
+
+    private static var setTitle_MethodID_2: jmethodID?
+
+    open func setTitle( title: String? ) {
+        var __locals = [jobject]()
+        var __args = [jvalue]( repeating: jvalue(), count: 1 )
+        __args[0] = JNIType.toJava( value: title, locals: &__locals )
+        JNIMethod.CallVoidMethod( object: javaObject, methodName: "setTitle", methodSig: "(Ljava/lang/String;)V", methodCache: &SwiftAdapterBinding_CellForward.setTitle_MethodID_2, args: &__args, locals: &__locals )
+    }
+
+    open func setTitle( _ _title: String? ) {
+        setTitle( title: _title )
+    }
 
 }
 

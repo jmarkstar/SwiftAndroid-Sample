@@ -19,9 +19,4 @@ public interface SwiftBluetoothScannerActivityBinding extends SwiftActivityBindi
 
         SwiftAdapterBinding.Responder getAdapter();
     }
-
-    public interface DeviceCell extends SwiftAdapterBinding.Cell {
-
-        public void setTitle(String title);
-    }
 }

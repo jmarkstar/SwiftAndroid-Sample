@@ -21,6 +21,6 @@ public interface SwiftAdapterBinding {
 
     public interface Cell {
 
-        //public void setTitle(String title);
+        public void setTitle(String title);
     }
 }

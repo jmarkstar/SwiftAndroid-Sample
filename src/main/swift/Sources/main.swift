@@ -104,11 +104,13 @@ final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
     override func numberOfRows() -> Int {
         
-        return 3
+        NSLog("")
+        
+        return 1000
     }
     
     override func configureCell(cell: SwiftAdapterBinding_Cell?, row: Int) {
         
-        //cell?.setTitle(title: "Swift test \(row)")
+        cell?.setTitle(title: "Swift test \(row)")
     }
 }
