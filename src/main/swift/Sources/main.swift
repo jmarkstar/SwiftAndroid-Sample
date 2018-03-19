@@ -2,8 +2,32 @@
 import java_swift
 import Foundation
 
+final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothScannerActivityBinding_ListenerBase {
+    
+    // one-off call to bind the Java and Swift sections of app
+    @_silgen_name("Java_com_jmarkstar_swiftandroid_MainActivity_bind")
+    public static func bind( __env: UnsafeMutablePointer<JNIEnv?>, __this: jobject?, __self: jobject? )-> jobject? {
+        
+        // This Swift instance forwards to Java through JNI
+        let responder = SwiftBluetoothScannerActivityBinding_ResponderForward( javaObject: __self )
+        
+        // This Swift instance receives native calls from Java
+        var locals = [jobject]()
+        return SwiftBluetoothScannerActivityBinding_ListenerImpl(responder: responder).localJavaObject( &locals )
+    }
+    
+    init(responder: SwiftBluetoothScannerActivityBinding_ResponderForward) {
+        self.responder = responder
+    }
+    
+    let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
+
+    
+}
+
 final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
     
+    /*
     // one-off call to bind the Java and Swift sections of app
     @_silgen_name("Java_com_jmarkstar_swiftandroid_MainActivity_bind")
     public static func bind( __env: UnsafeMutablePointer<JNIEnv?>, __this: jobject?, __self: jobject? )-> jobject? {
@@ -14,6 +38,11 @@ final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
         // This Swift instance receives native calls from Java
         var locals = [jobject]()
         return SwiftMathBinding_ListenerImpl(responder: responder).localJavaObject( &locals )
+    }*/
+    
+    deinit {
+        
+        NSLog("\(type(of: self)) \(#function)")
     }
     
     init(responder: SwiftMathBinding_ResponderForward) {
@@ -21,7 +50,7 @@ final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
     }
     
     let responder: SwiftMathBinding_ResponderForward
-
+    
     override func processSum( num1: Int, num2: Int ) {
         
         let result = num1 + num2
@@ -32,38 +61,34 @@ final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
     }
 }
 
-final class SwiftListViewBinding_ListenerImpl: SwiftListViewBinding_ListenerBase {
+final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
     // one-off call to bind the Java and Swift sections of app
     @_silgen_name("Java_com_jmarkstar_swiftandroid_SwiftAdapter_bind")
     public static func bind( __env: UnsafeMutablePointer<JNIEnv?>, __this: jobject?, __self: jobject? )-> jobject? {
         
         // This Swift instance forwards to Java through JNI
-        let responder = SwiftListViewBinding_ResponderForward( javaObject: __self )
+        let responder = SwiftAdapterBinding_ResponderForward( javaObject: __self )
         
         // This Swift instance receives native calls from Java
         var locals = [jobject]()
-        return SwiftListViewBinding_ListenerImpl(responder: responder).localJavaObject( &locals )
+        return SwiftAdapterBinding_ListenerImpl(responder: responder).localJavaObject( &locals )
     }
     
-    init(responder: SwiftListViewBinding_ResponderForward) {
-        NSLog("\(type(of: self)): \(#function)")
+    init(responder: SwiftAdapterBinding_ResponderForward) {
+        
         self.responder = responder
     }
     
-    let responder: SwiftListViewBinding_ResponderForward
+    let responder: SwiftAdapterBinding_ResponderForward
     
     override func numberOfRows() -> Int {
-        
-        NSLog("\(type(of: self)): \(#function)")
         
         return 1000
     }
     
-    override func configureCell(cell: SwiftListViewBinding_Cell?, row: Int) {
+    override func configureCell(cell: SwiftAdapterBinding_Cell?, row: Int) {
         
-        NSLog("\(type(of: self)): \(#function)")
-        
-        cell?.setTitle(title: "Swift test \(row)")
+        //cell?.setTitle(title: "Swift test \(row)")
     }
 }

@@ -15,10 +15,12 @@ public interface SwiftBluetoothScannerActivityBinding extends SwiftActivityBindi
     // Messages from Swift back to Java Activity
     public interface Responder extends SwiftActivityBinding.Responder {
 
+        SwiftBluetoothBinding.Responder getBluetoothManager();
 
+        SwiftAdapterBinding.Responder getAdapter();
     }
 
-    public interface DeviceCell extends  SwiftAdapterBinding.Cell {
+    public interface DeviceCell extends SwiftAdapterBinding.Cell {
 
         public void setTitle(String title);
     }

@@ -15,6 +15,6 @@ public interface SwiftActivityBinding {
     // Messages from Swift back to Java Activity
     public interface Responder {
 
-        
+
     }
 }

@@ -1,25 +1,11 @@
 package com.jmarkstar.swiftandroid;
 
-import android.content.Context;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ListView;
-import java.util.List;
-import java.util.zip.Inflater;
 
 import com.johnholdsworth.swiftbindings.SwiftAdapterBinding;
-import com.johnholdsworth.swiftbindings.SwiftListViewBinding;
+import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
     private SwiftAdapter adapter;
     private SwiftBluetoothLowEnergyManager bluetoothManager;
 
+    public SwiftAdapterBinding.Responder getAdapter() {
+        return adapter;
+    }
+
+    public SwiftBluetoothBinding.Responder getBluetoothManager() {
+        return bluetoothManager;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         bluetoothManager = new SwiftBluetoothLowEnergyManager(this);
 
         tableView = (ListView) findViewById(R.id.tableView);
-        adapter = SwiftAdapter.newInstance(this);
+        adapter = new SwiftAdapter(this);
         tableView.setAdapter(adapter);
         //adapter.notifyDataSetChanged();
         //tableView.invalidateViews();
