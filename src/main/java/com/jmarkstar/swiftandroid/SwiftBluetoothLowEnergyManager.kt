@@ -1,9 +1,6 @@
 package com.jmarkstar.swiftandroid
 
 import android.bluetooth.*
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding;
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Listener;
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Responder;
 import android.content.Context
 import android.bluetooth.le.ScanResult
 
@@ -11,6 +8,7 @@ import android.bluetooth.le.ScanResult
  * Created by coleman on 3/17/18.
  */
 
+/*
 /* public final */ class SwiftBluetoothLowEnergyManager(val context: Context) : Responder {
 
     private val listener: Listener
@@ -366,3 +364,4 @@ import android.bluetooth.le.ScanResult
         }
     }
 }
+*/

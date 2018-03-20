@@ -11,10 +11,6 @@ public protocol SwiftBluetoothScannerActivityBinding_Responder: SwiftActivityBin
 
     func getAdapter() -> SwiftAdapterBinding_Responder!
 
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getBluetoothManager()
-
-    func getBluetoothManager() -> SwiftBluetoothBinding_Responder!
-
 }
 
 
@@ -24,27 +20,14 @@ open class SwiftBluetoothScannerActivityBinding_ResponderForward: SwiftActivityB
 
     /// public abstract com.johnholdsworth.swiftbindings.SwiftAdapterBinding$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getAdapter()
 
-    private static var getAdapter_MethodID_3: jmethodID?
+    private static var getAdapter_MethodID_2: jmethodID?
 
     open func getAdapter() -> SwiftAdapterBinding_Responder! {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getAdapter", methodSig: "()Lcom/johnholdsworth/swiftbindings/SwiftAdapterBinding$Responder;", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getAdapter_MethodID_3, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getAdapter", methodSig: "()Lcom/johnholdsworth/swiftbindings/SwiftAdapterBinding$Responder;", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getAdapter_MethodID_2, args: &__args, locals: &__locals )
         defer { JNI.DeleteLocalRef( __return ) }
         return __return != nil ? SwiftAdapterBinding_ResponderForward( javaObject: __return ) : nil
-    }
-
-
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftBluetoothBinding$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getBluetoothManager()
-
-    private static var getBluetoothManager_MethodID_4: jmethodID?
-
-    open func getBluetoothManager() -> SwiftBluetoothBinding_Responder! {
-        var __locals = [jobject]()
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getBluetoothManager", methodSig: "()Lcom/johnholdsworth/swiftbindings/SwiftBluetoothBinding$Responder;", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getBluetoothManager_MethodID_4, args: &__args, locals: &__locals )
-        defer { JNI.DeleteLocalRef( __return ) }
-        return __return != nil ? SwiftBluetoothBinding_ResponderForward( javaObject: __return ) : nil
     }
 
 

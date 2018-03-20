@@ -28,21 +28,19 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
         NSLog("\(type(of: self)): \(#function)")
         
         self.responder = responder
-        
-        //let javaClass = JavaClass.forName("")
     }
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
-    lazy var bluetoothManager: AndroidBluetoothManager = AndroidBluetoothManager(self.responder.getBluetoothManager())
-
+    lazy var context: AndroidContext = AndroidContext(javaObject: self.responder.javaObject)
+    
+    lazy var bluetoothManager: AndroidBluetoothManager = AndroidBluetoothManager(context: self.context)!
+    
     override func viewDidLoad() {
-        
-        NSLog("\(type(of: self)): \(#function)")
         
         responder.getAdapter().reloadData()
         
-        try! bluetoothManager.startScan()
+        //try! bluetoothManager.startScan()
     }
 }
 
