@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>3.5</ProductVersion>
+    <ProjectGuid>{D5175E79-4E31-4CC7-BF05-FC178F9D25DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Name>SwiftAndroid-Sample</Name>
+    <AndroidDexMode>Incremental</AndroidDexMode>
+    <AllowLegacyCreate>False</AllowLegacyCreate>
+    <AllowLegacyOutParams>False</AllowLegacyOutParams>
+    <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>False</Optimize>
+    <OutputPath>.\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <GenerateDebugInfo>True</GenerateDebugInfo>
+    <EnableAsserts>True</EnableAsserts>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release</OutputPath>
+    <GenerateDebugInfo>False</GenerateDebugInfo>
+    <EnableAsserts>False</EnableAsserts>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="android" />
+    <Reference Include="cooper">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Cooper.Android.targets" />
+  <ItemGroup>
+    <Compile Include="src\androidTest\java\com\jmarkstar\swiftandroid\ExampleInstrumentedTest.java" />
+    <Compile Include="src\test\java\com\jmarkstar\swiftandroid\ExampleUnitTest.java" />
+    <Compile Include="src\main\java\org\swiftjava\com_johnholdsworth\SwiftMathBinding_ListenerProxy.java" />
+    <Compile Include="src\main\java\org\swiftjava\com_johnholdsworth\SwiftBluetoothBinding_Peripheral_ListenerProxy.java" />
+    <Compile Include="src\main\java\org\swiftjava\com_johnholdsworth\SwiftBluetoothBinding_ListenerProxy.java" />
+    <Compile Include="src\main\java\org\swiftjava\com_johnholdsworth\SwiftBluetoothScannerActivityBinding_ListenerProxy.java" />
+    <Compile Include="src\main\java\org\swiftjava\com_johnholdsworth\SwiftListViewBinding_ListenerProxy.java" />
+    <Compile Include="src\main\java\com\johnholdsworth\swiftbindings\SwiftBluetoothScannerActivityBinding.java" />
+    <Compile Include="src\main\java\com\johnholdsworth\swiftbindings\SwiftMathBinding.java" />
+    <Compile Include="src\main\java\com\johnholdsworth\swiftbindings\SwiftActivityBinding.java" />
+    <Compile Include="src\main\java\com\johnholdsworth\swiftbindings\SwiftBluetoothBinding.java" />
+    <Compile Include="src\main\java\com\johnholdsworth\swiftbindings\SwiftAdapterBinding.java" />
+    <Compile Include="src\main\java\com\jmarkstar\swiftandroid\MainActivity.java" />
+  </ItemGroup>
+</Project>

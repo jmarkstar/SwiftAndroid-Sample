@@ -5,29 +5,14 @@ import java_swift
 
 /// interface com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Listener ///
 
-public protocol SwiftBluetoothScannerActivityBinding_Listener: JavaProtocol {
-
-    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Listener.viewDidLoad()
-
-    func viewDidLoad()
+public protocol SwiftBluetoothScannerActivityBinding_Listener: SwiftActivityBinding_Listener {
 
 }
 
 
-open class SwiftBluetoothScannerActivityBinding_ListenerForward: JNIObjectForward, SwiftBluetoothScannerActivityBinding_Listener {
+open class SwiftBluetoothScannerActivityBinding_ListenerForward: SwiftActivityBinding_ListenerForward, SwiftBluetoothScannerActivityBinding_Listener {
 
     private static var SwiftBluetoothScannerActivityBinding_ListenerJNIClass: jclass?
-
-    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Listener.viewDidLoad()
-
-    private static var viewDidLoad_MethodID_2: jmethodID?
-
-    open func viewDidLoad() {
-        var __locals = [jobject]()
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        JNIMethod.CallVoidMethod( object: javaObject, methodName: "viewDidLoad", methodSig: "()V", methodCache: &SwiftBluetoothScannerActivityBinding_ListenerForward.viewDidLoad_MethodID_2, args: &__args, locals: &__locals )
-    }
-
 
 }
 
@@ -76,7 +61,7 @@ open class SwiftBluetoothScannerActivityBinding_ListenerBase: SwiftBluetoothScan
 
     public init() {}
 
-    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Listener.viewDidLoad()
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftActivityBinding$Listener.viewDidLoad()
 
     open func viewDidLoad() /**/ {
     }

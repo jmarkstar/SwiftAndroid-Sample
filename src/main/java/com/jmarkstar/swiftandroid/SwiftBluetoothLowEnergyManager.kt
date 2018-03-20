@@ -188,7 +188,7 @@ import android.bluetooth.le.ScanResult
             this.service = service
         }
 
-        fun getUUID(): String {
+        override fun getUUID(): String {
 
             return service.uuid.toString()
         }
@@ -202,6 +202,11 @@ import android.bluetooth.le.ScanResult
 
             this.characteristic = characteristic
         }
+
+        override fun getUUID(): String {
+
+            return characteristic.uuid.toString()
+        }
     }
 
     private class SwiftDescriptor(descriptor: BluetoothGattDescriptor): SwiftBluetoothBinding.GATTDescriptor {
@@ -211,6 +216,11 @@ import android.bluetooth.le.ScanResult
         init {
 
             this.descriptor = descriptor
+        }
+
+        override fun getUUID(): String {
+
+            return descriptor.uuid.toString()
         }
     }
 

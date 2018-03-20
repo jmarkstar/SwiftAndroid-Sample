@@ -5,12 +5,12 @@ import java_swift
 
 /// interface com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding ///
 
-public protocol SwiftBluetoothScannerActivityBinding: JavaProtocol {
+public protocol SwiftBluetoothScannerActivityBinding: SwiftActivityBinding {
 
 }
 
 
-open class SwiftBluetoothScannerActivityBindingForward: JNIObjectForward, SwiftBluetoothScannerActivityBinding {
+open class SwiftBluetoothScannerActivityBindingForward: SwiftActivityBindingForward, SwiftBluetoothScannerActivityBinding {
 
     private static var SwiftBluetoothScannerActivityBindingJNIClass: jclass?
 
