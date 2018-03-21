@@ -5,13 +5,30 @@
 //  Created by Alsey Coleman Miller on 3/21/18.
 //
 
+//import JNI
+
 /// Android namespace.
-public enum Android {
+public enum Android: JavaPackage {
     
-    public enum Content { }
+    public static let package = ["android"]
     
-    public enum Bluetooth {
+    public enum Content: JavaPackage {
         
-        public enum LE { }
+        public static let package = Android.package + ["content"]
     }
+    
+    public enum Bluetooth: JavaPackage {
+        
+        public static let package = Android.package + ["bluetooth"]
+        
+        public enum LE: JavaPackage {
+            
+            public static let package = Android.Bluetooth.package + ["le"]
+        }
+    }
+}
+
+public protocol JavaPackage {
+    
+    static var package: [String] { get }
 }

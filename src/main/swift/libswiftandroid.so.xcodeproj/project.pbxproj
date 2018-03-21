@@ -17,6 +17,7 @@
 		6E9AAE622062AE6400F24DFC /* AndroidBluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AAE612062AE6400F24DFC /* AndroidBluetoothDevice.swift */; };
 		6E9AAE642062AE6E00F24DFC /* AndroidBluetoothAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AAE632062AE6E00F24DFC /* AndroidBluetoothAdapter.swift */; };
 		6E9AAE662062AE8B00F24DFC /* AndroidBluetoothLowEnergyScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AAE652062AE8B00F24DFC /* AndroidBluetoothLowEnergyScanner.swift */; };
+		6E9AAE682062B8E700F24DFC /* AndroidBluetoothLowEnergyScanFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AAE672062B8E700F24DFC /* AndroidBluetoothLowEnergyScanFilter.swift */; };
 		6EAAD5052060DEAA0007B68A /* AndroidContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAAD5042060DEAA0007B68A /* AndroidContext.swift */; };
 		6EAAD5072060E1810007B68A /* AndroidBluetoothLowEnergyScanSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAAD5062060E1810007B68A /* AndroidBluetoothLowEnergyScanSettings.swift */; };
 		OBJ_1000 /* ZipEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_370 /* ZipEntry.swift */; };
@@ -644,6 +645,7 @@
 		6E9AAE612062AE6400F24DFC /* AndroidBluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothDevice.swift; sourceTree = "<group>"; };
 		6E9AAE632062AE6E00F24DFC /* AndroidBluetoothAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothAdapter.swift; sourceTree = "<group>"; };
 		6E9AAE652062AE8B00F24DFC /* AndroidBluetoothLowEnergyScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothLowEnergyScanner.swift; sourceTree = "<group>"; };
+		6E9AAE672062B8E700F24DFC /* AndroidBluetoothLowEnergyScanFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothLowEnergyScanFilter.swift; sourceTree = "<group>"; };
 		6EAAD5042060DEAA0007B68A /* AndroidContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidContext.swift; sourceTree = "<group>"; };
 		6EAAD5062060E1810007B68A /* AndroidBluetoothLowEnergyScanSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothLowEnergyScanSettings.swift; sourceTree = "<group>"; };
 		"Bluetooth::Bluetooth::Product" /* Bluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1570,6 +1572,7 @@
 				6E9AAE632062AE6E00F24DFC /* AndroidBluetoothAdapter.swift */,
 				6E9AAE612062AE6400F24DFC /* AndroidBluetoothDevice.swift */,
 				6E9AAE652062AE8B00F24DFC /* AndroidBluetoothLowEnergyScanner.swift */,
+				6E9AAE672062B8E700F24DFC /* AndroidBluetoothLowEnergyScanFilter.swift */,
 				6EAAD5062060E1810007B68A /* AndroidBluetoothLowEnergyScanSettings.swift */,
 				6E9AAE5B2062AC4200F24DFC /* AndroidBluetoothLowEnergyScanMode.swift */,
 				6E9AAE5D2062AC6A00F24DFC /* AndroidBluetoothLowEnergyScanCallbackType.swift */,
@@ -2372,6 +2375,7 @@
 				6E9AAE5A2062A8AA00F24DFC /* Android.swift in Sources */,
 				6E9AAE5C2062AC4200F24DFC /* AndroidBluetoothLowEnergyScanMode.swift in Sources */,
 				OBJ_629 /* SwiftAdapterBinding_Responder.swift in Sources */,
+				6E9AAE682062B8E700F24DFC /* AndroidBluetoothLowEnergyScanFilter.swift in Sources */,
 				OBJ_645 /* SwiftBluetoothScannerActivityBinding.swift in Sources */,
 				6E9AAE622062AE6400F24DFC /* AndroidBluetoothDevice.swift in Sources */,
 				OBJ_646 /* SwiftBluetoothScannerActivityBinding_Listener.swift in Sources */,
