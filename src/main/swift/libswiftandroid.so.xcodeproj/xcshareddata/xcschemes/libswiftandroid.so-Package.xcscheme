@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "JNI::JNI"
+               BuildableName = "JNI.framework"
+               BlueprintName = "JNI"
+               ReferencedContainer = "container:libswiftandroid.so.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Bluetooth::Bluetooth"
                BuildableName = "Bluetooth.framework"
                BlueprintName = "Bluetooth"
