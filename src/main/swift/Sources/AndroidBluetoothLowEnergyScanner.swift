@@ -16,10 +16,6 @@ public extension Android.Bluetooth.LE {
 
 public final class AndroidBluetoothLowEnergyScanner: JavaObject {
     
-    private static let javaClassName = "android/bluetooth/le/BluetoothLeScanner"
-    
-    private static var JNIClass: jclass?
-    
     public convenience init?( casting object: java_swift.JavaObject,
                               _ file: StaticString = #file,
                               _ line: Int = #line ) {
@@ -76,7 +72,7 @@ public final class AndroidBluetoothLowEnergyScanner: JavaObject {
             object: javaObject,
             methodName: "startScan",
             methodSig: "(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/bluetooth/le/ScanCallback;)V",
-            methodCache: &MethodID.startScan,
+            methodCache: &JNICache.MethodID.startScan,
             args: &__args,
             locals: &__locals )
     }
@@ -96,9 +92,19 @@ public final class AndroidBluetoothLowEnergyScanner: JavaObject {
 
 private extension AndroidBluetoothLowEnergyScanner {
     
-    /// JNI Method ID cache
-    struct MethodID {
+    /// JNI Cache
+    struct JNICache {
         
-        static var startScan: jmethodID?
+        /// JNI Java class name
+        static let className = "android/bluetooth/le/BluetoothLeScanner"
+        
+        /// JNI Java class
+        static var jniClass: jclass?
+        
+        /// JNI Method ID cache
+        struct MethodID {
+            
+            static var startScan: jmethodID?
+        }
     }
 }

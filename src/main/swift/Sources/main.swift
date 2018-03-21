@@ -32,24 +32,20 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
-    lazy var context: AndroidContext = AndroidContext(javaObject: self.responder.javaObject)
-    
-    lazy var bluetoothManager: AndroidBluetoothManager = AndroidBluetoothManager(context: self.context)!
-    
     override func viewDidLoad() {
         
         responder.getAdapter().reloadData()
         
-        if let scanner = bluetoothManager.adapter?.lowEnergyScanner {
+        if let scanner = Android.Bluetooth.Adapter.default?.lowEnergyScanner {
             
             NSLog("Will Bluetooth LE scan")
             
-            class TestCallback: Android.Bluetooth.LE.ScanCallback {
+            struct TestCallback: Android.Bluetooth.LE.ScanCallback {
                 
                 func onScanResult(callbackType: Android.Bluetooth.LE.ScanCallbackType,
-                                  result: Android.Bluetooth.LE.ScanResult?) {
+                                  result: Android.Bluetooth.LE.ScanResult) {
                     
-                    NSLog("\(#function) \(callbackType) \(result!)")
+                    NSLog("\(#function) \(result.toString() ?? "")")
                 }
                 
                 func onScanFailed(error: AndroidBluetoothLowEnergyScanCallback.Error) {

@@ -42,23 +42,14 @@ public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
     
     private static var new_MethodID_1: jmethodID?
     
-    public convenience init() {
+    public static var `default`: Android.Bluetooth.LE.ScanSettings {
         
-        var __locals = [jobject]()
+        struct Cache {
+            
+            static let builder = Android.Bluetooth.LE.ScanSettings.Builder()
+        }
         
-        var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        
-        let __object = JNIMethod.NewObject(
-            className: AndroidBluetoothLowEnergyScanSettings.javaClassName,
-            classCache: &AndroidBluetoothLowEnergyScanSettings.JNIClass,
-            methodSig: "()V",
-            methodCache: &AndroidBluetoothLowEnergyScanSettings.new_MethodID_1,
-            args: &__args,
-            locals: &__locals )
-        
-        self.init( javaObject: __object )
-        
-        JNI.DeleteLocalRef( __object )
+        return Cache.builder.build()
     }
     
     private static var SCAN_MODE_BALANCED_MethodID: jmethodID?
@@ -129,7 +120,7 @@ public final class AndroidBluetoothLowEnergyScanSettingsBuilder: JavaObject {
         
         var __locals = [jobject]()
         
-        var __args = [jvalue]()
+        var __args = [jvalue].init(repeating: jvalue(), count: 1)
         
         let __return = JNIMethod.CallObjectMethod(object: javaObject,
                                                   methodName: "build",

@@ -53,7 +53,7 @@ public final class AndroidBluetoothManager: JavaObject {
         
         var __locals = [jobject]()
         
-        var __args = [jvalue]()
+        var __args = [jvalue].init(repeating: jvalue(), count: 1)
         
         let __return = JNIMethod.CallObjectMethod(object: javaObject,
                                                   methodName: "getAdapter",

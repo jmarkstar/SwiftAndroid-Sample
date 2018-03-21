@@ -50,7 +50,7 @@ public final class AndroidBluetoothAdapter: JavaObject {
         
         var __locals = [jobject]()
         
-        var __args = [jvalue]()
+        var __args = [jvalue].init(repeating: jvalue(), count: 1)
         
         let __return = JNIMethod.CallStaticObjectMethod(className: javaClassName,
                                                         classCache: &JNIClass,
@@ -61,7 +61,7 @@ public final class AndroidBluetoothAdapter: JavaObject {
                                                         locals: &__locals)
         
         defer { JNI.DeleteLocalRef( __return ) }
-        
+                
         return __return != nil ? Android.Bluetooth.Adapter( javaObject: __return ) : nil
     }
     
@@ -96,7 +96,7 @@ public final class AndroidBluetoothAdapter: JavaObject {
         
         var __locals = [jobject]()
         
-        var __args = [jvalue]()
+        var __args = [jvalue].init(repeating: jvalue(), count: 1)
         
         let __return = JNIMethod.CallObjectMethod(object: javaObject,
                                                   methodName: "getBluetoothLeScanner",

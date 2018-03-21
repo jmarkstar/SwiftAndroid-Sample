@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E9AAE732062CF6200F24DFC /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9AAE722062CF6200F24DFC /* JavaVM.framework */; };
 		OBJ_1000 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_354 /* Timer.swift */; };
 		OBJ_1001 /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_355 /* TimerTask.swift */; };
 		OBJ_1002 /* ToDoubleBiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_356 /* ToDoubleBiFunction.swift */; };
@@ -647,6 +648,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E9AAE722062CF6200F24DFC /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = System/Library/Frameworks/JavaVM.framework; sourceTree = SDKROOT; };
 		"Bluetooth::Bluetooth::Product" /* Bluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JNI::JNI::Product" /* JNI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JNI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* AndroidBluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidBluetoothDevice.swift; sourceTree = "<group>"; };
@@ -1247,6 +1249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				6E9AAE732062CF6200F24DFC /* JavaVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1279,6 +1282,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E9AAE712062CF6200F24DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E9AAE722062CF6200F24DFC /* JavaVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_35 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1554,6 +1565,7 @@
 				OBJ_35 /* Tests */,
 				OBJ_36 /* Dependencies */,
 				OBJ_584 /* Products */,
+				6E9AAE712062CF6200F24DFC /* Frameworks */,
 			);
 			name = "";
 			sourceTree = "<group>";
