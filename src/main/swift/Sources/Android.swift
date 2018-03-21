@@ -5,6 +5,7 @@
 //  Created by Alsey Coleman Miller on 3/21/18.
 //
 
+import java_swift
 //import JNI
 
 /// Android namespace.
@@ -31,4 +32,12 @@ public enum Android: JavaPackage {
 public protocol JavaPackage {
     
     static var package: [String] { get }
+}
+
+extension JavaObject: CustomStringConvertible {
+    
+    public var description: String {
+        
+        get { return self.toString() }
+    }
 }

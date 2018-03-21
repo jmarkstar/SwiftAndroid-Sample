@@ -32,34 +32,46 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
+    private var results = [Android.Bluetooth.LE.ScanResult]()
+    
     override func viewDidLoad() {
         
         responder.getAdapter().reloadData()
         
-        if let scanner = Android.Bluetooth.Adapter.default?.lowEnergyScanner {
+        let scanCallback = ScanCallback { [weak self] in
+            self?.results.append($0)
+        }
+        
+        Android.Bluetooth.Adapter.default?.lowEnergyScanner?.startScan(callback: scanCallback)
+    }
+}
+
+extension SwiftBluetoothScannerActivityBinding_ListenerImpl {
+    
+    struct ScanCallback: Android.Bluetooth.LE.ScanCallback {
+        
+        var scanResult: (Android.Bluetooth.LE.ScanResult) -> ()
+        
+        func onScanResult(callbackType: Android.Bluetooth.LE.ScanCallbackType,
+                          result: Android.Bluetooth.LE.ScanResult) {
             
-            NSLog("Will Bluetooth LE scan")
+            NSLog("\(#function) \(result.toString() ?? "")")
             
-            struct TestCallback: Android.Bluetooth.LE.ScanCallback {
-                
-                func onScanResult(callbackType: Android.Bluetooth.LE.ScanCallbackType,
-                                  result: Android.Bluetooth.LE.ScanResult) {
-                    
-                    NSLog("\(#function) \(result.toString() ?? "")")
-                }
-                
-                func onScanFailed(error: AndroidBluetoothLowEnergyScanCallback.Error) {
-                    
-                    NSLog("\(#function) \(error)")
-                }
-                
-                func onBatchScanResults(results: [Android.Bluetooth.LE.ScanResult]) {
-                    
-                    NSLog("\(#function) \(results)")
-                }
-            }
+            scanResult(result)
+        }
+        
+        func onScanFailed(error: AndroidBluetoothLowEnergyScanCallback.Error) {
             
-            scanner.startScan(callback: TestCallback())
+            NSLog("\(#function) \(error)")
+            
+            // TODO: Handle Error
+        }
+        
+        func onBatchScanResults(results: [Android.Bluetooth.LE.ScanResult]) {
+            
+            NSLog("\(#function) \(results)")
+            
+            results.forEach { scanResult($0) }
         }
     }
 }
@@ -102,6 +114,8 @@ final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
 
 final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
+    var data = [String]()
+    
     // one-off call to bind the Java and Swift sections of app
     @_silgen_name("Java_com_jmarkstar_swiftandroid_SwiftAdapter_bind")
     public static func bind( __env: UnsafeMutablePointer<JNIEnv?>, __this: jobject?, __self: jobject? )-> jobject? {
@@ -123,11 +137,13 @@ final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
     override func numberOfRows() -> Int {
         
-        return 1000
+        return data.count
     }
     
     override func configureCell(cell: SwiftAdapterBinding_Cell?, row: Int) {
         
-        cell?.setTitle(title: "Swift test \(row)")
+        let item = self.data[row]
+        
+        cell?.setTitle(title: item)
     }
 }
