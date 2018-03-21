@@ -32,13 +32,14 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
+    private var results = [Android.Bluetooth.LE.ScanResult]()
+    
     override func viewDidLoad() {
         
         responder.getAdapter().reloadData()
         
         let scanCallback = ScanCallback { [weak self] in
-            (self?.responder.getAdapter().getListener() as? SwiftAdapterBinding_ListenerImpl)?.data.append($0.toString())
-            self?.responder.getAdapter().reloadData()
+            self?.results.append($0)
         }
         
         Android.Bluetooth.Adapter.default?.lowEnergyScanner?.startScan(callback: scanCallback)
@@ -113,10 +114,7 @@ final class SwiftMathBinding_ListenerImpl: SwiftMathBinding_ListenerBase {
 
 final class SwiftAdapterBinding_ListenerImpl: SwiftAdapterBinding_ListenerBase {
     
-    var data = [String]() {
-        
-        didSet {  }
-    }
+    var data = [String]()
     
     // one-off call to bind the Java and Swift sections of app
     @_silgen_name("Java_com_jmarkstar_swiftandroid_SwiftAdapter_bind")

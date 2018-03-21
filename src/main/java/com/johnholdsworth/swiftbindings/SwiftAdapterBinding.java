@@ -16,10 +16,8 @@ public interface SwiftAdapterBinding {
 
     public interface Responder {
 
-        public Listener getListener();
-
         public void reloadData();
-}
+    }
 
     public interface Cell {
 

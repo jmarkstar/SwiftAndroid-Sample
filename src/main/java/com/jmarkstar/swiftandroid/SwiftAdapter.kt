@@ -14,17 +14,12 @@ import com.johnholdsworth.swiftbindings.SwiftAdapterBinding
 
 open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.Responder {
 
-    private val _listener by lazy { this.bind(this) }
+    private val listener by lazy { this.bind(this) }
 
     private var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     /** Implemented in src/main/swift/Sources/main.swift  */
     private external fun bind(self: SwiftAdapterBinding.Responder): SwiftAdapterBinding.Listener
-
-    override fun getListener(): SwiftAdapterBinding.Listener {
-
-        return this.listener
-    }
 
     override fun reloadData() {
 
