@@ -9,9 +9,17 @@ import Foundation
 import java_swift
 import java_util
 
-public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
+public extension Android.Bluetooth.LE {
+    
+    public typealias ScanSettings = AndroidBluetoothLowEnergyScanSettings
+}
+
+public extension Android.Bluetooth.LE.ScanSettings {
     
     public typealias Builder = AndroidBluetoothLowEnergyScanSettingsBuilder
+}
+
+public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
     
     fileprivate static let javaClassName = "android/bluetooth/le/ScanSettings"
     
@@ -28,11 +36,11 @@ public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
         }
     }
     
-    private static var new_MethodID_1: jmethodID?
-    
     public required init( javaObject: jobject? ) {
         super.init(javaObject: javaObject)
     }
+    
+    private static var new_MethodID_1: jmethodID?
     
     public convenience init() {
         
@@ -55,7 +63,7 @@ public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
     
     private static var SCAN_MODE_BALANCED_MethodID: jmethodID?
     
-    fileprivate static var SCAN_MODE_BALANCED: Int {
+    internal static var SCAN_MODE_BALANCED: Int {
         
         get {
             
@@ -71,9 +79,11 @@ public final class AndroidBluetoothLowEnergyScanSettings: JavaObject {
     }
 }
 
+// MARK: - Builder
+
 public final class AndroidBluetoothLowEnergyScanSettingsBuilder: JavaObject {
     
-    private static let javaClassName = AndroidBluetoothLowEnergyScanSettings.javaClassName + "$Builder"
+    private static let javaClassName = Android.Bluetooth.LE.ScanSettings.javaClassName + "$Builder"
     
     private static var JNIClass: jclass?
     
@@ -115,7 +125,7 @@ public final class AndroidBluetoothLowEnergyScanSettingsBuilder: JavaObject {
     
     private static var build_MethodID: jmethodID?
     
-    public func build() -> AndroidBluetoothLowEnergyScanSettings {
+    public func build() -> Android.Bluetooth.LE.ScanSettings {
         
         var __locals = [jobject]()
         
@@ -137,7 +147,7 @@ public final class AndroidBluetoothLowEnergyScanSettingsBuilder: JavaObject {
     
     // public android.bluetooth.le.ScanSettings$Builder setScanMode(int);
     // descriptor: (I)Landroid/bluetooth/le/ScanSettings$Builder;
-    public func setScanMode(_ newValue: AndroidBluetoothLowEnergyScanSettings.ScanMode) -> AndroidBluetoothLowEnergyScanSettingsBuilder {
+    public func setScanMode(_ newValue: Android.Bluetooth.LE.ScanMode) -> Android.Bluetooth.LE.ScanSettings.Builder {
         
         var __locals = [jobject]()
         
@@ -163,23 +173,5 @@ public final class AndroidBluetoothLowEnergyScanSettingsBuilder: JavaObject {
         defer { JNI.DeleteLocalRef( __return ) }
         
         return AndroidBluetoothLowEnergyScanSettingsBuilder(javaObject: __return)
-    }
-}
-
-public extension AndroidBluetoothLowEnergyScanSettings {
-    
-    public struct ScanMode: RawRepresentable {
-        
-        public let rawValue: Int
-        
-        public init(rawValue: Int) {
-            self.rawValue = rawValue
-        }
-        
-        /**
-         * Perform Bluetooth LE scan in balanced power mode. Scan results are returned at a rate that
-         * provides a good trade-off between scan frequency and power consumption.
-         */
-        public static let balanced = ScanMode(rawValue: AndroidBluetoothLowEnergyScanSettings.SCAN_MODE_BALANCED)
     }
 }

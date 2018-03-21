@@ -9,6 +9,11 @@ import Foundation
 import java_swift
 import java_util
 
+public extension Android.Bluetooth {
+    
+    public typealias BluetoothManager = AndroidBluetoothManager
+}
+
 public final class AndroidBluetoothManager: JavaObject {
     
     private static var JNIClass: jclass?
@@ -30,5 +35,11 @@ public final class AndroidBluetoothManager: JavaObject {
             else { return nil }
     
         self.init(casting: service)
+    }
+    
+    public func startScan(settings: AndroidBluetoothLowEnergyScanSettings? = nil,
+                          callback: JavaObject) {
+        
+        
     }
 }

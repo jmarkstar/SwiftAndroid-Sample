@@ -44,7 +44,7 @@ fileprivate class SwiftActivityBinding_ListenerLocal_: JNILocalProxy<SwiftActivi
 
         let SwiftActivityBinding_Listener_viewDidLoad_0_thunk: SwiftActivityBinding_Listener_viewDidLoad_0_type = SwiftActivityBinding_Listener_viewDidLoad_0
         natives.append( JNINativeMethod( name: strdup("__viewDidLoad"), signature: strdup("(J)V"), fnPtr: unsafeBitCast( SwiftActivityBinding_Listener_viewDidLoad_0_thunk, to: UnsafeMutableRawPointer.self ) ) )
-
+        
         natives.append( JNINativeMethod( name: strdup("__finalize"), signature: strdup("(J)V"), fnPtr: unsafeBitCast( JNIReleasableProxy__finalize_thunk, to: UnsafeMutableRawPointer.self ) ) )
 
         let clazz = JNI.FindClass( proxyClassName() )

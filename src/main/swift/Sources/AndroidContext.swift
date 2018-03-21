@@ -9,6 +9,11 @@ import Foundation
 import java_swift
 import java_util
 
+public extension Android.Content {
+    
+    public typealias Context = AndroidContext
+}
+
 open class AndroidContext: JavaObject {
     
     private static let javaClassName = "android/content/Context"
@@ -71,28 +76,5 @@ open class AndroidContext: JavaObject {
             
             return __value != nil ? String( javaObject: __value ) : nil
         }
-    }
-}
-
-public extension AndroidContext {
-    
-    public struct SystemService: RawRepresentable {
-        
-        public let rawValue: String
-        
-        public init(rawValue: String) {
-            
-            self.rawValue = rawValue
-        }
-        
-        public static let bluetooth = SystemService(rawValue: AndroidContext.bluetoothService!)
-    }
-}
-
-extension AndroidContext.SystemService: ExpressibleByStringLiteral {
-    
-    public init(stringLiteral value: String) {
-        
-        self.init(rawValue: value)
     }
 }

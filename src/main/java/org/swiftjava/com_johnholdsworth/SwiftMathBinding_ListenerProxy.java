@@ -28,5 +28,4 @@ public class SwiftMathBinding_ListenerProxy implements com.johnholdsworth.swiftb
     public void finalize() {
         __finalize( __swiftObject );
     }
-
 }
