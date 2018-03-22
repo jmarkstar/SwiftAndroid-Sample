@@ -22,6 +22,11 @@ public enum Android: JavaPackage {
         public static let package = Android.package + ["widget"]
     }
     
+    public enum View: JavaPackage {
+        
+        public static let package = Android.package + ["view"]
+    }
+    
     public enum Bluetooth: JavaPackage {
         
         public static let package = Android.package + ["bluetooth"]

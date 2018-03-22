@@ -15,6 +15,8 @@ public interface SwiftBluetoothScannerActivityBinding extends SwiftActivityBindi
     // Messages from Swift back to Java Activity
     public interface Responder extends SwiftActivityBinding.Responder {
 
+        int getCellResource();
+
         void setAdapter(java.lang.Object adapter);
     }
 }

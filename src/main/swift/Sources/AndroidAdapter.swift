@@ -41,9 +41,9 @@ open class AndroidWidgetAdapter: JavaProtocol {
     
     open func getCount() -> Int { return 0 }
     
-    func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject {
+    open func getView(position: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View {
         
-        fatalError()
+        fatalError("\(#function) must be implemented in subclass")
     }
 }
 
@@ -90,9 +90,9 @@ private func AndroidWidgetAdapter_getView( _ __env: UnsafeMutablePointer<JNIEnv?
                                             _ __convertView: jobject?,
                                             _ __parent: jobject?) -> jobject? {
     
-    let convertView = JavaObject(javaObject: __convertView)
+    let convertView = Android.View.View(javaObject: __convertView)
     
-    let parentView = JavaObject(javaObject: __parent)
+    let parentView = Android.View.ViewGroup(javaObject: __parent)
     
     let result = AndroidWidgetAdapterListenerLocal
         .swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject )
@@ -110,7 +110,7 @@ fileprivate final class AndroidWidgetAdapterListenerProxy: AndroidWidgetAdapterL
         return swiftObject?.getCount() ?? 0
     }
     
-    func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject? {
+    func getView(position: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View? {
         
         return swiftObject?.getView(position: position, convertView: convertView, parent: parent)
     }
@@ -120,7 +120,7 @@ fileprivate protocol AndroidWidgetAdapterListenerProtocol: JavaProtocol {
     
     func getCount() -> Int
     
-    func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject?
+    func getView(position: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View?
 }
 
 extension AndroidWidgetAdapterListenerProtocol {

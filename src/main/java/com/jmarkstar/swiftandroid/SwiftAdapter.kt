@@ -17,15 +17,19 @@ open class SwiftAdapter(__swiftObject: Long) : BaseAdapter() {
         this.__swiftObject = __swiftObject
     }
 
-    //private var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    external fun __finalize(__swiftObject: Long)
+
+    fun finalize() {
+        __finalize(__swiftObject)
+    }
 
     // adapter
 
-    private external fun __getCount(): Int;
+    private external fun __getCount(__swiftObject: Long): Int;
 
     override fun getCount(): Int {
 
-        return __getCount()
+        return __getCount(__swiftObject)
     }
 
     override fun getItem(position: Int): Any? {
@@ -38,11 +42,11 @@ open class SwiftAdapter(__swiftObject: Long) : BaseAdapter() {
         return position.toLong()
     }
 
-    private external fun __getView(position: Int, convertView: View?, parent: ViewGroup): View;
+    private external fun __getView(__swiftObject: Long, position: Int, convertView: View?, parent: ViewGroup): View;
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
-        return __getView(position, convertView, parent)
+        return __getView(__swiftObject, position, convertView, parent)
 
         /*
         val view: View

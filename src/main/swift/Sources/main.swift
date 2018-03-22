@@ -36,7 +36,9 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     override func viewDidLoad() {
         
-        responder.setAdapter(adapter: listAdapter)
+        listAdapter.withJavaObject { [unowned self] in
+            self.responder.setAdapter(adapter: JavaObject(javaObject: $0))
+        }
         
         let scanCallback = ScanCallback { [weak self] in
             self?.listAdapter.data.append($0)
@@ -57,12 +59,10 @@ extension SwiftBluetoothScannerActivityBinding_ListenerImpl {
         
         override func getCount() -> Int {
             
-            NSLog("\(#function)")
-            
-            return 0
+            return data.count
         }
         
-        override func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject {
+        override func getView(position: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View {
             
             fatalError()
         }

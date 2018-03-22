@@ -2,7 +2,9 @@ package com.jmarkstar.swiftandroid;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.widget.*;
+import android.content.Context;
 
 import com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding;
 import com.jmarkstar.swiftandroid.SwiftAdapter;
@@ -38,5 +40,14 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
         SwiftAdapter swiftAdapter = (SwiftAdapter)adapter;
 
         tableView.setAdapter(swiftAdapter);
+    }
+
+    public int getCellResource() {
+
+        return R.layout.cell;
+
+        //LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        //inflater.inflate(R.layout.cell, parent, false);
     }
 }
