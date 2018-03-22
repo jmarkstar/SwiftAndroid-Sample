@@ -2,11 +2,12 @@ package com.jmarkstar.swiftandroid;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ListView;
+import android.view.LayoutInflater;
+import android.widget.*;
+import android.content.Context;
 
-import com.johnholdsworth.swiftbindings.SwiftAdapterBinding;
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding;
 import com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding;
+import com.jmarkstar.swiftandroid.SwiftAdapter;
 
 public class MainActivity extends AppCompatActivity implements SwiftBluetoothScannerActivityBinding.Responder {
 
@@ -19,16 +20,6 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
 
     private SwiftBluetoothScannerActivityBinding.Listener listener;
     private ListView tableView;
-    private SwiftAdapter adapter;
-    private SwiftBluetoothLowEnergyManager bluetoothManager;
-
-    public SwiftAdapterBinding.Responder getAdapter() {
-        return adapter;
-    }
-
-    public SwiftBluetoothBinding.Responder getBluetoothManager() {
-        return bluetoothManager;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,18 +29,30 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
         loadNativeDependencies();
         listener = bind(this);
 
-        bluetoothManager = new SwiftBluetoothLowEnergyManager(this);
         tableView = (ListView) findViewById(R.id.tableView);
-        adapter = new SwiftAdapter(this);
-        tableView.setAdapter(adapter);
 
         // inform Swift
         listener.viewDidLoad();
     }
 
-    //Response from Swift
-    /*
-    @Override public void processedSum(int result) {
-        tvResult.setText(String.valueOf(result));
-    }*/
+    public void setAdapter(Object adapter) {
+
+        SwiftAdapter swiftAdapter = (SwiftAdapter)adapter;
+
+        tableView.setAdapter(swiftAdapter);
+    }
+
+    public int getCellResource() {
+
+        return R.layout.cell;
+
+        //LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        //inflater.inflate(R.layout.cell, parent, false);
+    }
+
+    public int getTextViewResource() {
+
+        return R.id.textView;
+    }
 }

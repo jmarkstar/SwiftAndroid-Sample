@@ -1,9 +1,7 @@
 package com.jmarkstar.swiftandroid
 
 import android.bluetooth.*
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding;
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Listener;
-import com.johnholdsworth.swiftbindings.SwiftBluetoothBinding.Responder;
+import android.bluetooth.le.ScanCallback
 import android.content.Context
 import android.bluetooth.le.ScanResult
 
@@ -11,6 +9,47 @@ import android.bluetooth.le.ScanResult
  * Created by coleman on 3/17/18.
  */
 
+@SuppressWarnings("JniMissingFunction")
+public final class SwiftBluetoothScanCallback(__swiftObject: Long): ScanCallback()
+{
+
+    val __swiftObject: Long
+
+    init {
+
+        this.__swiftObject = __swiftObject
+    }
+
+    external fun __onScanResult(swiftObject: Long, callbackType: Int, result: android.bluetooth.le.ScanResult?)
+
+    override fun onScanResult(callbackType: Int, result: android.bluetooth.le.ScanResult?) {
+
+        __onScanResult(__swiftObject, callbackType, result)
+    }
+
+    external fun __onBatchScanResults(swiftObject: Long, results: MutableList<ScanResult>?)
+
+    override fun onBatchScanResults(results: MutableList<ScanResult>?) {
+
+        __onBatchScanResults(__swiftObject, results)
+    }
+
+    external fun __onScanFailed(swiftObject: Long, errorCode: Int)
+
+    override fun onScanFailed(errorCode: Int) {
+
+        __onScanFailed(__swiftObject, errorCode)
+    }
+
+    external fun __finalize(__swiftObject: Long)
+
+    fun finalize() {
+        __finalize(__swiftObject)
+    }
+}
+
+
+/*
 /* public final */ class SwiftBluetoothLowEnergyManager(val context: Context) : Responder {
 
     private val listener: Listener
@@ -366,3 +405,4 @@ import android.bluetooth.le.ScanResult
         }
     }
 }
+*/
