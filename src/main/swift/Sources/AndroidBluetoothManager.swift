@@ -11,7 +11,7 @@ import java_util
 
 public extension Android.Bluetooth {
     
-    public typealias BluetoothManager = AndroidBluetoothManager
+    public typealias Manager = AndroidBluetoothManager
 }
 
 /**
@@ -31,14 +31,6 @@ public final class AndroidBluetoothManager: JavaObject {
         object.withJavaObject {
             self.javaObject = $0
         }
-    }
-    
-    public convenience init?(context: AndroidContext) {
-        
-        guard let service = context.systemService(named: .bluetooth)
-            else { return nil }
-    
-        self.init(casting: service)
     }
     
     private static var getAdapter_MethodID: jmethodID?
@@ -77,4 +69,11 @@ public final class AndroidBluetoothManager: JavaObject {
         @inline(__always)
         get { return getAdapter() }
     }
+}
+
+// MARK: - Android.Content.Context.SystemService
+
+extension Android.Bluetooth.Manager: Android.Content.Context.SystemService {
+    
+    public static var systemServiceName: Android.Content.Context.SystemService.Name { return .bluetooth }
 }

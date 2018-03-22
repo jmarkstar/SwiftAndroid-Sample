@@ -1,38 +1,31 @@
 package com.jmarkstar.swiftandroid
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.TextView
-import com.johnholdsworth.swiftbindings.SwiftAdapterBinding
 
 /**
  * Created by coleman on 3/18/18.
  */
 
-open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.Responder {
+open class SwiftAdapter(__swiftObject: Long) : BaseAdapter() {
 
-    private val listener by lazy { this.bind(this) }
+    val __swiftObject: Long
 
-    private var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    init {
 
-    /** Implemented in src/main/swift/Sources/main.swift  */
-    private external fun bind(self: SwiftAdapterBinding.Responder): SwiftAdapterBinding.Listener
-
-    override fun reloadData() {
-
-        this.notifyDataSetChanged()
+        this.__swiftObject = __swiftObject
     }
+
+    //private var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     // adapter
 
+    private external fun __getCount(): Int;
+
     override fun getCount(): Int {
 
-        //Log.w("SwiftAdapter", "getCount: ");
-
-        return listener.numberOfRows() ?: 0
+        return __getCount()
     }
 
     override fun getItem(position: Int): Any? {
@@ -45,10 +38,13 @@ open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.R
         return position.toLong()
     }
 
+    private external fun __getView(position: Int, convertView: View?, parent: ViewGroup): View;
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
-        //Log.w("SwiftAdapter", "getView: ");
+        return __getView(position, convertView, parent)
 
+        /*
         val view: View
         val cell: CustomCell
 
@@ -72,17 +68,6 @@ open class SwiftAdapter(context: Context) : BaseAdapter(), SwiftAdapterBinding.R
         listener.configureCell(cell, position)
 
         return view
-    }
-
-    internal inner class CustomCell : SwiftAdapterBinding.Cell {
-
-        var textView: TextView? = null
-
-        override fun setTitle(title: String) {
-
-            //Log.w("CustomCell", "setTitle: ");
-
-            textView!!.text = title
-        }
+        */
     }
 }

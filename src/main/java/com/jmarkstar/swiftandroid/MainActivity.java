@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
 
     private SwiftBluetoothScannerActivityBinding.Listener listener;
     private ListView tableView;
-    private SwiftAdapter adapter;
-
-    public SwiftAdapterBinding.Responder getAdapter() {
-        return adapter;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,16 +28,13 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
         listener = bind(this);
 
         tableView = (ListView) findViewById(R.id.tableView);
-        adapter = new SwiftAdapter(this);
-        tableView.setAdapter(adapter);
 
         // inform Swift
         listener.viewDidLoad();
     }
 
-    //Response from Swift
-    /*
-    @Override public void processedSum(int result) {
-        tvResult.setText(String.valueOf(result));
-    }*/
+    public void setAdapter(SwiftAdapter adapter) {
+
+        tableView.setAdapter(adapter);
+    }
 }

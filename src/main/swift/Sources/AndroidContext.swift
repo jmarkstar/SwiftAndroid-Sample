@@ -33,18 +33,15 @@ open class AndroidContext: JavaObject {
     
     private static var getSystemService_MethodID: jmethodID?
     
-    public final func systemService(named systemService: SystemService) -> JavaObject? {
+    public func systemService <T> (_ service: T.Type) -> T? where T: JavaObject, T: Android.Content.Context.SystemService {
         
-        return getSystemService(systemService.rawValue)
-    }
-    
-    private func getSystemService(_ service: String) -> JavaObject? {
+        let serviceName = service.systemServiceName.rawValue
         
         var __locals = [jobject]()
         
         var __args = [jvalue]( repeating: jvalue(), count: 1)
         
-        __args[0] = JNIType.toJava( value: service, locals: &__locals )
+        __args[0] = JNIType.toJava( value: serviceName, locals: &__locals )
         
         let __return = JNIMethod.CallObjectMethod(object: javaObject,
                                                   methodName: "getSystemService",
@@ -55,8 +52,7 @@ open class AndroidContext: JavaObject {
         
         defer { JNI.DeleteLocalRef( __return ) }
         
-        return __return != nil ? JavaObject( javaObject: __return ) : nil
-        
+        return __return != nil ? T( javaObject: __return ) : nil
     }
     
     private static var BLUETOOTH_SERVICE_FieldID: jfieldID?

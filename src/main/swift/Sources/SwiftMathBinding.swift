@@ -6,7 +6,8 @@ import java_swift
 /// interface com.johnholdsworth.swiftbindings.SwiftMathBinding ///
 
 public protocol SwiftMathBinding: JavaProtocol {
-
+    
+    
 }
 
 

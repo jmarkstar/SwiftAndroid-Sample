@@ -5,12 +5,26 @@
 //  Created by Alsey Coleman Miller on 3/21/18.
 //
 
+import java_swift
+
 public extension Android.Content.Context {
     
     public typealias SystemService = AndroidContextSystemService
 }
 
-public struct AndroidContextSystemService: RawRepresentable {
+public extension Android.Content.Context.SystemService {
+    
+    public typealias Name = AndroidContextSystemServiceName
+}
+
+public protocol AndroidContextSystemService {
+    
+    static var systemServiceName: Android.Content.Context.SystemService.Name { get }
+}
+
+// MARK: - Supporting Types
+
+public struct AndroidContextSystemServiceName: RawRepresentable {
     
     public let rawValue: String
     
@@ -19,10 +33,10 @@ public struct AndroidContextSystemService: RawRepresentable {
         self.rawValue = rawValue
     }
     
-    public static let bluetooth = Android.Content.Context.SystemService(rawValue: Android.Content.Context.bluetoothService!)
+    public static let bluetooth = Android.Content.Context.SystemService.Name(rawValue: Android.Content.Context.bluetoothService!)
 }
 
-extension Android.Content.Context.SystemService: ExpressibleByStringLiteral {
+extension Android.Content.Context.SystemService.Name: ExpressibleByStringLiteral {
     
     public init(stringLiteral value: String) {
         
