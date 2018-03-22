@@ -73,4 +73,23 @@ open class AndroidContext: JavaObject {
             return __value != nil ? String( javaObject: __value ) : nil
         }
     }
+    
+    private static var LAYOUT_INFLATER_SERVICE_FieldID: jfieldID?
+    
+    internal static var layoutInflaterService: String? {
+        
+        get {
+            
+            let __value = JNIField.GetStaticObjectField(
+                fieldName: "LAYOUT_INFLATER_SERVICE",
+                fieldType: "Ljava/lang/String;",
+                fieldCache: &LAYOUT_INFLATER_SERVICE_FieldID,
+                className: javaClassName,
+                classCache: &JNIClass )
+            
+            defer { JNI.DeleteLocalRef( __value ) }
+            
+            return __value != nil ? String( javaObject: __value ) : nil
+        }
+    }
 }

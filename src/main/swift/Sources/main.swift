@@ -32,9 +32,15 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
-    private lazy var listAdapter = ListAdapter()
+    private lazy var layoutInflater: Android.View.LayoutInflater = Android.View.LayoutInflater(casting: self.responder.getLayoutInflater())!
+    
+    private lazy var listAdapter: ListAdapter = ListAdapter(layoutInflater: self.layoutInflater,
+                                                            cellResource: self.responder.getCellResource(),
+                                                            textViewResource: self.responder.getTextViewResource())
     
     override func viewDidLoad() {
+        
+        NSLog("\(type(of: self)): \(#function)")
         
         listAdapter.withJavaObject { [unowned self] in
             self.responder.setAdapter(adapter: JavaObject(javaObject: $0))
@@ -52,19 +58,49 @@ extension SwiftBluetoothScannerActivityBinding_ListenerImpl {
     
     class ListAdapter: Android.Widget.Adapter {
         
+        let layoutInflater: Android.View.LayoutInflater
+        
+        let cellResource: Int
+        
+        let textViewResource: Int
+        
+        init(layoutInflater: Android.View.LayoutInflater,
+             cellResource: Int,
+             textViewResource: Int) {
+            
+            self.layoutInflater = layoutInflater
+            self.cellResource = cellResource
+            self.textViewResource = textViewResource
+        }
+        
         var data = [Android.Bluetooth.LE.ScanResult]() {
             
-            didSet { self.notifyDataSetChanged() }
+            didSet {
+                NSLog("\(type(of: self)): \(#function)")
+                self.notifyDataSetChanged()
+            }
         }
         
         override func getCount() -> Int {
             
+            NSLog("\(type(of: self)): \(#function)")
+            
             return data.count
         }
         
-        override func getView(position: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View {
+        override func getView(position row: Int, convertView: Android.View.View?, parent: Android.View.ViewGroup) -> Android.View.View {
             
-            fatalError()
+            NSLog("\(type(of: self)): \(#function)")
+            
+            let view: Android.View.View = convertView ?? layoutInflater.inflate(resource: cellResource, root: parent, attachToRoot: false)
+            
+            let textView = Android.Widget.TextView(casting: view.findViewById(textViewResource)!)
+            
+            let item = self.data[row]
+            
+            textView?.text = item.device.address.description
+            
+            return view
         }
     }
 }

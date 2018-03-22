@@ -17,6 +17,10 @@ public interface SwiftBluetoothScannerActivityBinding extends SwiftActivityBindi
 
         int getCellResource();
 
-        void setAdapter(java.lang.Object adapter);
+        int getTextViewResource();
+
+        Object getLayoutInflater();
+
+        void setAdapter(Object adapter);
     }
 }

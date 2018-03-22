@@ -5,7 +5,7 @@
 //  Created by Alsey Coleman Miller on 3/21/18.
 //
 
-//import JNI
+import JNI
 
 /// Android namespace.
 public enum Android: JavaPackage {

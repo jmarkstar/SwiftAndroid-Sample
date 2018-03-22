@@ -11,6 +11,14 @@ public protocol SwiftBluetoothScannerActivityBinding_Responder: SwiftActivityBin
 
     func getCellResource() -> Int
 
+    /// public abstract java.lang.Object com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getLayoutInflater()
+
+    func getLayoutInflater() -> java_swift.JavaObject!
+
+    /// public abstract int com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getTextViewResource()
+
+    func getTextViewResource() -> Int
+
     /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.setAdapter(java.lang.Object)
 
     func setAdapter( adapter: java_swift.JavaObject? )
@@ -24,25 +32,50 @@ open class SwiftBluetoothScannerActivityBinding_ResponderForward: SwiftActivityB
 
     /// public abstract int com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getCellResource()
 
-    private static var getCellResource_MethodID_3: jmethodID?
+    private static var getCellResource_MethodID_5: jmethodID?
 
     open func getCellResource() -> Int {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getCellResource", methodSig: "()I", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getCellResource_MethodID_3, args: &__args, locals: &__locals )
+        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getCellResource", methodSig: "()I", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getCellResource_MethodID_5, args: &__args, locals: &__locals )
+        return Int(__return)
+    }
+
+
+    /// public abstract java.lang.Object com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getLayoutInflater()
+
+    private static var getLayoutInflater_MethodID_6: jmethodID?
+
+    open func getLayoutInflater() -> java_swift.JavaObject! {
+        var __locals = [jobject]()
+        var __args = [jvalue]( repeating: jvalue(), count: 1 )
+        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getLayoutInflater", methodSig: "()Ljava/lang/Object;", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getLayoutInflater_MethodID_6, args: &__args, locals: &__locals )
+        defer { JNI.DeleteLocalRef( __return ) }
+        return __return != nil ? java_swift.JavaObject( javaObject: __return ) : nil
+    }
+
+
+    /// public abstract int com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getTextViewResource()
+
+    private static var getTextViewResource_MethodID_7: jmethodID?
+
+    open func getTextViewResource() -> Int {
+        var __locals = [jobject]()
+        var __args = [jvalue]( repeating: jvalue(), count: 1 )
+        let __return = JNIMethod.CallIntMethod( object: javaObject, methodName: "getTextViewResource", methodSig: "()I", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getTextViewResource_MethodID_7, args: &__args, locals: &__locals )
         return Int(__return)
     }
 
 
     /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.setAdapter(java.lang.Object)
 
-    private static var setAdapter_MethodID_4: jmethodID?
+    private static var setAdapter_MethodID_8: jmethodID?
 
     open func setAdapter( adapter: java_swift.JavaObject? ) {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
         __args[0] = JNIType.toJava( value: adapter, locals: &__locals )
-        JNIMethod.CallVoidMethod( object: javaObject, methodName: "setAdapter", methodSig: "(Ljava/lang/Object;)V", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.setAdapter_MethodID_4, args: &__args, locals: &__locals )
+        JNIMethod.CallVoidMethod( object: javaObject, methodName: "setAdapter", methodSig: "(Ljava/lang/Object;)V", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.setAdapter_MethodID_8, args: &__args, locals: &__locals )
     }
 
     open func setAdapter( _ _adapter: java_swift.JavaObject? ) {

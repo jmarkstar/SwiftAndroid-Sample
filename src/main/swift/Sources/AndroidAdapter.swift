@@ -81,7 +81,7 @@ private func AndroidWidgetAdapter_getCount( _ __env: UnsafeMutablePointer<JNIEnv
     return jint(result)
 }
 
-private typealias AndroidWidgetAdapter_getView_type = @convention(c) ( _: UnsafeMutablePointer<JNIEnv?>, _: jobject?, _: jlong, _: jint, _: jobject?, _: jobject?) -> ()
+private typealias AndroidWidgetAdapter_getView_type = @convention(c) ( _: UnsafeMutablePointer<JNIEnv?>, _: jobject?, _: jlong, _: jint, _: jobject?, _: jobject?) -> jobject?
 
 private func AndroidWidgetAdapter_getView( _ __env: UnsafeMutablePointer<JNIEnv?>,
                                             _ __this: jobject?,
@@ -143,6 +143,12 @@ fileprivate class AndroidWidgetAdapterListenerLocal: JNILocalProxy<AndroidWidget
         natives.append( JNINativeMethod(name: strdup("__getCount"),
                                         signature: strdup("(J)I"),
                                         fnPtr: unsafeBitCast( getCountThunk, to: UnsafeMutableRawPointer.self ) ))
+        
+        let getViewThunk: AndroidWidgetAdapter_getView_type = AndroidWidgetAdapter_getView
+        
+        natives.append( JNINativeMethod(name: strdup("__getView"),
+                                        signature: strdup("(JILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;"),
+                                        fnPtr: unsafeBitCast( getViewThunk, to: UnsafeMutableRawPointer.self ) ))
         
         natives.append( JNINativeMethod( name: strdup("__finalize"),
                                          signature: strdup("(J)V"),

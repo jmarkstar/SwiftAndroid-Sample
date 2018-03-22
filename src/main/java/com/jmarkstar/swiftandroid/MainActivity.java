@@ -50,4 +50,9 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
 
         //inflater.inflate(R.layout.cell, parent, false);
     }
+
+    public int getTextViewResource() {
+
+        return R.id.textView;
+    }
 }
