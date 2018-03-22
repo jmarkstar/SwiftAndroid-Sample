@@ -55,6 +55,9 @@ public final class AndroidLayoutInflater: JavaObject {
             args: &__args,
             locals: &__locals )
         
+        guard __return != nil
+            else { fatalError("Could not deflate \(resource)") }
+        
         return Android.View.View(javaObject: __return)
     }
 }

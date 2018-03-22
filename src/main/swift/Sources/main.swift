@@ -47,7 +47,13 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
         }
         
         let scanCallback = ScanCallback { [weak self] in
+            
             self?.listAdapter.data.append($0)
+            
+            // FIXME: Properly refresh list view
+            self?.listAdapter.withJavaObject {
+                self?.responder.setAdapter(adapter: JavaObject(javaObject: $0))
+            }
         }
         
         Android.Bluetooth.Adapter.default?.lowEnergyScanner?.startScan(callback: scanCallback)
@@ -92,9 +98,16 @@ extension SwiftBluetoothScannerActivityBinding_ListenerImpl {
             
             NSLog("\(type(of: self)): \(#function)")
             
-            let view: Android.View.View = convertView ?? layoutInflater.inflate(resource: cellResource, root: parent, attachToRoot: false)
+            let view: Android.View.View = /* convertView ?? */ layoutInflater.inflate(resource: cellResource,
+                                                                                root: parent,
+                                                                                attachToRoot: false)
             
-            let textView = Android.Widget.TextView(casting: view.findViewById(textViewResource)!)
+            //NSLog("view.")
+            
+            guard let textViewObject = view.findViewById(textViewResource)
+                else { fatalError("No view for \(textViewResource)") }
+            
+            let textView = Android.Widget.TextView(casting: textViewObject)
             
             let item = self.data[row]
             

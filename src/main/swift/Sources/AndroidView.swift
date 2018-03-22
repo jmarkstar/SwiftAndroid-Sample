@@ -17,6 +17,25 @@ public extension Android.View {
 /// `Android.View.View`
 open class AndroidView: JavaObject {
     
+    // MARK: - Initialization
+    
+    public convenience init?( casting object: java_swift.JavaObject,
+                              _ file: StaticString = #file,
+                              _ line: Int = #line ) {
+        
+        self.init(javaObject: nil)
+        
+        object.withJavaObject {
+            self.javaObject = $0
+        }
+    }
+    
+    public required init( javaObject: jobject? ) {
+        super.init(javaObject: javaObject)
+    }
+    
+    // MARK: - Methods
+    
     open func findViewById(_ id: Int) -> Android.View.View? {
         
         var __locals = [jobject]()

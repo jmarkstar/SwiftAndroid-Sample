@@ -90,7 +90,7 @@ private func AndroidWidgetAdapter_getView( _ __env: UnsafeMutablePointer<JNIEnv?
                                             _ __convertView: jobject?,
                                             _ __parent: jobject?) -> jobject? {
     
-    let convertView = Android.View.View(javaObject: __convertView)
+    let convertView = __convertView != nil ? Android.View.View(javaObject: __convertView) : nil
     
     let parentView = Android.View.ViewGroup(javaObject: __parent)
     
@@ -98,7 +98,9 @@ private func AndroidWidgetAdapter_getView( _ __env: UnsafeMutablePointer<JNIEnv?
         .swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject )
         .getView(position: Int(__position), convertView: convertView, parent: parentView)
     
-    return result?.javaObject
+    var __locals = [jobject]()
+    
+    return result?.localJavaObject(&__locals)
 }
 
 fileprivate final class AndroidWidgetAdapterListenerProxy: AndroidWidgetAdapterListenerProtocol {
