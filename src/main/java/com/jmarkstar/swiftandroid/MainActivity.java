@@ -2,10 +2,10 @@ package com.jmarkstar.swiftandroid;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ListView;
+import android.widget.*;
 
-import com.johnholdsworth.swiftbindings.SwiftAdapterBinding;
 import com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding;
+import com.jmarkstar.swiftandroid.SwiftAdapter;
 
 public class MainActivity extends AppCompatActivity implements SwiftBluetoothScannerActivityBinding.Responder {
 
@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity implements SwiftBluetoothSca
         listener.viewDidLoad();
     }
 
-    public void setAdapter(SwiftAdapter adapter) {
+    public void setAdapter(Object adapter) {
 
-        tableView.setAdapter(adapter);
+        SwiftAdapter swiftAdapter = (SwiftAdapter)adapter;
+
+        tableView.setAdapter(swiftAdapter);
     }
 }

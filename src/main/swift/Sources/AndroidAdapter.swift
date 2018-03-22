@@ -13,41 +13,28 @@ public extension Android.Widget {
     public typealias Adapter = AndroidWidgetAdapter
 }
 
-open class AndroidWidgetAdapter: JNIObjectProtocol {
+open class AndroidWidgetAdapter: JavaProtocol {
+    
+    // MARK: - Properties
+    
+    fileprivate lazy var listener: AndroidWidgetAdapterListenerLocal = {
+        
+        let proxy = AndroidWidgetAdapterListenerProxy()
+        proxy.swiftObject = self
+        
+        return AndroidWidgetAdapterListenerLocal(owned: proxy, proto: proxy)
+    }()
     
     // MARK: - Initialization
     
-    /*
-    public convenience init?( casting object: java_swift.JavaObject,
-                              _ file: StaticString = #file,
-                              _ line: Int = #line ) {
-        
-        self.init(javaObject: nil)
-        
-        object.withJavaObject {
-            self.javaObject = $0
-        }
-    }
-    
-    public required init( javaObject: jobject? ) {
-        super.init(javaObject: javaObject)
-    }
-    
-    open override var javaObject: jobject?
-    
-    public override func localJavaObject( _ locals: UnsafeMutablePointer<[jobject]> ) -> jobject? {
-        
-        return SwiftAdapterBinding_ListenerLocal_( owned: self, proto: self ).localJavaObject( locals )
-    }*/
-    
     public func localJavaObject( _ locals: UnsafeMutablePointer<[jobject]> ) -> jobject? {
         
-        return AndroidBluetoothLowEnergyScanCallback_ListenerLocal_.localJavaObject( locals )
+        return listener.localJavaObject( locals )
     }
     
     public final func notifyDataSetChanged() {
         
-        
+        listener.notifyDataSetChanged()
     }
     
     // MARK: - Listener
@@ -71,7 +58,7 @@ fileprivate extension Android.Widget.Adapter {
         static let className = "com/jmarkstar/swiftandroid/SwiftAdapter"
         
         /// JNI Java class
-        static var jniClass: jclass? = AndroidWidgetAdapter_ListenerLocal._proxyClass
+        static var jniClass: jclass? = AndroidWidgetAdapterListenerLocal._proxyClass
         
         /// JNI Method ID cache
         struct MethodID {
@@ -80,21 +67,6 @@ fileprivate extension Android.Widget.Adapter {
         }
     }
 }
-/*
-private typealias SwiftAdapterBinding_Listener_configureCell_0_type = @convention(c) ( _: UnsafeMutablePointer<JNIEnv?>, _: jobject?, _: jlong, _: jobject?, _: jint ) -> ()
-
-private func SwiftAdapterBinding_Listener_configureCell_0( _ __env: UnsafeMutablePointer<JNIEnv?>, _ __this: jobject?, _ __swiftObject: jlong, _ cell: jobject?, _ row: jint ) -> () {
-    SwiftAdapterBinding_ListenerLocal_.swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject ).configureCell( cell: cell != nil ? SwiftAdapterBinding_CellForward( javaObject: cell ) : nil, row: Int(row) )
-}
-
-private typealias SwiftAdapterBinding_Listener_numberOfRows_1_type = @convention(c) ( _: UnsafeMutablePointer<JNIEnv?>, _: jobject?, _: jlong ) -> jint
-
-private func SwiftAdapterBinding_Listener_numberOfRows_1( _ __env: UnsafeMutablePointer<JNIEnv?>, _ __this: jobject?, _ __swiftObject: jlong ) -> jint {
-    let __return = SwiftAdapterBinding_ListenerLocal_.swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject ).numberOfRows( )
-    var __locals = [jobject]()
-    return JNI.check( jvalue( i: jint(__return) ).i, &__locals, removeLast: true )
-}
-*/
 
 private typealias AndroidWidgetAdapter_getCount_type = @convention(c) ( _: UnsafeMutablePointer<JNIEnv?>, _: jobject?, _: jlong) -> (jint)
 
@@ -102,7 +74,7 @@ private func AndroidWidgetAdapter_getCount( _ __env: UnsafeMutablePointer<JNIEnv
                                             _ __this: jobject?,
                                             _ __swiftObject: jlong) -> jint {
     
-    let result = AndroidWidgetAdapter_ListenerLocal
+    let result = AndroidWidgetAdapterListenerLocal
         .swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject )
         .getCount()
     
@@ -122,14 +94,45 @@ private func AndroidWidgetAdapter_getView( _ __env: UnsafeMutablePointer<JNIEnv?
     
     let parentView = JavaObject(javaObject: __parent)
     
-    let result = AndroidWidgetAdapter_ListenerLocal
+    let result = AndroidWidgetAdapterListenerLocal
         .swiftObject( jniEnv: __env, javaObject: __this, swiftObject: __swiftObject )
-        .getView(position: Int(__position), convertView: convertView, parent: parentView)()
+        .getView(position: Int(__position), convertView: convertView, parent: parentView)
     
-    return 
+    return result?.javaObject
 }
 
-fileprivate class AndroidWidgetAdapter_ListenerLocal: JNILocalProxy<Android.Widget.Adapter, Any> {
+fileprivate final class AndroidWidgetAdapterListenerProxy: AndroidWidgetAdapterListenerProtocol {
+    
+    weak var swiftObject: Android.Widget.Adapter?
+    
+    func getCount() -> Int {
+        
+        return swiftObject?.getCount() ?? 0
+    }
+    
+    func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject? {
+        
+        return swiftObject?.getView(position: position, convertView: convertView, parent: parent)
+    }
+}
+
+fileprivate protocol AndroidWidgetAdapterListenerProtocol: JavaProtocol {
+    
+    func getCount() -> Int
+    
+    func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject?
+}
+
+extension AndroidWidgetAdapterListenerProtocol {
+    
+    public func localJavaObject( _ locals: UnsafeMutablePointer<[jobject]> ) -> jobject? {
+        
+        return AndroidWidgetAdapterListenerLocal( owned: self, proto: self ).localJavaObject( locals )
+    }
+    
+}
+
+fileprivate class AndroidWidgetAdapterListenerLocal: JNILocalProxy<AndroidWidgetAdapterListenerProtocol, Any> {
     
     fileprivate static let _proxyClass: jclass = {
         

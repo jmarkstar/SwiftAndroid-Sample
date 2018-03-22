@@ -7,9 +7,9 @@ import java_swift
 
 public protocol SwiftBluetoothScannerActivityBinding_Responder: SwiftActivityBinding_Responder {
 
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftAdapterBinding$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getAdapter()
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.setAdapter(java.lang.Object)
 
-    func getAdapter() -> SwiftAdapterBinding_Responder!
+    func setAdapter( adapter: java_swift.JavaObject? )
 
 }
 
@@ -18,18 +18,20 @@ open class SwiftBluetoothScannerActivityBinding_ResponderForward: SwiftActivityB
 
     private static var SwiftBluetoothScannerActivityBinding_ResponderJNIClass: jclass?
 
-    /// public abstract com.johnholdsworth.swiftbindings.SwiftAdapterBinding$Responder com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.getAdapter()
+    /// public abstract void com.johnholdsworth.swiftbindings.SwiftBluetoothScannerActivityBinding$Responder.setAdapter(java.lang.Object)
 
-    private static var getAdapter_MethodID_2: jmethodID?
+    private static var setAdapter_MethodID_2: jmethodID?
 
-    open func getAdapter() -> SwiftAdapterBinding_Responder! {
+    open func setAdapter( adapter: java_swift.JavaObject? ) {
         var __locals = [jobject]()
         var __args = [jvalue]( repeating: jvalue(), count: 1 )
-        let __return = JNIMethod.CallObjectMethod( object: javaObject, methodName: "getAdapter", methodSig: "()Lcom/johnholdsworth/swiftbindings/SwiftAdapterBinding$Responder;", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.getAdapter_MethodID_2, args: &__args, locals: &__locals )
-        defer { JNI.DeleteLocalRef( __return ) }
-        return __return != nil ? SwiftAdapterBinding_ResponderForward( javaObject: __return ) : nil
+        __args[0] = JNIType.toJava( value: adapter, locals: &__locals )
+        JNIMethod.CallVoidMethod( object: javaObject, methodName: "setAdapter", methodSig: "(Ljava/lang/Object;)V", methodCache: &SwiftBluetoothScannerActivityBinding_ResponderForward.setAdapter_MethodID_2, args: &__args, locals: &__locals )
     }
 
+    open func setAdapter( _ _adapter: java_swift.JavaObject? ) {
+        setAdapter( adapter: _adapter )
+    }
 
 }
 

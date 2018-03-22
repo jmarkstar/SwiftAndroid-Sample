@@ -32,19 +32,40 @@ final class SwiftBluetoothScannerActivityBinding_ListenerImpl: SwiftBluetoothSca
     
     let responder: SwiftBluetoothScannerActivityBinding_ResponderForward
     
+    private lazy var listAdapter = ListAdapter()
+    
     override func viewDidLoad() {
         
-        responder.getAdapter().reloadData()
+        responder.setAdapter(adapter: listAdapter)
         
-        let scanCallback = ScanCallback { [weak self] _ in
-            
-            //(self?.responder.getAdapter().getListener() as? SwiftAdapterBinding_ListenerImpl)?.data
-            //    .append($0.device.address.rawValue)
-            
-            self?.responder.getAdapter().reloadData()
+        let scanCallback = ScanCallback { [weak self] in
+            self?.listAdapter.data.append($0)
         }
         
         Android.Bluetooth.Adapter.default?.lowEnergyScanner?.startScan(callback: scanCallback)
+    }
+}
+
+extension SwiftBluetoothScannerActivityBinding_ListenerImpl {
+    
+    class ListAdapter: Android.Widget.Adapter {
+        
+        var data = [Android.Bluetooth.LE.ScanResult]() {
+            
+            didSet { self.notifyDataSetChanged() }
+        }
+        
+        override func getCount() -> Int {
+            
+            NSLog("\(#function)")
+            
+            return 0
+        }
+        
+        override func getView(position: Int, convertView: JavaObject?, parent: JavaObject) -> JavaObject {
+            
+            fatalError()
+        }
     }
 }
 
